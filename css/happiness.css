@@ -1,0 +1,26 @@
+.happiness {
+  background-image: url(/Mcscoke/img/Happiness/image\ 11.png);
+  background-color: var(--red);
+  height: 40rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section > h1 {
+  color: var(--red);
+  font-size: 3.5rem;
+}
+section > p {
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.bg {
+  height: auto;
+  text-align: left;
+  background-color: var(--happiness-background);
+  padding: 2rem;
+}
+section > p > a {
+  text-decoration: none;
+}
