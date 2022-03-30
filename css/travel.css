@@ -1,0 +1,16 @@
+.explore {
+  padding: 2rem;
+  font-weight: bold;
+  height: auto;
+  text-align: left;
+}
+section > h1 {
+  color: var(--red);
+  font-size: 3rem;
+}
+section > p {
+  padding-left: 2rem;
+}
+section > ol {
+  padding-left: 4rem;
+}

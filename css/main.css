@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --red: #ff3d00;
+  --gray: #2b2b2b;
+  --white: #fff;
+  --black: #000000;
+  --happiness-background: rgba(102, 85, 85, 0.5);
+}
+.nav {
+  background-color: var(--black);
+  display: grid;
+  grid-template-columns: 30% 63% 7%;
+}
+.nav-logo {
+  width: 9em;
+  height: auto;
+}
+.nav-right > ul > li > a {
+  display: block;
+  color: white;
+  align-items: center;
+  padding-right: 2em;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav-right > ul > li > a :hover :active {
+  border-bottom: 1px solid var(--white);
+}
+.nav-right > ul > li {
+  align-items: center;
+  float: left;
+}
+.wrapper {
+  background-color: var(--red);
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 3em 0 3em 0;
+}
+.margin {
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+.product-title > h2 {
+  color: var(--white);
+  font-size: 1.7em;
+}
+.product-title > p {
+  color: var(--white);
+  padding-right: 3em;
+}
+.product-title > button {
+  background-color: #000000;
+  color: var(--white);
+  padding: 1em;
+}
+.product-img1 {
+  padding-left: 1em;
+}
+.information {
+  padding-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0.6em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.information2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0.6em;
+}
+.header-text {
+  margin-top: 2rem;
+}
+.footer {
+  background-color: var(--gray);
+  display: grid;
+  grid-template-columns: 15% 25% 25% 30%;
+  border-bottom: 1px solid var(--white);
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.footer-product > ul {
+  list-style-type: none;
+}
+.footer-product > ul > h5 {
+  color: var(--white);
+}
+.social-responsibility > ul {
+  list-style-type: none;
+}
+.footer-aboutus > ul {
+  list-style-type: none;
+}
+.footer-product > ul > li > a {
+  text-decoration: none;
+  color: #aeaeae;
+  line-height: 1.7;
+}
+.social-responsibility > ul > li > a {
+  text-decoration: none;
+  color: #aeaeae;
+  line-height: 1.7;
+}
+.social-responsibility > ul > h5 > a {
+  text-decoration: none;
+  color: var(--white);
+}
+.footer-aboutus > ul > li > a {
+  text-decoration: none;
+  color: #aeaeae;
+  line-height: 1.7;
+}
+.footer-aboutus > ul > h5 > a {
+  text-decoration: none;
+  color: var(--white);
+}
+.footer-product > ul > h5 > a {
+  text-decoration: none;
+  color: var(--white);
+}
+.footer-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--gray);
+  padding-top: 1em;
+  align-items: center;
+}
+.bottom-footer-title {
+  color: var(--white);
+}
+.footer__contact {
+  color: #aeaeae;
+}
+.footer-Logo {
+  width: 6.6em;
+  height: auto;
+}
