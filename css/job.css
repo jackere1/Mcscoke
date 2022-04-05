@@ -8,6 +8,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+.margin {
+  padding-left: 8em;
+  padding-right: 8em;
+}
 .footer {
   background-color: var(--gray);
   margin-top: 4em;
