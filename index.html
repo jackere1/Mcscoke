@@ -1,63 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta
+<head>
+   <meta
       name="description"
       content="MCS Coca-Cola, М-Си-Эс Кока-Кола, Кока-Кола"
-    />
-    <meta
+   />
+   <meta
       name="keywords"
       content="MCS Coca-Cola, М-Си-Эс Кока-Кола, Кока-Кола"
-    />
-
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="img/icon.png" type="image/x-icon" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:type" content="website" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomePage</title>
-    
-  </head>
-  <body>
-    <header>
-       <section class="margin"></section>
+   />
+   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="icon" href="img/icon.png" type="image/x-icon" />
+   <meta name="robots" content="index, follow" />
+   <meta property="og:type" content="website" />
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>HomePage</title>
+</head>
+<body>
+   <header>
       <section class="nav">
-        <section class="nav-logo">
-         <img src="img/Navbar/mcs_logo_nav.png"/>
-        </section>
-        <section class="nav-right">
-        <ul>
-          <li><a href="index.html">Нүүр хуудас</a></li>
-          <li><a href="Products.html">Бүтээгдэхүүнүүд</a></li>
-          <li><a href="aboutus.html">Бидний тухай</a></li>
-          <li><a href="niigem.html">Нийгмийн хариуцлага</a></li>
-          <li><a href="medee.html">Мэдээ мэдээлэл</a></li>
-        </ul>
+      <a href="index.html"><img src="img/Navbar/mcs_logo_nav.png" alt="mcs_nav"/></a>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+         <i><img src="img/dropdown.png" alt="bars"></i>
+      </label>
+      <nav>
+         <ul>
+            <li><a href="index.html">Нүүр хуудас</a></li>
+            <li><a href="Products.html">Бүтээгдэхүүнүүд</a></li>
+            <li><a href="aboutus.html">Бидний тухай</a></li>
+            <li><a href="niigem.html">Нийгмийн хариуцлага</a></li>
+            <li><a href="medee.html">Мэдээ мэдээлэл</a></li>
+         </ul>
+      </nav>
+      <a href="index.html"><img src="img/Navbar/cola_logo_nav.png" alt="cola_nav"/></a>
       </section>
-      <section>
-         <picture>
-           <source
-             srcset="img/Navbar/cola_logo_nav.png"
-             media="(min-width:1020px)"
-           />
-           <source
-             srcset="img/Navbar/cola_logo_nav.png"
-             media="(min-width:800px)"
-           />
-           <img
-             src="img/Navbar/cola_logo_nav.png"
-             alt="cola_nav"
-             width="50px"
-             height="auto"
-           />
-         </picture>
-       </section>
-      </section>
-    </header>
-
-    <main>
+</header>
+   <main>
       <section class="">
          <picture>
             <source
@@ -102,7 +84,7 @@
    </section>
       <section class="information">
          <section class="about-mcs">
-            <picture>
+            <picture class="mcs">
                <source 
                   srcset="img/HomePage/about-cocaCola.png"
                   media="(min-width:1020px)"
@@ -115,6 +97,15 @@
                   src="img/HomePage/about-cocacola-mobile.png" alt="aboutcola"
                   />
             </picture>
+            <div class = "information-overlay">
+               <div class="text">
+                  <h3>М-Си-Эс Кока-Кола ХХК-ийн тухай</h3>
+            <p>Хэрэглэгч, харилцагчидаа дээдэлдэг, монголдоо хамгийн...
+               <a></a>
+            </p>
+               </div>
+            
+            </div>
          </section>
       
       <section class="happiness-center">
@@ -131,6 +122,12 @@
                src="img/homepage/happiness-center-mobile.png" alt="happiness"
                />
          </picture>
+         <div class = "information-overlay">
+            <div class="text">
+               <h3>Happiness-center</h3>
+         <p>Хэрэглэгч, харилцагчидаа дээдэлдэг, монголдоо хамгийн...
+         </p>
+            </div>
       </section>
    </section>
    <section class="information2 ">
@@ -148,6 +145,9 @@
                src="img/HomePage/plant-tour-mobile.png" alt="tour"
                />
          </picture>
+         <div class = "information2-overlay">
+               <h3>Виртуал үйлдвэрийн аялал </h3>
+            </div>
       </section>
       <section class="doYouKnow">
          <picture>
@@ -163,6 +163,7 @@
                src="img/homePage/doYouKnow-mobile.png" alt="douYouknow"
                />
          </picture>
+         
       </section>
       <section class="vacancy">
          <picture>
@@ -178,94 +179,108 @@
                src="img/HomePage/HR-mobile.png" alt="vacancy"
                />
          </picture>
+         <div class = "information2-vacancy-overlay">
+            <h3><a href="job.html"> Нээлттэй ажлын байр</a></h3>
+         </div>
       </section>
    </section>
       
    </main>
-
-    <footer>
-       <section class="footer ">
+   
+   <footer>
+      <section class="footer ">
       <section class="footer-product">
          <ul>
-            <h5><a href="#">Бренд</a></h5>
+            <h5><a href="Products.html">Бренд</a></h5>
             <hr>
-            <li><a href="#">Coca-Cola</a></li>
-            <li><a href="#">Fanta</a></li>
-            <li><a href="#">Sprite</a></li>
-            <li><a href="#">Fuzetea</a></li>
-            <li><a href="#">Minute Maid</a></li>
-            <li><a href="#">Powerade</a></li>
-            <li><a href="#">Peace Tea</a></li>
+            <li><a href="productDetails.html">Coca-Cola</a></li>
+            <li><a href="productDetails.html">Fanta</a></li>
+            <li><a href="productDetails.html">Sprite</a></li>
+            <li><a href="productDetails.html">Fuzetea</a></li>
+            <li><a href="productDetails.html">Minute Maid</a></li>
+            <li><a href="productDetails.html">Powerade</a></li>
+            <li><a href="productDetails.html">Peace Tea</a></li>
          </ul>
-        
+      
       </section>
       <article class="social-responsibility">
       <ul>
-        <h5><a href="#">НИЙГМИЙН ХАРИУЦЛАГА</a></h5>
-        <hr>
-        <li><a href="#">Эрүүл, идэвхтэй амьдрал</a></li>
-        <li><a href="#">Ажлын байр</a></li>
-        <li><a href="#">Энергийн менежмэнт</a></li>
-        <li><a href="#">Ус хэмнэлт</a></li>
-        <li><a href="#">Сав баглаа боодлын менежмэнт</a></li>
-        <li><a href="#">Хамтарч ажиллах санал хүсэлт</a></li>
+      <h5><a href="niigem.html">НИЙГМИЙН ХАРИУЦЛАГА</a></h5>
+      <hr>
+      <li><a href="niigem.html">Эрүүл, идэвхтэй амьдрал</a></li>
+      <li><a href="job.html">Ажлын байр</a></li>
+      <li><a href="niigem.html">Энергийн менежмэнт</a></li>
+      <li><a href="niigem.html">Ус хэмнэлт</a></li>
+      <li><a href="niigem.html">Сав баглаа боодлын менежмэнт</a></li>
+      <li><a href="niigem.html">Хамтарч ажиллах санал хүсэлт</a></li>
       </ul>
       </article>
       <article class="footer-aboutus">
          <ul>
-        <h5 ><a href="#">БИДНИЙ ТУХАЙ </a></h5>
-        <hr>
-        <li><a href="#">М-СИ-ЭС Кока-Кола ХХК-ийн тухай</a></li>
-        <li><a href="#">М-СИ-ЭС Группын тухай</a></li>
-        <li><a href="#">Кока-Кола компанийн тухай</a></li>
-        <h5><a href="#">МЭДЭЭ МЭДЭЭЛЭЛ</a></h5>
-        <hr>
-        <li><a href="#">Мэдээ</a></li>
-        <li><a href="#">Фото</a></li>
-        <li><a href="#">Видео</a></li>
+      <h5 ><a href="aboutus.html">БИДНИЙ ТУХАЙ </a></h5>
+      <hr>
+      <li><a href="aboutus.html">М-СИ-ЭС Кока-Кола ХХК-ийн тухай</a></li>
+      <li><a href="aboutus.html">М-СИ-ЭС Группын тухай</a></li>
+      <li><a href="aboutus.html">Кока-Кола компанийн тухай</a></li>
+      <h5><a href="medee.html">МЭДЭЭ МЭДЭЭЛЭЛ</a></h5>
+      <hr>
+      <li><a href="medee.html">Мэдээ</a></li>
+      <li><a href="medee.html">Фото</a></li>
+      <li><a href="medee.html">Видео</a></li>
       </ul>
       </article>
       <section class="footer-contact">
-        <p>ХОЛБОГДОХ</p>
-        <hr>
-        <form>
-          <label for="type">Төрлөө сонгоно уу?</label> <br />
-          <input type="text" id="type" name="type" /><br />
-          <label for="email">Имэйл</label> <br />
-          <input type="text" id="email" name="mail" /><br />
-          <label for="phone">Утас</label> <br />
-          <input type="text" id="phone" name="number" /><br />
-          <label for="message">Мессеж</label> <br />
-          <input type="text" id="message" name="sms" /><br />
-          <br />
-          <input class="footer-contact-button" type="submit" value="Илгээнэ үү" />
-        </form>
+      <p>ХОЛБОГДОХ</p>
+      <hr>
+      <form>
+         <label for="type">Төрлөө сонгоно уу?</label>
+         <select id="type" name="type">
+      <option value="message">Гомдол , санал</option>
+      <option value="message">Хамтран ажиллаж санал</option>
+   </select> <br />
+         <label for="email">Имэйл</label> <br />
+         <input type="text" id="email" name="mail" /><br />
+         <label for="phone">Утас</label> <br />
+         <input type="text" id="phone" name="number" /><br />
+         <label for="message">Мессеж</label> <br />
+         <input type="text" id="message" name="sms" /><br />
+         <br />
+         <input class="footer-contact-button" type="submit" value="Илгээнэ үү" />
+      </form>
       </section>
       </section>
       <section class="footer-bottom ">
-        <section class="footer-Logo">
-          <picture>
+      <section class="footer-Logo">
+         <picture>
             <source
-              srcset="img/footer/footer-logo 1.png"
-              media="(min-width:1020px)"
+            srcset="img/footer/footer-logo 1.png"
+            media="(min-width:1020px)"
             />
             <source
-              srcset="img/footer/footer-logo 1.png"
-              media="(min-width:800px)"
+            srcset="/img/footer/footer-logo 1.png"
+            media="(min-width:800px)"
             />
             <img src="img/footer/footer.png" alt="footer-logo" />
-          </picture>
-        </section>
-        <section class="icons">
-          <img class="icon" alt="icons" src="img/Footer/facebook.png" />
-          <img class="icon" alt="icons" src="img/Footer/instagram.png" />
-          <img class="icon" alt="icons" src="img/Footer/youtube.png" />
-        </section>
-        <article class="bottom-footer-title">
-          <p>COPYRIGHT © MCS Coca-Cola Company</p>
-        </article>
+         </picture>
       </section>
-  
-    </footer>
-  </body>
+      <section class="icons">
+         <a href="https://www.facebook.com/CocaColaMongolia">
+               <img class="icon" alt="icons" src="img/Footer/facebook.png" />
+         </a>
+         <a href="https://www.instagram.com/cocacolamongolia/" >
+            <img class="icon" alt="icons" src="img/Footer/instagram.png" />
+         </a>
+         <a href="https://www.youtube.com/channel/UCtqoKNEFjf6qiTk7J846XpQ">
+            <img class="icon" alt="icons" src="img/Footer/youtube.png" />
+         </a>
+         
+         
+      </section>
+      <article class="bottom-footer-title">
+         <p>COPYRIGHT © MCS Coca-Cola Company</p>
+      </article>
+      </section>
+
+   </footer>
+</body>
 </html>

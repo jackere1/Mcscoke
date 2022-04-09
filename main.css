@@ -28,7 +28,7 @@ header {
 }
 
 .nav > a > img {
-    height: 8vh;
+    height: 4vw;
     width: auto;
 }
 
@@ -75,6 +75,7 @@ header {
         width: 100vw;
         height: 100vh;
         background: var(--gray);
+        opacity: 0.8;
         text-align: center;
         transition: all 0.5s;
         font-size: 10vh;
@@ -86,8 +87,9 @@ header {
         font-size: 1.5vw;
         letter-spacing: 0.5vw;
     }
-    #check:checked ~ .nav > nav > ul {
-        left: 0;
+    
+    #check:checked~.nav>nav>ul {
+      left: 0;
     }
 }
 
