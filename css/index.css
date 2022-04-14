@@ -311,7 +311,6 @@ input[type="text"] {
   .product-img1 {
     width: 5em;
     height: auto;
-    padding-left: 1em;
   }
   .footer {
     padding: var(--mobile-padding);
