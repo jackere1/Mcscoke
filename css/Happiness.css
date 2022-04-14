@@ -1,0 +1,164 @@
+@import url(./variable.css);
+@import url(./header.css);
+body {
+  margin: 0;
+  font-family: var(--main-font);
+}
+img {
+  max-width: 100%;
+}
+.happiness {
+  background-image: url(/Mcscoke/img/Happiness/image\ 11.png);
+  background-color: var(--main-color);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em 0 1em 0;
+}
+section > h1 {
+  color: var(--main-bg-color);
+  font-size: 2.6rem;
+  padding-left: 1rem;
+}
+section > p {
+  font-size: 1.2rem;
+  color: var(--white);
+  font-weight: 500;
+  text-align: justify;
+  padding: 0 2rem 0 2rem;
+}
+.happiness-information {
+  margin: var(--main-padding);
+  background-color: rgb(102, 85, 85, 10%);
+  padding: 0.5em;
+}
+
+.bg {
+  height: auto;
+  text-align: left;
+  padding: 1rem;
+}
+section > p > a {
+  text-decoration: none;
+}
+.footer {
+  background-color: var(--gray);
+  display: grid;
+  grid-template-columns: 15% 25% 25% 30%;
+  padding: var(--main-padding);
+}
+.footer > * {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.footer-product > ul {
+  list-style-type: none;
+}
+.footer-product > ul > h5 {
+  color: var(--white);
+}
+.social-responsibility > ul {
+  list-style-type: none;
+}
+.footer-aboutus > ul {
+  list-style-type: none;
+}
+.footer-product > ul > li > a {
+  text-decoration: none;
+  color: #aeaeae;
+  line-height: 1.7;
+}
+.footer.contact > select,
+input[type="text"] {
+  padding: 0.5em 0.5em;
+  margin: 0.1em 0;
+  display: grid;
+  border-radius: var(--radius);
+  box-sizing: border-box;
+}
+
+.footer-contact p {
+  color: var(--white);
+}
+
+.social-responsibility > ul > li > a {
+  text-decoration: none;
+  color: #aeaeae;
+  line-height: 1.7;
+}
+.social-responsibility > ul > h5 > a {
+  text-decoration: none;
+  color: var(--white);
+}
+.footer-aboutus > ul > li > a {
+  text-decoration: none;
+  color: #aeaeae;
+  line-height: 1.7;
+}
+.footer-aboutus > ul > h5 > a {
+  text-decoration: none;
+  color: var(--white);
+}
+.footer-product > ul > h5 > a {
+  text-decoration: none;
+  color: var(--white);
+}
+.footer-bottom {
+  border-top: 0.5px solid #454545;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--gray);
+  align-items: center;
+  padding: var(--main-padding);
+  padding-top: 0.5em;
+}
+.bottom-footer-title {
+  color: var(--white);
+}
+.footer-contact-button {
+  background-color: var(--main-bg-color);
+  border-radius: var(--radius);
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  color: var(--white);
+}
+.icon {
+  width: 1.5em;
+  height: auto;
+}
+.footer-contact {
+  color: #aeaeae;
+}
+.footer-Logo {
+  width: 6.6em;
+  height: auto;
+}
+@media only screen and (min-width: 1020px) {
+  hr {
+    display: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .footer {
+    padding: var(--mobile-padding);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "footer-contact"
+      "footer-product"
+      "social-responsibility"
+      "footer-aboutus";
+  }
+  .footer-bottom {
+    padding: var(--mobile-padding);
+  }
+  .footer-contact {
+    padding: var(--mobile-padding);
+  }
+  .happiness-information {
+    margin: var(--mobile-padding);
+  }
+  section > h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}

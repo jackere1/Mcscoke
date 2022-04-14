@@ -1,30 +1,65 @@
 @import url(./variable.css);
-.nav {
-  background-color: var(--black);
-  display: grid;
-  grid-template-columns: 30% 63% 7%;
-  padding: 0.4em 4em 0.4em 4em;
+body {
+  margin: 0;
+  font-family: var(--main-font);
 }
+img {
+  max-width: 100%;
+}
+/* nav css */
+.nav {
+  box-sizing: border-box;
+  background-color: var(--gray);
+  display: flex;
+  min-height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4em 3em 0.4em 3em;
+}
+
 .nav-logo {
   width: 9em;
   height: auto;
 }
-.nav-right > ul > li > a {
-  display: block;
-  color: white;
-  align-items: center;
-  padding-right: 2em;
-  text-decoration: none;
+.hamburger {
+  display: none;
   cursor: pointer;
-}
-.nav-right > ul > li {
   align-items: center;
-  float: left;
 }
+.bar {
+  display: block;
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: var(--white);
+  margin: 0.3rem auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.nav-menu > li > a {
+  color: white;
+  text-decoration: none;
+}
+.nav-menu > li {
+  align-items: center;
+  list-style-type: none;
+}
+.nav-menu > ul :hover {
+  color: skyblue;
+}
+.mcs-logo {
+  width: 2.5rem;
+  text-align: center;
+}
+/*nav-css*/
 .wrapper {
   background-color: var(--main-bg-color);
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 55% 45%;
   grid-area: "product-title product-img";
   padding: var(--main-padding);
   padding-top: 2em;
@@ -37,6 +72,8 @@
 }
 .product-title > p {
   color: var(--white);
+  margin-left: 1em;
+  text-align: justify;
 }
 .product-title > button {
   background-color: #000000;
@@ -44,38 +81,117 @@
   padding: 1em;
   border-radius: var(--radius);
 }
+.product-img {
+  margin-left: 2.5em;
+}
+.product-img1 {
+  margin-left: 1.5em;
+}
 .information {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 0.4em;
-  padding: var(--main-padding);
+  padding: 0 11em 0 11em;
   margin-top: 2em;
-}
-.about-mcs,
-.happiness-center,
-.plant-tour,
-.doYouKnow {
-  border-radius: var(--radius);
-  width: 100%;
-}
-img {
-  max-width: 100%;
-  height: auto;
 }
 .information2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.4em;
-  padding: var(--main-padding);
+  padding: 0 11em 0 11em;
 }
+.about-mcs {
+  border-radius: 10px;
+}
+.about-mcs,
+.happiness-center {
+  display: block;
+  position: relative;
+}
+
+.information-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: 0.7s ease;
+  background-color: rgb(191, 45, 0, 90%);
+  border-radius: var(--radius);
+  margin-bottom: 0.25em;
+}
+.about-mcs:hover .information-overlay {
+  opacity: 1;
+}
+.happiness-center:hover .information-overlay {
+  opacity: 1;
+}
+.text {
+  font-family: var(--main-font);
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+.plant-tour,
+.vacancy {
+  position: relative;
+  width: 100%;
+}
+.information2-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(196, 197, 88, 90%);
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.9s ease;
+  opacity: 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.25em;
+  height: 3em;
+}
+.plant-tour:hover .information2-overlay {
+  opacity: 1;
+}
+.information2-vacancy-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(104, 117, 164, 90%);
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.9s ease;
+  opacity: 0;
+  color: white;
+  height: 3em;
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+
+.vacancy:hover .information2-vacancy-overlay {
+  opacity: 1;
+}
+
 .footer {
   background-color: var(--gray);
-  margin-top: 4em;
   display: grid;
   grid-template-columns: 15% 25% 25% 30%;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  margin-top: 2em;
   padding: var(--main-padding);
+}
+
+.footer > * {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .footer-product > ul {
   list-style-type: none;
@@ -94,6 +210,15 @@ img {
   color: #aeaeae;
   line-height: 1.7;
 }
+.footer.contact > select,
+input[type="text"] {
+  padding: 0.5em 0.5em;
+  margin: 0.1em 0;
+  display: grid;
+  border-radius: var(--radius);
+  box-sizing: border-box;
+}
+
 .footer-contact p {
   color: var(--white);
 }
@@ -127,6 +252,7 @@ img {
   background-color: var(--gray);
   align-items: center;
   padding: var(--main-padding);
+  padding-top: 0.5em;
 }
 .bottom-footer-title {
   color: var(--white);
@@ -138,7 +264,7 @@ img {
   color: var(--white);
 }
 .icon {
-  width: em;
+  width: 1.5em;
   height: auto;
 }
 .footer-contact {
@@ -153,13 +279,14 @@ img {
     display: none;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 660px) {
   .nav-logo {
-    width: 7em;
+    width: 8em;
     height: auto;
+    align-items: center;
   }
   .nav {
-    padding: 0;
+    padding: var(--mobile-padding);
   }
   .wrapper {
     padding: var(--mobile-padding);
@@ -206,10 +333,41 @@ img {
     grid-template-columns: 1fr;
     padding: var(--mobile-padding);
   }
-  .nav-right {
+  .footer-contact {
+    padding: var(--mobile-padding);
+  }
+  .mcs-logo {
     display: none;
   }
-  .footer-contact {
-    padding: var(--white);
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(0.5em) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-0.5em) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    gap: 0;
+    top: 2.8rem;
+    flex-direction: column;
+    background-color: rgb(43, 43, 43, 96%);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    transition: 0.4s;
+    padding: 0;
+  }
+  .nav-item {
+    margin: 1rem 0;
+  }
+  .nav-menu.active {
+    left: 0;
   }
 }
