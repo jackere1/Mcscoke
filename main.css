@@ -1,0 +1,257 @@
+@import url(css/variable.css);
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* Header хэсгийн CSS эндээс эхлэн бичигдэв. */
+header {
+    width: 100%;
+    height: 10vh;
+}
+
+.nav {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    height: 9vh;
+}
+
+.nav > nav > ul {
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav > a > img {
+    height: 4vw;
+    width: auto;
+}
+
+
+.nav > nav > ul > li > a {
+    color: var(--white);
+    font-family: var(--main-font);
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.checkbtn {
+    display: none;
+    cursor: pointer;
+}
+
+.checkbtn > i > img {
+    height: 8vh;
+    width: auto;
+}
+
+#check {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .nav > nav > ul {
+        display: block;
+    }
+
+    .nav > nav > ul > li {
+        display: block;
+        line-height: 100px;
+        margin: 2vh 0.9vh;
+    }
+
+    .nav > nav > ul {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: var(--gray);
+        opacity: 0.8;
+        text-align: center;
+        transition: all 0.5s;
+        font-size: 10vh;
+        top: 75px;
+        left: -100%;
+    }
+
+    .nav > nav > ul > li > a {
+        font-size: 1.5vw;
+        letter-spacing: 0.5vw;
+    }
+    
+    #check:checked~.nav>nav>ul {
+      left: 0;
+    }
+}
+
+
+
+/* Footer хэсгийн CSS эндээс эхлэн бичигдэв. */
+.footer {
+    font-family: var(--main-font);
+    background-color: var(--gray);
+    display: grid;
+    grid-template-columns: 15% 25% 25% 30%;
+    margin-top: 2em;
+    padding: var(--main-padding);
+  }
+  .footer > * {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .footer-product > ul {
+    list-style-type: none;
+  }
+  .footer-product > ul > h5 {
+    color: var(--white);
+  }
+  .social-responsibility > ul {
+    list-style-type: none;
+  }
+  .footer-aboutus > ul {
+    list-style-type: none;
+  }
+  .footer-product > ul > li > a {
+    text-decoration: none;
+    color: #aeaeae;
+    line-height: 1.7;
+  }
+  .footer.contact > select,
+  input[type="text"] {
+    padding: 0.5em 0.5em;
+    margin: 0.1em 0;
+    display: grid;
+    border-radius: var(--radius);
+    box-sizing: border-box;
+  }
+  
+  .footer-contact p {
+    color: var(--white);
+  }
+  
+  .social-responsibility > ul > li > a {
+    text-decoration: none;
+    color: #aeaeae;
+    line-height: 1.7;
+  }
+  .social-responsibility > ul > h5 > a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  .footer-aboutus > ul > li > a {
+    text-decoration: none;
+    color: #aeaeae;
+    line-height: 1.7;
+  }
+  .footer-aboutus > ul > h5 > a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  .footer-product > ul > h5 > a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  .footer-bottom {
+    border-top: 0.5px solid #454545;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--gray);
+    align-items: center;
+    padding: var(--main-padding);
+    padding-top: 0.5em;
+  }
+  .bottom-footer-title {
+    color: var(--white);
+  }
+  .footer-contact-button {
+    background-color: var(--main-bg-color);
+    border-radius: var(--radius);
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    color: var(--white);
+  }
+  .icon {
+    width: 1.5em;
+    height: auto;
+  }
+  .footer-contact {
+    color: #aeaeae;
+  }
+  .footer-Logo {
+    width: 6.6em;
+    height: auto;
+  }
+  @media only screen and (min-width: 1020px) {
+    hr {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .nav-logo {
+      width: 8em;
+      height: auto;
+      align-items: center;
+    }
+    .nav {
+      padding: var(--mobile-padding);
+    }
+    .wrapper {
+      padding: var(--mobile-padding);
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "product-img"
+        "product-title";
+    }
+    .product-title {
+      grid-area: product-title;
+      text-align: center;
+    }
+    .product-title > p {
+      text-align: justify;
+    }
+  
+    .product-img {
+      grid-area: product-img;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .product-img1 {
+      width: 5em;
+      height: auto;
+      padding-left: 1em;
+    }
+    .footer {
+      padding: var(--mobile-padding);
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "footer-contact"
+        "footer-product"
+        "social-responsibility"
+        "footer-aboutus";
+    }
+    .footer-bottom {
+      padding: var(--mobile-padding);
+    }
+    .information {
+      grid-template-columns: 1fr;
+      padding: var(--mobile-padding);
+    }
+    .information2 {
+      grid-template-columns: 1fr;
+      padding: var(--mobile-padding);
+    }
+    .nav-right {
+      display: none;
+    }
+    .footer-contact {
+      padding: var(--mobile-padding);
+    }
+  }

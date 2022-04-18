@@ -4,9 +4,10 @@
   --main-padding: 0 8em 0 8em;
   --mobile-padding: 0 1.2em 0 1.2em;
   --gray: #2b2b2b;
+  --red: #FF0000;
   --white: #fff;
   --black: #000000;
   --radius: 0.6em;
-  --main-font: "Zilla Slab", serif;
+  --main-font: "Zilla Slab", sans-serif;
   --happiness-background: rgba(102, 85, 85, 0.5);
 }

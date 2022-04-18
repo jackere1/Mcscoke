@@ -65,6 +65,9 @@ img {
   padding-top: 2em;
   padding-bottom: 2em;
 }
+.product-title {
+  font-family: var(--main-font);
+}
 
 .product-title > h2 {
   color: var(--white);
@@ -100,6 +103,7 @@ img {
   grid-gap: 0.4em;
   padding: 0 11em 0 11em;
 }
+
 .about-mcs {
   border-radius: 10px;
 }
@@ -146,6 +150,32 @@ img {
 .vacancy {
   position: relative;
   width: 100%;
+  transition: 0.9s ease;
+  opacity: 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.25em;
+  height: 3em;
+}
+.plant-tour:hover .information2-overlay {
+  opacity: 1;
+}
+.information2-vacancy-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(104, 117, 164, 90%);
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.9s ease;
+  opacity: 0;
+  color: white;
+  height: 3em;
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+
+.vacancy:hover .information2-vacancy-overlay {
+  opacity: 1;
 }
 .information2-overlay {
   position: absolute;
@@ -182,6 +212,7 @@ img {
 }
 
 .footer {
+  font-family: var(--main-font);
   background-color: var(--gray);
   display: grid;
   grid-template-columns: 15% 25% 25% 30%;
