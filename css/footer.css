@@ -89,12 +89,12 @@ input[type="text"] {
   width: 6.6em;
   height: auto;
 }
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1200px) {
   hr {
     display: none;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 850px) {
   .footer {
     padding: var(--mobile-padding);
     grid-template-columns: 1fr;
