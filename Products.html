@@ -12,6 +12,7 @@
       name="keywords"
       content="MCS Coca-Cola, М-Си-Эс Кока-Кола, Кока-Кола"
     />
+    <link rel="stylesheet" href="css/products.css">
     <link rel="icon" href="img/icon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css">
@@ -19,22 +20,27 @@
   </head>
   <body>
     <header>
-        <section class="nav">
-          <img src="img/Navbar/mcs_logo_nav.png" alt="mcs_nav"/>
-          <nav>
-            <ul>
-              <li><a href="index.html">Нүүр хуудас</a></li>
-              <li><a href="Products.html">Бүтээгдэхүүнүүд</a></li>
-              <li><a href="aboutus.html">Бидний тухай</a></li>
-              <li><a href="niigem.html">Нийгмийн хариуцлага</a></li>
-              <li><a href="medee.html">Мэдээ мэдээлэл</a></li>
-            </ul>
-          </nav>
-          <img src="img/Navbar/cola_logo_nav.png"alt="cola_nav"/>
-        </section>
-    </header>
-    <main>
-      <section>
+      <nav class="nav">
+       <section class="nav-logo">
+          <img src="img/Navbar/mcs_logo_nav.png"/>
+         </section>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Нүүр хуудас</a></li>
+        <li class="nav-item"><a href="Products.html" class="nav-link">Бүтээгдэхүүнүүд</a></li>
+        <li class="nav-item"><a href="aboutus.html" class="nav-link">Бидний тухай</a></li>
+        <li class="nav-item"><a href="niigem.html" class="nav-link">Нийгмийн хариуцлага</a></li>
+        <li class="nav-item"><a href="medee.html" class="nav-link">Мэдээ мэдээлэл</a></li>
+      </ul>
+    <section class="mcs-logo">
+       <img src="img/Navbar/cola_logo_nav.png" alt="logo">
+    </section>
+    <section class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+ </section>
+ </nav>
+  </header>
         <figure><img src="img/Products/cola.png" alt="cola" /></figure>
         <figure><img src="img/Products/fanta.png" alt="fanta" /></figure>
         <figure><img src="img/Products/Sprite.png" alt="Sprite" /></figure>
@@ -148,5 +154,6 @@
      </section>
  
    </footer>
+   <script src="./mobileMenu.js"></script>
   </body>
 </html>

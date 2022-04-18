@@ -1,0 +1,93 @@
+@import url("./variable.css");
+.nav {
+  box-sizing: border-box;
+  background-color: var(--gray);
+  display: flex;
+  min-height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4em 3em 0.4em 3em;
+}
+
+.nav-logo {
+  width: 9em;
+  height: auto;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  align-items: center;
+}
+.bar {
+  display: block;
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: var(--white);
+  margin: 0.3rem auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.nav-menu > li > a {
+  color: white;
+  text-decoration: none;
+}
+.nav-menu > li {
+  align-items: center;
+  list-style-type: none;
+}
+.nav-menu > ul :hover {
+  color: skyblue;
+}
+.mcs-logo {
+  width: 2.5rem;
+  text-align: center;
+}
+@media only screen and (max-width: 660px) {
+  .nav-logo {
+    width: 8em;
+    height: auto;
+    align-items: center;
+  }
+  .nav {
+    padding: var(--mobile-padding);
+  }
+  .mcs-logo {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(0.5em) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-0.5em) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    gap: 0;
+    top: 2.8rem;
+    flex-direction: column;
+    background-color: rgb(43, 43, 43, 96%);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    transition: 0.4s;
+    padding: 0;
+  }
+  .nav-item {
+    margin: 1rem 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}

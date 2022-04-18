@@ -1,4 +1,61 @@
 @import url(./variable.css);
+body {
+  margin: 0;
+  font-family: var(--main-font);
+}
+img {
+  max-width: 100%;
+}
+/* nav css */
+.nav {
+  box-sizing: border-box;
+  background-color: var(--gray);
+  display: flex;
+  min-height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4em 3em 0.4em 3em;
+}
+
+.nav-logo {
+  width: 9em;
+  height: auto;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  align-items: center;
+}
+.bar {
+  display: block;
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: var(--white);
+  margin: 0.3rem auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.nav-menu > li > a {
+  color: white;
+  text-decoration: none;
+}
+.nav-menu > li {
+  align-items: center;
+  list-style-type: none;
+}
+.nav-menu > ul :hover {
+  color: skyblue;
+}
+.mcs-logo {
+  width: 2.5rem;
+  text-align: center;
+}
+/*nav-css*/
 .wrapper {
   background-color: var(--main-bg-color);
   display: grid;
@@ -46,11 +103,16 @@
   grid-gap: 0.4em;
   padding: 0 11em 0 11em;
 }
+
+.about-mcs {
+  border-radius: 10px;
+}
 .about-mcs,
 .happiness-center {
   display: block;
   position: relative;
 }
+
 .information-overlay {
   position: absolute;
   top: 0;
@@ -83,10 +145,37 @@
   text-align: center;
   cursor: pointer;
 }
+
 .plant-tour,
 .vacancy {
   position: relative;
   width: 100%;
+  transition: 0.9s ease;
+  opacity: 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.25em;
+  height: 3em;
+}
+.plant-tour:hover .information2-overlay {
+  opacity: 1;
+}
+.information2-vacancy-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(104, 117, 164, 90%);
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.9s ease;
+  opacity: 0;
+  color: white;
+  height: 3em;
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+
+.vacancy:hover .information2-vacancy-overlay {
+  opacity: 1;
 }
 .information2-overlay {
   position: absolute;
@@ -121,10 +210,6 @@
 .vacancy:hover .information2-vacancy-overlay {
   opacity: 1;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 .footer {
   font-family: var(--main-font);
@@ -134,6 +219,7 @@ img {
   margin-top: 2em;
   padding: var(--main-padding);
 }
+
 .footer > * {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -224,7 +310,7 @@ input[type="text"] {
     display: none;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 660px) {
   .nav-logo {
     width: 8em;
     height: auto;
@@ -256,7 +342,6 @@ input[type="text"] {
   .product-img1 {
     width: 5em;
     height: auto;
-    padding-left: 1em;
   }
   .footer {
     padding: var(--mobile-padding);
@@ -278,10 +363,41 @@ input[type="text"] {
     grid-template-columns: 1fr;
     padding: var(--mobile-padding);
   }
-  .nav-right {
-    display: none;
-  }
   .footer-contact {
     padding: var(--mobile-padding);
+  }
+  .mcs-logo {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(0.5em) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-0.5em) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    gap: 0;
+    top: 2.8rem;
+    flex-direction: column;
+    background-color: rgb(43, 43, 43, 96%);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    transition: 0.4s;
+    padding: 0;
+  }
+  .nav-item {
+    margin: 1rem 0;
+  }
+  .nav-menu.active {
+    left: 0;
   }
 }

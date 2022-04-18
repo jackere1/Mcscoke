@@ -9,30 +9,34 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"  href="./css/aboutus.css"/>
     <link rel="icon" href="img/icon.png" type="image/x-icon" />
     
     <title>AboutUs</title>
   </head>
   <body>
     <header>
-        <section class="nav">
-          <a href="index.html"><img src="img/Navbar/mcs_logo_nav.png" alt="mcs_nav"/></a>
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <i><img src="img/dropdown.png" alt="bars"></i>
-          </label>
-          <nav>
-            <ul>
-              <li><a href="index.html">Нүүр хуудас</a></li>
-              <li><a href="Products.html">Бүтээгдэхүүнүүд</a></li>
-              <li><a href="aboutus.html">Бидний тухай</a></li>
-              <li><a href="niigem.html">Нийгмийн хариуцлага</a></li>
-              <li><a href="medee.html">Мэдээ мэдээлэл</a></li>
-            </ul>
-          </nav>
-          <a href="index.html"><img src="img/Navbar/cola_logo_nav.png" alt="cola_nav"/></a>
-        </section>
-    </header>
+      <nav class="nav">
+       <section class="nav-logo">
+          <img src="img/Navbar/mcs_logo_nav.png"/>
+         </section>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Нүүр хуудас</a></li>
+        <li class="nav-item"><a href="Products.html" class="nav-link">Бүтээгдэхүүнүүд</a></li>
+        <li class="nav-item"><a href="aboutus.html" class="nav-link">Бидний тухай</a></li>
+        <li class="nav-item"><a href="niigem.html" class="nav-link">Нийгмийн хариуцлага</a></li>
+        <li class="nav-item"><a href="medee.html" class="nav-link">Мэдээ мэдээлэл</a></li>
+      </ul>
+    <section class="mcs-logo">
+       <img src="img/Navbar/cola_logo_nav.png" alt="logo">
+    </section>
+    <section class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+ </section>
+ </nav>
+  </header>
     <main>
       <section>
         <ul>
@@ -157,5 +161,6 @@
      </section>
  
    </footer>
+   <script src="./mobileMenu.js"></script>
   </body>
 </html>
