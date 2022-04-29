@@ -18,6 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomePage</title>
   </head>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
   <body>
     <header>
         <nav class="nav">
@@ -42,41 +43,17 @@
    </nav>
     </header>
     <main>
-      <section class="">
-         <picture>
-            <source
-               srcset="img/HomePage/yes_no.png" 
-               media="(min-width:1020px) "
-               />
-            <source
-               srcset="img/HomePage/yes_no.png"
-               media="(min-width:800px)"
-               />
-            <img
-               src="img/HomePage/yes_no.png" alt="yesno"
-               />
-         </picture>
-      </section>
-      <section class="">
-         <picture>
-            <source
-               srcset="img/HomePage/Havar.png"
-               media="(min-width:1020px)"
-               />
-            <source
-               srcset="img/HomePage/Havar.png"
-               media="(min-width:800px)"
-               />
-            <img
-               src="img/HomePage/Havar.png" alt="havar"
-               />
-         </picture>
-      </section>
-      <section class="wrapper margin">
+      <img class="nature" src="./img/HomePage/slider3 (2).png" width="100%"  >
+      <img class="nature" src="./img/HomePage/slider.png" width="100%">
+      <img class="nature" src="./img/HomePage/web-OBS2 (1).jpg" width="100%">
+      <script>
+         w3.slideshow(".nature", 6000);
+         </script>
+      <section class="wrapper ">
       <section class="product-title">
          <h2>Таны хүслээр</h2>
          <p>М-Си-Эс Кока-Кола ХХК нь хүн бүрийн хүсэл сонирхолд нийцүүлэн ердийн, бага илчлэгтэй болон илчлэггүй гэх мэт олон төрлийн ундаануудыг дуртай цагт нь, хүссэн газарт нь, гарын дор байлган аз жаргалын амтыг мэдрүүлж, сэргээхийн төлөө чармайн ажиллаж байна.</p>
-         <button>Бүтээгдэхүүнүүд</button> <br><br>
+         <a href="Products.html"><button>Бүтээгдэхүүнүүд</button></a> <br><br>
       </section>
       <section class="product-img">
          <img class="product-img1" src="img/HomePage/Cola.png" alt="cocaCola"/>
@@ -86,7 +63,7 @@
    </section>
       <section class="information">
          <section class="about-mcs">
-            <picture class="mcs">
+            <picture>
                <source 
                   srcset="img/HomePage/aboutCocaCola.png"
                   media="(min-width:1020px)"
@@ -95,7 +72,7 @@
                   srcset="img/HomePage/aboutCocacola.png"
                   media="(min-width:800px)"
                   />
-               <img
+               <img class="mcs"
                   src="img/HomePage/acocaMobile.png" alt="aboutcola"
                   />
             </picture>
@@ -104,6 +81,7 @@
                   <h3>М-Си-Эс Кока-Кола ХХК-ийн тухай</h3>
               <p>Хэрэглэгч, харилцагчидаа дээдэлдэг, монголдоо хамгийн...
             </p>
+            <a>Дэлгэрэнгүй</a>
                </div>
        
             </div>
@@ -119,7 +97,7 @@
                srcset="img/HomePage/happines.png"
                media="(min-width:800px)"
                />
-            <img
+            <img class="mcs"
                src="img/HomePage/happinessMobile.png" alt="happiness"
                />
          </picture>
@@ -129,6 +107,7 @@
            <p>
             М-Си-Эс Кока-Кола компани хүүхэд залуусын чөлөөт цагийг ...
          </p>
+         <a>Дэлгэрэнгүй</a>
             </div>
       </section>
    </section>
@@ -143,7 +122,7 @@
                srcset="img/HomePage/planttour.png"
                media="(min-width:800px)"
                />
-            <img
+            <img class="mcs"
                src="img/HomePage/plant-tour-mobile.png" alt="tour"
                />
          </picture>
@@ -161,7 +140,7 @@
                srcset="img/HomePage/doKnow.png"
                media="(min-width:800px)"
                />
-            <img
+            <img class="mcs"
                src="img/HomePage/doKnowMobile.png" alt="douYouknow"
                />
          </picture>
@@ -177,7 +156,7 @@
                srcset="img/HomePage/HR.png"
                media="(min-width:800px)"
                />
-            <img
+            <img class="mcs"
                src="img/HomePage/HR-mobile.png" alt="vacancy"
                />
          </picture>
@@ -285,5 +264,6 @@
   
     </footer>
     <script src="./mobileMenu.js"></script>
+   
   </body>
 </html>
