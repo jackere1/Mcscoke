@@ -1,0 +1,27 @@
+[
+    {
+      "id": "1",
+      "link": "index.html",
+      "title": "Нүүр хуудас"
+    },
+    {
+      "id": 2,
+      "link": "Products.html",
+      "title": "Бүтээгдэхүүнүүд"
+    },
+    {
+      "id": 3,
+      "link": "aboutus.html",
+      "title": "Бидний тухай"
+    },
+    {
+      "id": 4,
+      "link": "niigem.html",
+      "title": "Нийгмийн хариуцлага"
+    },
+    {
+      "id": 5,
+      "link": "medee.html",
+      "title": "Мэдээ мэдээлэл"
+    }
+  ]
