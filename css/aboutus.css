@@ -15,6 +15,13 @@ main {
   align-items: center;
 }
 
+.info {
+  width: 60%;
+  text-align: start;
+}
+
+
+
 .buttons {
   margin: 2% 10% 2% 10%;
   width: 100%;
@@ -28,6 +35,13 @@ main {
   height: 6vh;
   color: var(--white);
   font-size: 1.2vw;
+  border: 2px solid var(--red);
+}
+
+.buttons > button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
 }
 
 .info {
@@ -39,10 +53,18 @@ main {
 
 @media only screen and (max-width: 600px) {
   h4, .buttons > button {
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
 
+  .buttons {
+    margin: 0;
+  }
   .buttons > button {
     width: 100%;
+    border: 1px solid var(--gray);
+  }
+  .info {
+    width: 100%;
+    text-align: center;
   }
 }
