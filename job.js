@@ -2,22 +2,22 @@
 fetch("./json/job.json")
 .then(response => response.json())
 .then(data =>{
-for(i= 0 ; i < 3 ; i++){
-    console.log(data[i].post)
-    document.querySelector(".job-information").innerHTML += "<p>" + data[i].post + "</p>"
-}
+    console.log(data)
+    data.map((value) => {
+        return(
+    document.querySelector(".job-information").innerHTML += "<p>" + value.post + "</p>",
+    document.querySelector(".job-information").innerHTML += "<ul>"
+    // document.querySelector(".job-information").innerHTML += "<li class = 'job-information-p'>" + value.list + "</li>",
+    // document.querySelector(".job-information").innerHTML += "</ul></article>"
+        )
+    })
+    data.map((value) => {
+        return(
+    document.querySelector(".job-information").innerHTML += "<ul class = 'job-information-p'>" + value.list + "</ul>"
+        )
+    })
 
-document.querySelector(".job-information").innerHTML += "<ul>";
-
-for(i = 0; i < 3; i++) {
-    if(data[i].list.length == 0)
-         continue;
-for(j = 0; j < data[i].list.length; j++) {
-    document.querySelector(".job-information").innerHTML += "<li class = 'job-information-p'>" + data[i].list[j] + "</li>";
 }
-}
-
-document.querySelector(".job-information").innerHTML += "</ul></article>";
-})
+)
 }
 Job();

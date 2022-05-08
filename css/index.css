@@ -55,6 +55,9 @@ img {
   width: 2.5rem;
   text-align: center;
 }
+.mcs{
+  border-radius: var(--radius);
+}
 /*nav-css*/
 .wrapper {
   background-color: var(--main-bg-color);
@@ -62,8 +65,8 @@ img {
   grid-template-columns: 55% 45%;
   grid-area: "product-title product-img";
   padding: var(--main-padding);
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 .product-title {
   font-family: var(--main-font);
@@ -78,7 +81,7 @@ img {
   margin-left: 1em;
   text-align: justify;
 }
-.product-title > button {
+.product-title > a > button {
   background-color: #000000;
   color: var(--white);
   padding: 1em;
@@ -96,6 +99,9 @@ img {
   grid-column-gap: 0.4em;
   padding: 0 11em 0 11em;
   margin-top: 2em;
+}
+.mcs{
+  border-radius: var(--radius);
 }
 .information2 {
   display: grid;
@@ -145,6 +151,12 @@ img {
   text-align: center;
   cursor: pointer;
 }
+.text>button{
+  border-radius: var(--radius);
+  background-color: rgb(191, 45, 0, 10%);
+  color: var(--white);
+  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+}
 
 .plant-tour,
 .vacancy {
@@ -153,8 +165,6 @@ img {
   transition: 0.9s ease;
   color: white;
   text-align: center;
-  margin-bottom: 0.25em;
-  height: 3em;
 }
 .plant-tour:hover .information2-overlay {
   opacity: 1;
@@ -162,7 +172,7 @@ img {
 .information2-vacancy-overlay {
   position: absolute;
   bottom: 0;
-  background: rgb(104, 117, 164, 90%);
+  background: rgb(104, 117, 164, 95%);
   color: #f1f1f1;
   width: 100%;
   transition: 0.9s ease;
@@ -170,7 +180,9 @@ img {
   color: white;
   height: 3em;
   text-align: center;
+  border-radius: 0.6em 0.6em 0 0;
   margin-bottom: 0.25em;
+  
 }
 
 .vacancy:hover .information2-vacancy-overlay {
@@ -182,28 +194,20 @@ img {
   background: rgb(196, 197, 88, 90%);
   color: #f1f1f1;
   width: 100%;
+  height: 3em;
   transition: 0.9s ease;
   opacity: 0;
   color: white;
   text-align: center;
+  border-radius: 0.6em 0.6em 0 0;
   margin-bottom: 0.25em;
-  height: 3em;
+}
+.information2-vacancy-overlay > h3 > a{
+  text-decoration: none;
+  color: var(--white);
 }
 .plant-tour:hover .information2-overlay {
   opacity: 1;
-}
-.information2-vacancy-overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(104, 117, 164, 90%);
-  color: #f1f1f1;
-  width: 100%;
-  transition: 0.9s ease;
-  opacity: 0;
-  color: white;
-  height: 3em;
-  text-align: center;
-  margin-bottom: 0.25em;
 }
 
 .vacancy:hover .information2-vacancy-overlay {

@@ -17,6 +17,10 @@ img {
 .job-information {
   margin: var(--main-padding);
   margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.jobImg{
+  width: 100%;
 }
 .job-information-p{
   margin-left: 2rem;
