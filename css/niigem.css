@@ -24,6 +24,25 @@ img {
   cursor: pointer;
 }
 
+.buttons > button {
+  width: 25vw;
+  height: 4vw;
+  background-color: rgba(70, 144, 167, 0.815);
+  color: var(--white);
+  border: 2px white solid;
+  font-size: 1vw;
+  cursor: pointer;
+  margin: 10vh 0;
+}
+
+.buttons > button:hover {
+  background-color: var(--gray);
+}
+
+.buttons > button:active {
+  background-color: var(--gray);
+}
+
 .first > button:hover{
   background-color: #fff;
   color: black;
@@ -48,6 +67,15 @@ img {
  margin: 10px;
 }
 
+.images {
+  width: 55vw;
+  margin: auto;
+  border-bottom: 1px solid var(--red);
+}
+
+h2 {
+  color: var(--red);
+}
 div {
   display: flex;
   justify-content: center;
@@ -73,6 +101,16 @@ div > p {
     width: 30vw;
     height: 4vw;
     font-size: 2vw;
+  }
+
+  .buttons > button {
+    width: 30vw;
+    height: 5vw;
+    font-size: 1vw;
+  }
+
+  .images {
+    width: 90vw;
   }
   div > p {
     font-size: 0.8rem;
