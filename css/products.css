@@ -433,6 +433,38 @@ background-position: center;
   animation-name: animatetop;
   animation-duration: 0.4s
 }
+/* Minute Maid */
+.minute-modal-content {
+  display: grid;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+background-image: url("../img/Products/mm-web.png");
+background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+/* Schweppes */
+.schweppes-modal-content {
+  display: grid;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+background-image: url("../img/Products/Brand_Schweps-170630.jpg");
+background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
 @media only screen and (max-width: 1350px) {
   .contain {
     margin: 2vh 4vw 2vh 4vw;
