@@ -46,3 +46,41 @@ const water = () => {
         })
     })
 }
+
+const energy = () => {
+    document.querySelector(".inside").innerHTML = "";
+    fetch("https://api.jsonbin.io/b/62779206019db46796979376")
+    .then(response => response.json())
+    .then(data => {
+        data.map(value => {
+            document.querySelector(".inside").innerHTML += `<figure class="images">
+            <h2>${value.title}</h2>
+            <span>${value.p}</span>
+            <img src="${value.image}" alt="${value.alt}"/>
+            </figure>
+            `
+        })
+    })
+}
+
+const bottle = () => {
+    document.querySelector(".inside").innerHTML = "";
+    fetch("https://api.jsonbin.io/b/6277942b019db467969793ef/1")
+    .then(response => response.json())
+    .then(data => {
+        data.map(value => {
+            return(
+                document.querySelector(".inside").innerHTML += `<figure class="images nopixel">
+                <h2>${value.title}</h2>
+                <span>${value.p}</span>
+                ${value.image.map(elm => {
+                    return(
+                        `<img src="${elm}" alt="${value.alt}"/>`
+                    )
+                })}
+                </figure>
+                `
+            )
+        })
+    })
+}

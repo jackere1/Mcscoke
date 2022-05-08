@@ -48,6 +48,10 @@ img {
   color: black;
 }
 
+.nopixel > img {
+  width: 10vw;
+}
+
 .bg {
   display: flex;
   justify-content: center;
@@ -73,6 +77,10 @@ img {
   border-bottom: 1px solid var(--red);
 }
 
+.images > img {
+  width: 100%;
+  /* display: none; */
+}
 h2 {
   color: var(--red);
 }
@@ -114,5 +122,9 @@ div > p {
   }
   div > p {
     font-size: 0.8rem;
+  }
+
+  h2 {
+    font-size: 2vw;
   }
 }
