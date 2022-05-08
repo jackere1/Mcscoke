@@ -278,6 +278,7 @@ img {
   padding: 0;
   border: 1px solid #888;
   width: 80%;
+  height: 80%;
   background-image: url("../img/Products/ea1165ff-1e5e-48a8-ba4b-b765cfd8d403.png");
   background-position-x: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -306,7 +307,10 @@ img {
  .close6,
  .close7 ,
  .close8,
- .close9{
+ .close9,
+ .close10,
+ .close11,
+ .close12{
   color: white;
   float: right;
   font-size: 28px;
@@ -314,9 +318,20 @@ img {
   cursor: pointer;
 }
 
-.close:hover,
+.close:hover ,
+.close2:hover , 
+.close3:hover ,
+.close4:hover ,
+.close5:hover,
+.close6:hover,
+.close7:hover ,
+.close8:hover,
+.close9:hover,
+.close10:hover,
+.close11:hover,
+.close12:hover,
 .close:focus {
-  color: var(--main);
+  color: var(--red);
   text-decoration: none;
   cursor: pointer;
 }
@@ -356,6 +371,7 @@ margin:var(--main-padding);
   padding: 0;
   border: 1px solid #888;
   width: 80%;
+  height: 80%;
   background-image: url("../img/Products/SPRITE\ web.jpg");
   background-position-x: left;
   background-position-y: top;
@@ -373,6 +389,7 @@ margin:var(--main-padding);
   padding: 0;
   border: 1px solid #888;
   width: 80%;
+  height: 80%;
 background-color: rgb(135,206,250);
   background-position-x: left;
   background-position-y: top;
@@ -384,15 +401,15 @@ background-color: rgb(135,206,250);
 }
 /* Peace tea Modal */
 .peace-modal-content {
+  height: 80%;
   display: grid;
   position: relative;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
   width: 80%;
-background-image: url("../img/Products/26804404_407175973045518_2051645.png");
-background-position-x: center;
-background-position-y: bottom;
+background-image: url("../img/Products/26804404_407175973045518_2051645\ \(2\).png");
+background-position: center;
   background-position-x: left;
   background-position-y: top;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -409,6 +426,7 @@ background-position-y: bottom;
   padding: 0;
   border: 1px solid #888;
   width: 80%;
+  height: 80%;
 background-image: url("../img/Products/606eb60d-e654-466a-8ff0-18fed9ae9497-moya\ semya\ web.png");
 background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -417,7 +435,7 @@ background-position: center;
   animation-name: animatetop;
   animation-duration: 0.4s
 }
-/* Moy */
+/* Fuze tea*/
 .fuze-modal-content {
   display: grid;
   position: relative;
@@ -425,6 +443,7 @@ background-position: center;
   padding: 0;
   border: 1px solid #888;
   width: 80%;
+  height: 80%;
 background-image: url("../img/Products/Brand_fuze-170630.jpg");
 background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -441,8 +460,10 @@ background-position: center;
   padding: 0;
   border: 1px solid #888;
   width: 80%;
+  height: 80%;
 background-image: url("../img/Products/mm-web.png");
-background-position: center;
+background-position-x: center;
+background-position-y: bottom;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -457,7 +478,26 @@ background-position: center;
   padding: 0;
   border: 1px solid #888;
   width: 80%;
+  height: 80%;
 background-image: url("../img/Products/Brand_Schweps-170630.jpg");
+background-position-x: right;
+background-position-y: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Millenia */
+.millenia-modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%;
+background-image: url("../img/Products/millenia-web.png");
 background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
