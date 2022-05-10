@@ -49,6 +49,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  background-image: url("img/aboutUs/bg1.jpg");
 }
 
 @media only screen and (max-width: 600px) {
