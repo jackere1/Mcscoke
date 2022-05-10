@@ -4,20 +4,19 @@ function plusSlides(n) {
     showSlides(slideIndex += n);
   }
   function currentSlide(n) {
-    showSlides(slideIndex = n);
+    showSlides(slideIndex = n-1);
   }
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("modal-body");
-  if (n > slides.length) {
-      slideIndex = 1
- }    
+  var slides = document.getElementsByClassName("modal-body1");
+  if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
   
   slides[slideIndex-1].style.display = "block";  
+  console.log(slides);
 }
 showSlides(slideIndex);

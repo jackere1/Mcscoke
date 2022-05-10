@@ -367,7 +367,7 @@ img {
 
 }
 
-.modal-body {
+.modal-body , .modal-body1 {
 color: var(--white);
 margin:var(--main-padding);
 }
