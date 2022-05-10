@@ -375,7 +375,6 @@ margin:var(--main-padding);
 
 /* grid-testing */
 #mm { 
-  margin: 2%;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 2fr 1fr;
@@ -393,7 +392,7 @@ margin:var(--main-padding);
 }
 
 .colas img {
-  height: 70%;
+  height: 80%;
 }
 
 .tailbar {
@@ -405,7 +404,26 @@ margin:var(--main-padding);
 
 .hvsnegt {
   grid-area: husnegt;
+  background-color: var(--main-bg-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 2px;
+  padding: 0;
 }
+
+.hvsnegt > ul  {
+  text-decoration: none;
+}
+
+.label {
+  margin-top: 0;
+  height: 100%;
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+}
+
 /* Fanta Modal */
 .fanta-modal-content {
   display: grid;
