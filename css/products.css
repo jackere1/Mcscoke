@@ -310,7 +310,8 @@ img {
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+
 }
 
 @-webkit-keyframes animatetop {
@@ -370,6 +371,40 @@ img {
 .modal-body , .modal-body1 {
 color: var(--white);
 margin:var(--main-padding);
+}
+
+/* grid-testing */
+#mm { 
+  margin: 2%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "undaa tailbar"
+                       "undaa husnegt";
+}
+
+.colas {
+  width: 100%;
+  grid-area: undaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.colas img {
+  height: 70%;
+}
+
+.tailbar {
+  display: flex;
+  flex-direction: column;
+  grid-area: tailbar;
+  justify-content: center;
+}
+
+.hvsnegt {
+  grid-area: husnegt;
 }
 /* Fanta Modal */
 .fanta-modal-content {
