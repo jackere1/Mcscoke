@@ -1,7 +1,9 @@
 @import url(./variable.css);
+
 body {
   margin: 0;
   font-family: var(--main-font);
+
 }
 img {
   max-width: 100%;
@@ -307,6 +309,15 @@ input[type="text"] {
 .footer-Logo {
   width: 6.6em;
   height: auto;
+}
+.reveal{
+  opacity: 0;
+  right: -100%;
+}
+
+.reveal.active{
+  opacity: 1;
+  transition: all 2s ease;
 }
 @media only screen and (min-width: 1020px) {
   hr {

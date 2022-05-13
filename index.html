@@ -19,6 +19,7 @@
     <title>HomePage</title>
   </head>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
+  
   <body>
     <header>
         <nav class="nav">
@@ -43,25 +44,25 @@
    </nav>
     </header>
     <main>
-      <img class="nature" src="./img/HomePage/slider3 (2).png" width="100%"  >
+      <img class="nature" src="./img/HomePage/slider3 (2).png" width="100%" >
       <img class="nature" src="./img/HomePage/slider.png" width="100%">
-      <img class="nature" src="./img/HomePage/web-OBS2 (1).jpg" width="100%">
+      <img class="nature" src="./img/HomePage/web.jpg" width="100%">
       <script>
          w3.slideshow(".nature", 6000);
          </script>
-      <section class="wrapper ">
-      <section class="product-title">
+      <section class="wrapper">
+      <div class="product-title reveal">
          <h2>Таны хүслээр</h2>
          <p>М-Си-Эс Кока-Кола ХХК нь хүн бүрийн хүсэл сонирхолд нийцүүлэн ердийн, бага илчлэгтэй болон илчлэггүй гэх мэт олон төрлийн ундаануудыг дуртай цагт нь, хүссэн газарт нь, гарын дор байлган аз жаргалын амтыг мэдрүүлж, сэргээхийн төлөө чармайн ажиллаж байна.</p>
          <a href="Products.html"><button>Бүтээгдэхүүнүүд</button></a> <br><br>
-      </section>
-      <section class="product-img">
+      </div>
+      <div class="product-img reveal">
          <img class="product-img1" src="img/HomePage/Cola.png" alt="cocaCola"/>
          <img class="product-img1"  src = "img/HomePage/Fanta.png" alt=" fanta"/>
          <img class="product-img1" src="img/HomePage/Sprite.png" alt=" sprite"/>
-      </section>
+      </div>
    </section>
-      <section class="information">
+      <section class="information reveal">
          <section class="about-mcs">
             <picture>
                <source 
@@ -111,7 +112,7 @@
             </div>
       </section>
    </section>
-   <section class="information2 ">
+   <section class="information2 reveal ">
       <section class="plant-tour">
          <picture>
             <source
@@ -263,7 +264,7 @@
       </section>
   
     </footer>
-    <script src="./mobileMenu.js"></script>
-   
+    <script  src="./mobileMenu.js"></script>
+    <script src="./Scroll.js"></script>
   </body>
 </html>

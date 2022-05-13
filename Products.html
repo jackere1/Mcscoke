@@ -1,822 +1,757 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="main.css">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="MCS Coca-Cola, М-Си-Эс Кока-Кола, Кока-Кола"
-    />
-    <meta
-      name="keywords"
-      content="MCS Coca-Cola, М-Си-Эс Кока-Кола, Кока-Кола"
-    />
-    <link rel="stylesheet" href="css/products.css">
-    <link rel="icon" href="img/icon.png" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
-  </head>
-  <body>
-    <header>
-        <nav class="nav">
-          <section class="nav-logo">
-              <img src="img/Navbar/mcs_logo_nav.png"/>
-          </section>
-          <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link">Нүүр хуудас</a></li>
-            <li class="nav-item"><a href="Products.html" class="nav-link">Бүтээгдэхүүнүүд</a></li>
-            <li class="nav-item"><a href="aboutus.html" class="nav-link">Бидний тухай</a></li>
-            <li class="nav-item"><a href="niigem.html" class="nav-link">Нийгмийн хариуцлага</a></li>
-            <li class="nav-item"><a href="medee.html" class="nav-link">Мэдээ мэдээлэл</a></li>
-          </ul>
-        <section class="mcs-logo">
-          <img src="img/Navbar/cola_logo_nav.png" alt="logo">
-        </section>
-        <section class="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </section>
-      </nav>
-    </header>
-    <main>
-      <section class="contain">
-        <div class="product">
-        <a class="productImg" href="#"><img src="img/Products/cola.png" alt="cola" /></a>
-        <div class="transition1">
-            <div class="text" id = "modalText">
-              Coca-Cola
-            </div>
-           </div>
-      </div>
-      <div class="product">
-        <a class="productImg" href="#"  ><img src="img/Products/fanta.png" alt="fanta" /></a>
-        <div class="transition2">
-          <div class="text" id = "fantaText">
-            Fanta
-          </div>
-         </div>
-      </div>
-      <div class="product">
-        <a class="productImg" href="#" ><img src="img/Products/Sprite.png" alt="Sprite" /></a>
-        <div class="transition3">
-          <div class="text" id="spriteText">
-            Sprite
-          </div>
-         </div>
-      </div>
-       <div class="product">
-        <a class = "productImg" href="#"><img src="img/Products/Bonaqua.png" alt="Bonaqua" /></a>
-        <div class="transition4">
-          <div class="text" id="bonaquaText">
-            Bonaqua
-          </div>
-         </div>
-       </div>
-       <div class="product">
-        <a class = "productImg" href="#" class="product"><img src="img/Products/peacetea.png" alt="Peace" /></a>
-        <div class="transition5">
-          <div class="text" id="peaceTeaText">
-            Peace tea
-          </div>
-         </div>
-       </div>
-       <div class="product">
-        <a href="#" class="productImg"><img src="img/Products/Cmoy_cemya.png" alt="Cmoy" /></a>
-        <div class="transition6">
-          <div class="text" id="moyText">
-            Моя Семья
-          </div>
-         </div>
-        </div>
-        <div class="product">
-            <a href="#" class="productImg"><img src="img/Products/FuzeTea.png" alt="FuzeTea" /></a>
-            <div class="transition7">
-              <div class="text" id="fuzeText">
-                Fuze Tea
-              </div>
-             </div>
-        </div>
-        <div class="product">
-          <a href="#" class="productImg"><img src="img/Products/minutemaid.png" alt="Minute" /></a>
-          <div class="transition8">
-            <div class="text" id="minuteText">
-              Minute Maid
-            </div>
-           </div>
-      </div>
-      <div class="product">
-        <a href="# " class="productImg"><img src="img/Products/schweppes.png" alt="Schweppes" /></a>
-        <div class="transition9">
-          <div class="text" id="schweppesText">
-            Schweppes
-          </div>
-         </div>
-    </div>
-    <div class="product">
-      <a href="#" class="productImg"><img src="img/Products/millenia.png" alt="Millenia" /></a>
-      <div class="transition10">
-        <div class="text" id="milleniaText">
-          Millenia
-        </div>
-       </div>
-  </div>
-  <div class="product">
-    <a href="#" class="productImg"><img src="img/Products/powerrade 1.png" alt="Powerrade" /></a>
-    <div class="transition11">
-      <div class="text" id="poweradeText">
-        Powerade
-      </div>
-     </div>
-</div>
-<div class="product">
-  <a href="#" class="productImg"><img src="img/Products/Dobrii.png" alt="Dobrii" /></a>
-  <div class="transition">
-    <div class="text" id="dobriiText">
-      Добрый
-    </div>
-   </div>
-</div>
-<!-- Coca-cola Modal -->
-<section id="myModal" class="modal">
-  
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-    </div>
-    <!-- <div class="modal-img">
-        <img src="./img/Products/cola.png"/>
-    </div> -->
-    <div class="modal-body1">
-      <div id="mm">
-        <div class="tailbar">
-          <p>1886 онд АНУ-ын Жоржиа мужийн Атланта хотын эмийн санч доктор Жон С.Пембертон хэд хэдэн онцгой түүхий эдийг сонгон нэгэн төрлийн амтлаг сиропыг бүтээсэн нь өнөөдрийн бидний мэдэх сэнгэнэсэн, сэтгэл сэргээм "Кока-Кола" ундаа бий болох эхний алхам болсон юм. Дэлхийн 200 гаруй улсад бүтээгдэхүүнүүдээ борлуулдаг Кока-Кола Компани нь дэлхийн хамгийн том ундаа үйлдвэрлэгч билээ. </p>
-        <ul>
-          <li>
-            Хуванцар савлагаатай: 0.3л, 0.5л, 0.9л, 1.25л, 2.0л
-          </li>
-          <li>Лаазтай: 0.2л,0.33л</li>
-          <li> Шилэн савлагаа: 0,2л</li>
-        </ul>
-        </div>
-
-        <div class="colas">
-        <img src="img/Products/cokeclassic.png" alt="cola" />
-      </div>
-        <!-- <table style="background-color: skyblue; padding-bottom: 2em;" class="hvsnegt">
-          <tr style="background-color: #808080;">
-            <th>ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
-            <th>ОРЦ НАЙРЛАГА</th>
-          </tr>
-          <tr>
-            <th>Нүүрс ус-10.6 г</th>
-            <th colspan="3">Ус, сахар, хийжүүлэгч (нүүрсхүчлийн хий 290), хүнсний будагч (150d), хүчиллэг зохицуулагч (338), кофеин,  амт үнэр оруулагч</th>
-          </tr>
-          <tr>
-            <th>Сахар-10.6 г
-            </th>
-          </tr>
-          <tr>
-            <th> Уураг-0 г</th>
-          </tr>
-          <tr>
-            <th>Тос-0 г </th>
-          </tr>
-          <tr>
-            <th>Натри-5 мг</th>
-          </tr>
-        </table> -->
-        <div class="hvsnegt">
-          <div class="label">
-            <h5>ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</h5>
-          </div>
-          <div class="label">
-            <h5>ОРЦ НАЙРЛАГА</h5>
-          </div>
-          
-          
-          <ul>
-            <li>Нүүрс ус-10.6 г</li>
-            <li>Сахар-10.6 г</li>
-            <li>Уураг-0 г</li>
-            <li>Тос-0 г</li>
-            <li>Натри-5 мг</li>
-          </ul>
-          <p>Ус, сахар, хийжүүлэгч (нүүрсхүчлийн хий 290), хүнсний будагч (150d), хүчиллэг зохицуулагч (338), кофеин,  амт үнэр оруулагч</p>
-        </div>
-      </div>
-    </div> 
-    <div class="modal-body1">dfjsojfnsdiz</div>
-    <div class="modal-body1">dfjsojfnsdiznjsanfsjfnsjf</div>
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-    
-
-  </div>   
-  </section>
-  <!-- Fanta Modal -->
-  <section id="fantaModal" class="modal">
-  
-    <div class="fanta-modal-content">
-      <div class="modal-header">
-        <span class="close2">&times;</span>
-      </div>
-     <div class="modal-body">
-        <p>Герман дахь Кока-Кола компанийн захирал Макс Кейт болон түүний багийнхан шинэ бүтээгдэхүүнийг уран сэтгэмж, уран зөгнөл гэсэн утгатай үгээр буюу Fantasy хэмээн нэрлэхээр төлөвлөж байсан ч худалдаа хариуцсан ажилтан  Жо Книп “FANTA” гэж нэрлэх санал гаргасан нь бүгдэд таалагдан 1941 оноос одоог хүртэл ашигласаар байна.</p>
-        <p>Фанта нь шинэхэн амтат жимсний төрөл, өнгөлөг тод өнгө, сэнгэнэсэн амтаараа хэрэглэгчдийг байлдан дагуулж чаддаг.</p>
-        <p>Дэлхийн бүхий л орны хэрэглэгчид, тэр дундаа өсвөр үеийнхэн Fanta-г аз жаргал, баяр хөөр бэлэглэдэг хэмээн итгэж сонгодог бөгөөд найз нөхөд, гэр бүлтэйгээ янз бүрийн арга хэмжээ, онцгой тохиолдлуудад хэрэглэх дуртай байдаг.</p>
-        <p>Одоо FANTA брэнд нь Европ, Ази, Африк болон Өмнөд Америкын зах зээлд маш том байр суурь эзэлсэн Дэлхийн топ брэндүүдийн нэг болсон бөгөөд Дэлхийн даяар 100 гаруй төрлийн амттайгаар үйлдвэрлэгдэн худалдаалагдаж байна.</p>
-        <p>Манай орны хувьд 8-н төрлийн жимсний /Жүрж, Алим, Усан Үзэм, Ханборгоцой, Тоор, Ногоон нимбэг, Ногоон алим, Тарвас- үйлдвэрлэхээ больсон/ амттайгаар 2003 оноос хойш үйлдвэрлэгдэн худалдаалагдаж байна.</p>
-        <ul>
-          <li>
-            Хуванцар савлагаатай: 0.3л,0,5л, 1.25л, 2.0л
-          </li>
-          <li>Лаазтай: 0.2л,0.33л</li>
-          <li> Шилэн савлагаа: 0,2л</li>
-        </ul>
-        
-        <table style="background-color: #c4c4c4; padding-bottom: 2em;">
-          <tr style="background-color: #808080;">
-            <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
-            <th>ОРЦ НАЙРЛАГА</th>
-          </tr>
-          <tr>
-            <th>Илчлэг-20 ккал</th>
-            <th>Ус, сахар, хийжүүлэгч (нүүрсхүчлийн хий 290), хүчиллэг зохицуулагч (330 ,331), амт үнэр оруулагч, нөөшлөгч (211), чихэрлэг амт оруулагч (950,955)</th>
-  
-          </tr>
-          <tr>
-            <th>Нүүрс ус-4.9 г</th>
-          </tr>
-          <tr>
-            <th> Сахар-4.9 г</th>
-          </tr>
-          <tr>
-            <th>Уураг-0 г</th>
-          </tr>
-          <tr>
-            <th>Тос-0 г</th>
-          </tr>
-          <tr>
-            <th>Натри-17 мг </th>
-          </tr>
-        </table>
-      </div>
-    </div>   
-    </section>
-       <!-- Sprite Modal -->
-       <section id="spriteModal" class="modal">
-  
-        <div class="sprite-modal-content">
-          <div class="modal-header">
-            <span  class="close3">&times;</span>
-          </div>
-         <div class="modal-body">
-            <p>1961 онд "Спрайт" ундааг АНУ-д нэвтрүүлсэн нь оргилуун тунгалаг ундааны төрөлдөө зах зээлд тэргүүлэх брэнд болжээ. Улмаар 190 гаруй улсад худалдаалагддаг, “Кока-Колa”-ын дараах 2 дахь том брэнд бүтээгдэхүүн болсон юм </p>
-            
-            <ul>
-              <li>
-                Хуванцар савлагаатай: 0.3л,0,5л,0.9, 1.25л, 2.0л
-              </li>
-              <li>Лаазтай: 0.2л,0.33л</li>
-              <li> Шилэн савлагаа: 0,2л</li>
+   <head>
+      <link rel="stylesheet" href="main.css">
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta
+         name="description"
+         content="MCS Coca-Cola, М-Си-Эс Кока-Кола, Кока-Кола"
+         />
+      <meta
+         name="keywords"
+         content="MCS Coca-Cola, М-Си-Эс Кока-Кола, Кока-Кола"
+         />
+      <link rel="stylesheet" href="css/products.css">
+      <link rel="icon" href="img/icon.png" type="image/x-icon" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Products</title>
+   </head>
+   <script src="./json/CocaCola/Coca.js" ></script>
+   <script src="./json/Fanta/fanta.js" ></script>
+   <body>
+      <header>
+         <nav class="nav">
+            <section class="nav-logo">
+               <img src="img/Navbar/mcs_logo_nav.png"/>
+            </section>
+            <ul class="nav-menu">
+               <li class="nav-item"><a href="index.html" class="nav-link">Нүүр хуудас</a></li>
+               <li class="nav-item"><a href="Products.html" class="nav-link">Бүтээгдэхүүнүүд</a></li>
+               <li class="nav-item"><a href="aboutus.html" class="nav-link">Бидний тухай</a></li>
+               <li class="nav-item"><a href="niigem.html" class="nav-link">Нийгмийн хариуцлага</a></li>
+               <li class="nav-item"><a href="medee.html" class="nav-link">Мэдээ мэдээлэл</a></li>
             </ul>
-            
-            <table style="background-color: #c4c4c4; padding-bottom: 2em;">
-              <tr style="background-color: #808080;">
-                <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
-                <th>ОРЦ НАЙРЛАГА</th>
-              </tr>
-              <tr>
-                <th>Илчлэг-32.5 ккал</th>
-                <th>Ус, сахар, хийжүүлэгч (нүүрсхүчлийн хий 290), хүчиллэг зохицуулагч (330), амт үнэр оруулагч, нөөшлөгч (211,202), чихэрлэг амт оруулагч (950,955), хүнсний будагч (110,102)</th>
-      
-              </tr>
-              <tr>
-                <th>Нүүрс ус-8 г</th>
-              </tr>
-              <tr>
-                <th> Сахар-8 г</th>
-              </tr>
-              <tr>
-                <th>Уураг-0 г</th>
-              </tr>
-              <tr>
-                <th>Тос-0 г</th>
-              </tr>
-              <tr>
-                <th>Натри-13 мг </th>
-              </tr>
-            </table>
-          </div>
-        </div>   
-        </section>
-<!-- Bonaque Modal -->
-<section id="bonaquaModal" class="modal">
-  
-  <div class="bonaqua-modal-content">
-    <div class="modal-header">
-      <span  class="close4">&times;</span>
-    </div>
-   <div class="modal-body">
-      <p>Bonaqua гэдэг нь Францаар “САЙН УС” гэсэн утгатай үг юм. </p>
-      <p>Bonaqua савласан усыг анх 1988 онд Герман Улсад үйлдвэрлэсэн бөгөөд одоо Европи, Ази, Америк зэрэг тивүүдийн олон улс орнуудад үйлдвэрлэн худалдаалж байна. Дэлхийн нэр хүндтэй энэхүү бүтээгдэхүүнийг Монголын зах зээлд 2004 онд анх гаргаж одоог хүртэл Олон Улсын болон Монгол улсын стандартын дагуу үйлдвэрлэн хэрэглэгчиддээ хүргэж байна.</p>
-      <p>Bonaqua цэвэр ус нь 5 дамжлагаар шүүж цэвэршүүлсэн, хүний биед шаардлагатай эрдэс  бодисуудыг нэмэлтээр хийн, үйлдвэрлэлийн озоноор ариутган савласан онцлог бүтээгдэхүүн юм.</p>
-      <p>Бонакуа цэвэр ус нь хүний биед шаардлагатай шингэний хэрэгцээг нөхөх бөгөөд бүх насны хүмүүс хэрэглэхэд тохиромжтой, амны цангааг бүрэн тайлах бүтээгдэхүүн юм.</p>
-      <p>Монголын №1 цэвэр ус Bonaqua</p>
-      <ul>
-        <li>
-          Хуванцар савлагаатай: 330мл , 500мл, 1500мл, 4500мл
-        </li>
-      </ul>
-      
-      <table style="background-color: #c4c4c4; padding-bottom: 2em;">
-        <tr style="background-color: #808080;">
-          <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
-          <th>ОРЦ НАЙРЛАГА</th>
-        </tr>
-        <tr>
-          <th>Илчлэг-0 ккал</th>
-          <th>Ус, магнийн сульфат, калийн хлорид, натрийн хлорид</th>
-
-        </tr>
-        <tr>
-          <th>Нүүрс ус-0 г</th>
-        </tr>
-        <tr>
-          <th> Сахар-0 г</th>
-        </tr>
-        <tr>
-          <th>Уураг-0 г</th>
-        </tr>
-        <tr>
-          <th>Тос-0 г</th>
-        </tr>
-        <tr>
-          <th>Натри-1 мг </th>
-        </tr>
-      </table>
-    </div>
-  </div>   
-  </section>
-       
-  <!-- Peace Tea Modal -->
-  <section id="peaceTeaModal" class="modal">
-  
-    <div class="peace-modal-content">
-      <div class="modal-header">
-        <span  class="close5">&times;</span>
-      </div>
-     <div class="modal-body">
-        <p>
-          Peace Tea брэнд 2009 оны 12 сард дэлхийн зах зээлд танилцуулагдсан ба эерэг байдал, олон соёлт, өөдрөг үзлийг залуу үеийнхэнд  уриалахад зориулан гаргасан цай юм. </p>
-        <p>Монгол Улсын зах зээлд 2020 оны 6 сард Алтан жүрж, Ойн жимс, Алим ба Киви гэсэн шинэлэг өнгө төрх бүхий онцгой жимсний амтууд, сэнгэнэсэн гааны амт хосолсон 3 төрлийн цайг танилцуулаад байна</p>
-        <ul>
-          <li>
-            Хуванцар савлагаатай: 330мл , 500мл, 1500мл, 4500мл
-          </li>
-        </ul>
-        
-        <table style="background-color: #c4c4c4; padding-bottom: 2em;">
-          <tr style="background-color: #808080;">
-            <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
-            <th>ОРЦ НАЙРЛАГА</th>
-          </tr>
-          <tr>
-            <th>Илчлэг-29 ккал</th>
-            <th>Ус, сахар, цайны ханд, цайны нунтаг,</th>
-  
-          </tr>
-          <tr>
-            <th>Нүүрс ус-7.1 г</th>
-            <th>хүчиллэг зохицуулагч (330, 331), үл</th>
-          </tr>
-          <tr>
-            <th> Сахар-7.1 г</th>
-            <th>исэлдүүлэгч (1520, 422, 473), чихэрлэг</th>
-          </tr>
-          <tr>
-            <th>Уураг-0 г</th>
-            <th>амт оруулагч (960, 420), амт үнэр оруулагч</th>
-          </tr>
-          <tr>
-            <th>Тос-0 г</th>
-          </tr>
-          <tr>
-            <th>Натри-1 мг </th>
-          </tr>
-        </table>
-      </div>
-      <div class="modal-body">ndsjhfbsudhfb</div>
-    </div>   
-    </section>
-         <!-- Моя Семья -->
-  <section id="moyModal" class="modal">
-  
-    <div class="moy-modal-content">
-      <div class="modal-header">
-        <span  class="close6">&times;</span>
-      </div>
-     <div class="modal-body">
-        <p>
-          Peace Tea брэнд 2009 оны 12 сард дэлхийн зах зээлд танилцуулагдсан ба эерэг байдал, олон соёлт, өөдрөг үзлийг залуу үеийнхэнд  уриалахад зориулан гаргасан цай юм. </p>
-        <p>Монгол Улсын зах зээлд 2020 оны 6 сард Алтан жүрж, Ойн жимс, Алим ба Киви гэсэн шинэлэг өнгө төрх бүхий онцгой жимсний амтууд, сэнгэнэсэн гааны амт хосолсон 3 төрлийн цайг танилцуулаад байна</p>
-        <ul>
-          <li>
-            Хуванцар савлагаатай: 330мл , 500мл, 1500мл, 4500мл
-          </li>
-        </ul>
-        
-        <table style="background-color: #c4c4c4; padding-bottom: 2em;">
-          <tr style="background-color: #808080;">
-            <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
-            <th>ОРЦ НАЙРЛАГА</th>
-          </tr>
-          <tr>
-            <th>Илчлэг-29 ккал</th>
-            <th>Ус, сахар, цайны ханд, цайны нунтаг,</th>
-  
-          </tr>
-          <tr>
-            <th>Нүүрс ус-7.1 г</th>
-            <th>хүчиллэг зохицуулагч (330, 331), үл</th>
-          </tr>
-          <tr>
-            <th> Сахар-7.1 г</th>
-            <th>исэлдүүлэгч (1520, 422, 473), чихэрлэг</th>
-          </tr>
-          <tr>
-            <th>Уураг-0 г</th>
-            <th>амт оруулагч (960, 420), амт үнэр оруулагч</th>
-          </tr>
-          <tr>
-            <th>Тос-0 г</th>
-          </tr>
-          <tr>
-            <th>Натри-1 мг </th>
-          </tr>
-        </table>
-      </div>
-    </div>   
-    </section>
-     <!-- Fuze Tea -->
-  <section id="fuzeModal" class="modal">
-  
-    <div class="fuze-modal-content">
-      <div class="modal-header">
-        <span  class="close7">&times;</span>
-      </div>
-     <div class="modal-body">
-        <p>
-          FUZE TEA брэнд 2012 онд дэлхийн 14 орны зах зээлд зэрэг танилцуулагдсаны нэг нь Монгол Улс байсан юм. </p>
-         <p>Цай, жимс болон бусад байгалийн түүхий эдүүдийн төгс зохицол бүхий эрч хүчийг бэлэглэх FUZE TEA брэнд өнөөдөр дэлхийн 40 орчим улсын зах зээлд 30 гаруй төрлийн сонголттойгоор борлуулагдаж байгаа бөгөөд Монгол Улсын хувьд  цайны зах зээлийг тодорхойлж буй тэргүүлэгч брэндийн байр суурийг эзэлж байна.</p> 
-        <ul>
-          <li>
-            Хуванцар савлагаатай: 330мл , 500мл, 1500мл, 4500мл
-          </li>
-        </ul>
-        
-        <table style="background-color: #c4c4c4; padding-bottom: 2em;">
-          <tr style="background-color: #808080;">
-            <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
-            <th>ОРЦ НАЙРЛАГА</th>
-          </tr>
-          <tr>
-            <th>Илчлэг-34 ккал</th>
-            <th>Ус, сахар, нимбэгний шүүс, хүчиллэг зохицуулагч  (330.331), цайны ханд, байгалийн амт үнэр оруулагчид, үл исэлдүүлэгч (300.301)</th>
-  
-          </tr>
-          <tr>
-            <th>Нүүрс ус-8.1 г</th>
-            <th></th>
-          </tr>
-          <tr>
-            <th> Сахар-8.1 г</th>
-            <th></th>
-          </tr>
-          <tr>
-            <th>Уураг-0 г</th>
-            <th></th>
-          </tr>
-          <tr>
-            <th>Тос-0 г</th>
-          </tr>
-          <tr>
-            <th>Натри-18 мг </th>
-          </tr>
-        </table>
-      </div>
-    </div>   
-    </section>
-<!-- Minute Maid -->
-    <section id="minuteModal" class="modal">
-  
-      <div class="minute-modal-content">
-        <div class="modal-header">
-          <span  class="close8">&times;</span>
-        </div>
-       <div class="modal-body">
-          <p>
-            Minute Maid нь шүүс үйлдвэрлэлийн 60 гаруй жилийн арвин туршлагатай бөгөөд чанар, шинэчлэлт, шимт бодисын гайхамшигт уламжлалтай билээ. </p>
-            <p>Нарны гэрэлд боловсорсон сайн чанарын жүржийг сонгон авч, дээд зэргийн амттай жүржийн зөөлөн эдийг тусгайлан нэмсэн гайхалтай амт бүхий Minute Maid Жүржийн шүүсийг танд зориулдаг билээ.</p>
-            <p>1945 онд АНУ-ын цэргийн хүчин Флорида Фоодс корпорациас 500 мянган поунд буюу 250 мянга орчим килограмм нунтаг жүржийн жүүс захиалсан нь хожим Вакум Фоодс болж сүүлд нь Минут Мэйд корпораци болж нэршил нь өөрчлөгдсөн байна.  Минут Мэйд корпорацийг 1960 онд Кока-Кола компани худалдан авсан нь оргилуун ундаанаас өөр төрлийн бизнесийг эхлүүлсэн анхны аз сорьсон алхам байсан юм.</p>
-          <ul>
-            <li>
-              Хуванцар савлагаатай: 330мл , 500мл, 1500мл, 4500мл
-            </li>
-          </ul>
-          
-          <table style="background-color: #c4c4c4; padding-bottom: 2em;">
-            <tr style="background-color: #808080;">
-              <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
-              <th>ОРЦ НАЙРЛАГА</th>
-            </tr>
-            <tr>
-              <th>Илчлэг-34 ккал</th>
-              <th>Ус, сахар, нимбэгний шүүс, хүчиллэг зохицуулагч  (330.331), цайны ханд, байгалийн амт үнэр оруулагчид, үл исэлдүүлэгч (300.301)</th>
-    
-            </tr>
-            <tr>
-              <th>Нүүрс ус-8.1 г</th>
-              <th></th>
-            </tr>
-            <tr>
-              <th> Сахар-8.1 г</th>
-              <th></th>
-            </tr>
-            <tr>
-              <th>Уураг-0 г</th>
-              <th></th>
-            </tr>
-            <tr>
-              <th>Тос-0 г</th>
-            </tr>
-            <tr>
-              <th>Натри-18 мг </th>
-            </tr>
-          </table>
-        </div>
-      </div>   
-      </section>
-      <!-- Schweppes -->
-    <section id="schweppesModal" class="modal">
-  
-      <div class="schweppes-modal-content">
-        <div class="modal-header">
-          <span  class="close9">&times;</span>
-        </div>
-       <div class="modal-body">
-          <p>
-            Швейцарийн эрдэмтэн Жэйкоб Швеппе 1783 онд хийжүүлсэн ус гаргах аргыг улам боловсронгуй болгон патенжуулж авснаар дэлхий хамгийн анхны оргилуун ус болон ундааны Schweppes (Швеппс) брэнд үүссэн түүхтэй. Тэрээр 1792 оноос Лондон руу өөрийн бизнесийг шилжүүлэн өргөжүүлснээр Schweppes брэнд маш олон төрлийн амттай оргилуун ус болон ундаануудыг гаргаж дэлхий даяар өөрийн гэсэн сая сая хэрэглэгчидтэй болжээ.</p>
-            <p>Дэлхий даяараа Schweppes-ийг дангаар цангаа тайлж уухаас гадна төрөл бүрийн уух зүйлстэй хольж олон төрлийн гайхалтай амт бүхий коктейл болгон хэрэглэдэг. Та ч гэсэн гэртээ туршаад үзээрэй.</p>
-          <ul>
-            <li>
-              Хуванцар савлагаатай: 0.48л, 1.25л
-            </li>
-          </ul>
-          
-          <table style="background-color: #c4c4c4; padding-bottom: 2em;">
-            <tr style="background-color: #808080;">
-              <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
-              <th>ОРЦ НАЙРЛАГА</th>
-            </tr>
-            <tr>
-              <th>Илчлэг-34 ккал</th>
-              <th>Ус, сахар, нимбэгний шүүс, хүчиллэг зохицуулагч  (330.331), цайны ханд, байгалийн амт үнэр оруулагчид, үл исэлдүүлэгч (300.301)</th>
-    
-            </tr>
-            <tr>
-              <th>Нүүрс ус-8.1 г</th>
-              <th></th>
-            </tr>
-            <tr>
-              <th> Сахар-8.1 г</th>
-              <th></th>
-            </tr>
-            <tr>
-              <th>Уураг-0 г</th>
-              <th></th>
-            </tr>
-            <tr>
-              <th>Тос-0 г</th>
-            </tr>
-            <tr>
-              <th>Натри-18 мг </th>
-            </tr>
-          </table>
-        </div>
-      </div>   
-      </section>
-      <!-- Millenia -->
-    <section id="milleniaModal" class="modal">
-  
-      <div class="millenia-modal-content">
-        <div class="modal-header">
-          <span  class="close10">&times;</span>
-        </div>
-       <div class="modal-body " style="color: #202020">
-          <p>
-            VIO Millenia байгалийн эрдэст ус нь Монгол орны онгон дагшин нутагт, газрын гүнд хуримтлагдах явцдаа үе давхаргуудад байрлах хөрс, чулуулгийн найрлагаар эрдэсжсэн бүтээгдэхүүн. Дэлхийн 200 гаруй улсад бүтээгдэхүүн үйлдвэрлэдэг Кока-Кола компанийн албан ёсны брэндийн нэг болох VIO  нэрийн дор үйлдвэрлэж борлуулах  эрхийг авсан Монголын анхны бүтээгдэхүүн.</p>
-            <p>Европын Холбооны стандартын үзүүлэлтүүдийг хангасан ус
-
-              Усны чанар нь Европын Холбооны ‘Байгалийн усны стандарт’ үзүүлэлтүүдийг хангасан болохыг Германы SGS лабораторийн 3 жилийн шинжилгээний дүнгээр баталгаажсан.</p>
-              <p>Байгалиасаа шүлтлэг ус</p>
-
-               <p> Газрын гүнээс гаргасан усны орчинг pH 7.8 болохыг тогтоов</p>
-      
-          <table style="background-color: #c4c4c4; padding-bottom: 2em;">
-            <tr style="background-color: #808080;">
-              <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
-              <th>ОРЦ НАЙРЛАГА</th>
-            </tr>
-            <tr>
-              <th>Илчлэг-0 ккал</th>
-              <th>Кальци-50</th>
-    
-            </tr>
-            <tr>
-              <th>Нүүрс ус-0г</th>
-              <th>Магни-12 г</th>
-            </tr>
-            <tr>
-              <th>Чихэр-0 гр </th>
-              <th>Натри-7,7</th>
-            </tr>
-            <tr>
-              <th>Уураг-0 г</th>
-              <th>Кали-1,85</th>
-            </tr>
-            <tr>
-              <th>Тос-0 г</th>
-              <th>Стронци- 0,23</th>
-            </tr>
-            <tr>
-              <th>Натри-0.77 мг </th>
-              <th>Бикарбонат-190</th>
-            </tr>
-          </table>
-        </div>
-      </div>   
-      </section>
-      <!-- Powerade -->
-      <section id="schweppesModal" class="modal">
-  
-        <div class="schweppes-modal-content">
-          <div class="modal-header">
-            <span  class="close9">&times;</span>
-          </div>
-         <div class="modal-body">
-            <p>
-              Швейцарийн эрдэмтэн Жэйкоб Швеппе 1783 онд хийжүүлсэн ус гаргах аргыг улам боловсронгуй болгон патенжуулж авснаар дэлхий хамгийн анхны оргилуун ус болон ундааны Schweppes (Швеппс) брэнд үүссэн түүхтэй. Тэрээр 1792 оноос Лондон руу өөрийн бизнесийг шилжүүлэн өргөжүүлснээр Schweppes брэнд маш олон төрлийн амттай оргилуун ус болон ундаануудыг гаргаж дэлхий даяар өөрийн гэсэн сая сая хэрэглэгчидтэй болжээ.</p>
-              <p>Дэлхий даяараа Schweppes-ийг дангаар цангаа тайлж уухаас гадна төрөл бүрийн уух зүйлстэй хольж олон төрлийн гайхалтай амт бүхий коктейл болгон хэрэглэдэг. Та ч гэсэн гэртээ туршаад үзээрэй.</p>
-            <ul>
-              <li>
-                Хуванцар савлагаатай: 0.48л, 1.25л
-              </li>
-            </ul>
-            
-            <table style="background-color: #c4c4c4; padding-bottom: 2em;">
-              <tr style="background-color: #808080;">
-                <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
-                <th>ОРЦ НАЙРЛАГА</th>
-              </tr>
-              <tr>
-                <th>Илчлэг-34 ккал</th>
-                <th>Ус, сахар, нимбэгний шүүс, хүчиллэг зохицуулагч  (330.331), цайны ханд, байгалийн амт үнэр оруулагчид, үл исэлдүүлэгч (300.301)</th>
-      
-              </tr>
-              <tr>
-                <th>Нүүрс ус-8.1 г</th>
-                <th></th>
-              </tr>
-              <tr>
-                <th> Сахар-8.1 г</th>
-                <th></th>
-              </tr>
-              <tr>
-                <th>Уураг-0 г</th>
-                <th></th>
-              </tr>
-              <tr>
-                <th>Тос-0 г</th>
-              </tr>
-              <tr>
-                <th>Натри-18 мг </th>
-              </tr>
-            </table>
-          </div>
-        </div>   
-        </section>
-      </section>
-    </main>
-
-    <footer>
-      <section class="footer ">
-     <section class="footer-product">
-        <ul>
-           <h5><a href="Products.html">Бренд</a></h5>
-           <hr>
-           <li><a href="productDetails.html">Coca-Cola</a></li>
-           <li><a href="productDetails.html">Fanta</a></li>
-           <li><a href="productDetails.html">Sprite</a></li>
-           <li><a href="productDetails.html">Fuzetea</a></li>
-           <li><a href="productDetails.html">Minute Maid</a></li>
-           <li><a href="productDetails.html">Powerade</a></li>
-           <li><a href="productDetails.html">Peace Tea</a></li>
-        </ul>
-       
-     </section>
-     <article class="social-responsibility">
-     <ul>
-       <h5><a href="niigem.html">НИЙГМИЙН ХАРИУЦЛАГА</a></h5>
-       <hr>
-       <li><a href="niigem.html">Эрүүл, идэвхтэй амьдрал</a></li>
-       <li><a href="job.html">Ажлын байр</a></li>
-       <li><a href="niigem.html">Энергийн менежмэнт</a></li>
-       <li><a href="niigem.html">Ус хэмнэлт</a></li>
-       <li><a href="niigem.html">Сав баглаа боодлын менежмэнт</a></li>
-       <li><a href="niigem.html">Хамтарч ажиллах санал хүсэлт</a></li>
-     </ul>
-     </article>
-     <article class="footer-aboutus">
-        <ul>
-       <h5 ><a href="aboutus.html">БИДНИЙ ТУХАЙ </a></h5>
-       <hr>
-       <li><a href="aboutus.html">М-СИ-ЭС Кока-Кола ХХК-ийн тухай</a></li>
-       <li><a href="aboutus.html">М-СИ-ЭС Группын тухай</a></li>
-       <li><a href="aboutus.html">Кока-Кола компанийн тухай</a></li>
-       <h5><a href="medee.html">МЭДЭЭ МЭДЭЭЛЭЛ</a></h5>
-       <hr>
-       <li><a href="medee.html">Мэдээ</a></li>
-       <li><a href="medee.html">Фото</a></li>
-       <li><a href="medee.html">Видео</a></li>
-     </ul>
-     </article>
-     <section class="footer-contact">
-       <p>ХОЛБОГДОХ</p>
-       <hr>
-       <form>
-        <label for="type">Төрлөө сонгоно уу?</label>
-         <select id="type" name="type">
-     <option value="message">Гомдол , санал</option>
-     <option value="message">Хамтран ажиллаж санал</option>
-   </select> <br />
-         <label for="email">Имэйл</label> <br />
-         <input type="text" id="email" name="mail" /><br />
-         <label for="phone">Утас</label> <br />
-         <input type="text" id="phone" name="number" /><br />
-         <label for="message">Мессеж</label> <br />
-         <input type="text" id="message" name="sms" /><br />
-         <br />
-         <input class="footer-contact-button" type="submit" value="Илгээнэ үү" />
-       </form>
-     </section>
-     </section>
-     <section class="footer-bottom ">
-       <section class="footer-Logo">
-         <picture>
-           <source
-             srcset="img/footer/footer-logo 1.png"
-             media="(min-width:1020px)"
-           />
-           <source
-             srcset="/img/footer/footer-logo 1.png"
-             media="(min-width:800px)"
-           />
-           <img src="img/footer/footer.png" alt="footer-logo" />
-         </picture>
-       </section>
-       <section class="icons">
-          <a href="https://www.facebook.com/CocaColaMongolia">
-              <img class="icon" alt="icons" src="img/Footer/facebook.png" />
-          </a>
-          <a href="https://www.instagram.com/cocacolamongolia/" >
-           <img class="icon" alt="icons" src="img/Footer/instagram.png" />
-          </a>
-          <a href="https://www.youtube.com/channel/UCtqoKNEFjf6qiTk7J846XpQ">
-           <img class="icon" alt="icons" src="img/Footer/youtube.png" />
-          </a>
-        
-        
-       </section>
-       <article class="bottom-footer-title">
-         <p>COPYRIGHT © MCS Coca-Cola Company</p>
-       </article>
-     </section>
- 
-   </footer>
-   <script src="./mobileMenu.js"></script>
-   <script src="./Modal/modal.js" ></script>
-   <script src = "./Modal//fantaModal.js" ></script>
-   <script src="./Modal/spriteModal.js" ></script>
-   <script src = "./Modal/bonaqua.js" ></script>
-   <script src = "./Modal/peaceTea.js" ></script>
-   <script src = "./Modal/Moya.js" ></script>
-   <script src = "./Modal/fuzeTea.js"  ></script>
-   <script src = "./Modal/MinuteMaid.js"  ></script>
-   <script src = "./Modal/schweppes.js"  ></script>
-   <script src = "./Modal/millenia.js"  ></script>
-   <script src="./productSlider.js" ></script>
-  </body>
+            <section class="mcs-logo">
+               <img src="img/Navbar/cola_logo_nav.png" alt="logo">
+            </section>
+            <section class="hamburger">
+               <div class="bar"></div>
+               <div class="bar"></div>
+               <div class="bar"></div>
+            </section>
+         </nav>
+      </header>
+      <main>
+         <section class="contain">
+            <div class="product">
+               <a class="productImg" href="#"><img src="img/Products/cola.png" alt="cola" /></a>
+               <div class="transition1">
+                  <div class="text" id = "modalText">
+                     Coca-Cola
+                  </div>
+               </div>
+            </div>
+            <div class="product">
+               <a class="productImg" href="#"  ><img src="img/Products/fanta (1).png" alt="fanta" /></a>
+               <div class="transition2">
+                  <div class="text" id = "fantaText">
+                     Fanta
+                  </div>
+               </div>
+            </div>
+            <div class="product">
+               <a class="productImg" href="#" ><img src="img/Products/Sprite.png" alt="Sprite" /></a>
+               <div class="transition3">
+                  <div class="text" id="spriteText">
+                     Sprite
+                  </div>
+               </div>
+            </div>
+            <div class="product">
+               <a class = "productImg" href="#"><img src="img/Products/Bonaqua.png" alt="Bonaqua" /></a>
+               <div class="transition4">
+                  <div class="text" id="bonaquaText">
+                     Bonaqua
+                  </div>
+               </div>
+            </div>
+            <div class="product">
+               <a class = "productImg" href="#" class="product"><img src="img/Products/peacetea.png" alt="Peace" /></a>
+               <div class="transition5">
+                  <div class="text" id="peaceTeaText">
+                     Peace tea
+                  </div>
+               </div>
+            </div>
+            <div class="product">
+               <a href="#" class="productImg"><img src="img/Products/Cmoy_cemya.png" alt="Cmoy" /></a>
+               <div class="transition6">
+                  <div class="text" id="moyText">
+                     Моя Семья
+                  </div>
+               </div>
+            </div>
+            <div class="product">
+               <a href="#" class="productImg"><img src="img/Products/FuzeTea.png" alt="FuzeTea" /></a>
+               <div class="transition7">
+                  <div class="text" id="fuzeText">
+                     Fuze Tea
+                  </div>
+               </div>
+            </div>
+            <div class="product">
+               <a href="#" class="productImg"><img src="img/Products/minutemaid.png" alt="Minute" /></a>
+               <div class="transition8">
+                  <div class="text" id="minuteText">
+                     Minute Maid
+                  </div>
+               </div>
+            </div>
+            <div class="product">
+               <a href="# " class="productImg"><img src="img/Products/schweppes.png" alt="Schweppes" /></a>
+               <div class="transition9">
+                  <div class="text" id="schweppesText">
+                     Schweppes
+                  </div>
+               </div>
+            </div>
+            <div class="product">
+               <a href="#" class="productImg"><img src="img/Products/millenia.png" alt="Millenia" /></a>
+               <div class="transition10">
+                  <div class="text" id="milleniaText">
+                     Millenia
+                  </div>
+               </div>
+            </div>
+            <div class="product">
+               <a href="#" class="productImg"><img src="img/Products/powerrade 1.png" alt="Powerrade" /></a>
+               <div class="transition11">
+                  <div class="text" id="poweradeText">
+                     Powerade
+                  </div>
+               </div>
+            </div>
+            <div class="product">
+               <a href="#" class="productImg"><img src="img/Products/Dobrii.png" alt="Dobrii" /></a>
+               <div class="transition">
+                  <div class="text" id="dobriiText">
+                     Добрый
+                  </div>
+               </div>
+            </div>
+            <!-- Coca-cola Modal -->
+            <section id="myModal" class="modal">
+               <section class="modal-content">
+                  <div class="modal-header">
+                     <span class="close">&times;</span>
+                  </div>
+                  <section class="modal-body1">
+                     <div id="mm">
+                        <!-- Buteegdehuunii tailbar -->
+                        <div class="tailbar">
+                        </div>
+                        <!-- Cola img -->
+                        <div class="colas">
+                        </div>
+                        <!-- Cola Table -->
+                        <section id="colaTable" class="hvsnegt">
+                           <div class="label">
+                              <h5>ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</h5>
+                           </div>
+                           <div class="label">
+                              <h5>ОРЦ НАЙРЛАГА</h5>
+                           </div>
+                        </section>
+                     </div>
+                  </section>
+                  <section class="modal-body1">
+                     <section id="mm">
+                        <!-- Buteegdehuunii tailbar -->
+                        <div id="zeroDes" class="tailbar">
+                        </div>
+                        <!-- Zero cola img -->
+                        <div id = "zeroCola" class="colas">
+                        </div>
+                        <section id="zeroColaTable" class="hvsnegt">
+                           <div class="label">
+                              <h5>ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</h5>
+                           </div>
+                           <div class="label">
+                              <h5>ОРЦ НАЙРЛАГА</h5>
+                           </div>
+                        </section>
+                     </section>
+                  </section>
+                  <div class="modal-body1">
+                     <div id="mm">
+                        <!-- Buteegdehuunii tailbar -->
+                        <div id="plusDes" class="tailbar">
+                        </div>
+                        <!-- Plus cola img -->
+                        <div id = "plusCola" class="colas">
+                        </div>
+                        <div id="plusColaTable" class="hvsnegt">
+                           <div class="label">
+                              <h5>ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</h5>
+                           </div>
+                           <div class="label">
+                              <h5>ОРЦ НАЙРЛАГА</h5>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="next" onclick="plusSlides(1)">❯</a>
+               </section>
+            </section>
+            <!-- Fanta Modal -->
+            <section id="fantaModal" class="modal">
+               <section class="fanta-modal-content">
+                  <div class="modal-header">
+                     <span class="close2">&times;</span>
+                  </div>
+                  <section class="modal-body">
+                     <div id="mm">
+                        <div id = "fanta" class="colas">  </div>
+                        <div id="fantaMore" class="tailbar"> </div>
+                        <section id="fantaTable" class="hvsnegt">
+                           <div class="label">
+                              <h5>ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</h5>
+                           </div>
+                           <div class="label">
+                              <h5>ОРЦ НАЙРЛАГА</h5>
+                           </div>
+                        </section>
+                     </div>
+                  </section>
+               </section>
+            </section>
+            <!-- Sprite Modal -->
+            <section id="spriteModal" class="modal">
+               <div class="sprite-modal-content">
+                  <div class="modal-header">
+                     <span  class="close3">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                     <p>1961 онд "Спрайт" ундааг АНУ-д нэвтрүүлсэн нь оргилуун тунгалаг ундааны төрөлдөө зах зээлд тэргүүлэх брэнд болжээ. Улмаар 190 гаруй улсад худалдаалагддаг, “Кока-Колa”-ын дараах 2 дахь том брэнд бүтээгдэхүүн болсон юм </p>
+                     <ul>
+                        <li>
+                           Хуванцар савлагаатай: 0.3л,0,5л,0.9, 1.25л, 2.0л
+                        </li>
+                        <li>Лаазтай: 0.2л,0.33л</li>
+                        <li> Шилэн савлагаа: 0,2л</li>
+                     </ul>
+                     <table style="background-color: #c4c4c4; padding-bottom: 2em;">
+                        <tr style="background-color: #808080;">
+                           <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
+                           <th>ОРЦ НАЙРЛАГА</th>
+                        </tr>
+                        <tr>
+                           <th>Илчлэг-32.5 ккал</th>
+                           <th>Ус, сахар, хийжүүлэгч (нүүрсхүчлийн хий 290), хүчиллэг зохицуулагч (330), амт үнэр оруулагч, нөөшлөгч (211,202), чихэрлэг амт оруулагч (950,955), хүнсний будагч (110,102)</th>
+                        </tr>
+                        <tr>
+                           <th>Нүүрс ус-8 г</th>
+                        </tr>
+                        <tr>
+                           <th> Сахар-8 г</th>
+                        </tr>
+                        <tr>
+                           <th>Уураг-0 г</th>
+                        </tr>
+                        <tr>
+                           <th>Тос-0 г</th>
+                        </tr>
+                        <tr>
+                           <th>Натри-13 мг </th>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </section>
+            <!-- Bonaque Modal -->
+            <section id="bonaquaModal" class="modal">
+               <div class="bonaqua-modal-content">
+                  <div class="modal-header">
+                     <span  class="close4">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                     <p>Bonaqua гэдэг нь Францаар “САЙН УС” гэсэн утгатай үг юм. </p>
+                     <p>Bonaqua савласан усыг анх 1988 онд Герман Улсад үйлдвэрлэсэн бөгөөд одоо Европи, Ази, Америк зэрэг тивүүдийн олон улс орнуудад үйлдвэрлэн худалдаалж байна. Дэлхийн нэр хүндтэй энэхүү бүтээгдэхүүнийг Монголын зах зээлд 2004 онд анх гаргаж одоог хүртэл Олон Улсын болон Монгол улсын стандартын дагуу үйлдвэрлэн хэрэглэгчиддээ хүргэж байна.</p>
+                     <p>Bonaqua цэвэр ус нь 5 дамжлагаар шүүж цэвэршүүлсэн, хүний биед шаардлагатай эрдэс  бодисуудыг нэмэлтээр хийн, үйлдвэрлэлийн озоноор ариутган савласан онцлог бүтээгдэхүүн юм.</p>
+                     <p>Бонакуа цэвэр ус нь хүний биед шаардлагатай шингэний хэрэгцээг нөхөх бөгөөд бүх насны хүмүүс хэрэглэхэд тохиромжтой, амны цангааг бүрэн тайлах бүтээгдэхүүн юм.</p>
+                     <p>Монголын №1 цэвэр ус Bonaqua</p>
+                     <ul>
+                        <li>
+                           Хуванцар савлагаатай: 330мл , 500мл, 1500мл, 4500мл
+                        </li>
+                     </ul>
+                     <table style="background-color: #c4c4c4; padding-bottom: 2em;">
+                        <tr style="background-color: #808080;">
+                           <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
+                           <th>ОРЦ НАЙРЛАГА</th>
+                        </tr>
+                        <tr>
+                           <th>Илчлэг-0 ккал</th>
+                           <th>Ус, магнийн сульфат, калийн хлорид, натрийн хлорид</th>
+                        </tr>
+                        <tr>
+                           <th>Нүүрс ус-0 г</th>
+                        </tr>
+                        <tr>
+                           <th> Сахар-0 г</th>
+                        </tr>
+                        <tr>
+                           <th>Уураг-0 г</th>
+                        </tr>
+                        <tr>
+                           <th>Тос-0 г</th>
+                        </tr>
+                        <tr>
+                           <th>Натри-1 мг </th>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </section>
+            <!-- Peace Tea Modal -->
+            <section id="peaceTeaModal" class="modal">
+               <div class="peace-modal-content">
+                  <div class="modal-header">
+                     <span  class="close5">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                     <p>
+                        Peace Tea брэнд 2009 оны 12 сард дэлхийн зах зээлд танилцуулагдсан ба эерэг байдал, олон соёлт, өөдрөг үзлийг залуу үеийнхэнд  уриалахад зориулан гаргасан цай юм. 
+                     </p>
+                     <p>Монгол Улсын зах зээлд 2020 оны 6 сард Алтан жүрж, Ойн жимс, Алим ба Киви гэсэн шинэлэг өнгө төрх бүхий онцгой жимсний амтууд, сэнгэнэсэн гааны амт хосолсон 3 төрлийн цайг танилцуулаад байна</p>
+                     <ul>
+                        <li>
+                           Хуванцар савлагаатай: 330мл , 500мл, 1500мл, 4500мл
+                        </li>
+                     </ul>
+                     <table style="background-color: #c4c4c4; padding-bottom: 2em;">
+                        <tr style="background-color: #808080;">
+                           <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
+                           <th>ОРЦ НАЙРЛАГА</th>
+                        </tr>
+                        <tr>
+                           <th>Илчлэг-29 ккал</th>
+                           <th>Ус, сахар, цайны ханд, цайны нунтаг,</th>
+                        </tr>
+                        <tr>
+                           <th>Нүүрс ус-7.1 г</th>
+                           <th>хүчиллэг зохицуулагч (330, 331), үл</th>
+                        </tr>
+                        <tr>
+                           <th> Сахар-7.1 г</th>
+                           <th>исэлдүүлэгч (1520, 422, 473), чихэрлэг</th>
+                        </tr>
+                        <tr>
+                           <th>Уураг-0 г</th>
+                           <th>амт оруулагч (960, 420), амт үнэр оруулагч</th>
+                        </tr>
+                        <tr>
+                           <th>Тос-0 г</th>
+                        </tr>
+                        <tr>
+                           <th>Натри-1 мг </th>
+                        </tr>
+                     </table>
+                  </div>
+                  <div class="modal-body">ndsjhfbsudhfb</div>
+               </div>
+            </section>
+            <!-- Моя Семья -->
+            <section id="moyModal" class="modal">
+               <div class="moy-modal-content">
+                  <div class="modal-header">
+                     <span  class="close6">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                     <p>
+                        Peace Tea брэнд 2009 оны 12 сард дэлхийн зах зээлд танилцуулагдсан ба эерэг байдал, олон соёлт, өөдрөг үзлийг залуу үеийнхэнд  уриалахад зориулан гаргасан цай юм. 
+                     </p>
+                     <p>Монгол Улсын зах зээлд 2020 оны 6 сард Алтан жүрж, Ойн жимс, Алим ба Киви гэсэн шинэлэг өнгө төрх бүхий онцгой жимсний амтууд, сэнгэнэсэн гааны амт хосолсон 3 төрлийн цайг танилцуулаад байна</p>
+                     <ul>
+                        <li>
+                           Хуванцар савлагаатай: 330мл , 500мл, 1500мл, 4500мл
+                        </li>
+                     </ul>
+                     <table style="background-color: #c4c4c4; padding-bottom: 2em;">
+                        <tr style="background-color: #808080;">
+                           <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
+                           <th>ОРЦ НАЙРЛАГА</th>
+                        </tr>
+                        <tr>
+                           <th>Илчлэг-29 ккал</th>
+                           <th>Ус, сахар, цайны ханд, цайны нунтаг,</th>
+                        </tr>
+                        <tr>
+                           <th>Нүүрс ус-7.1 г</th>
+                           <th>хүчиллэг зохицуулагч (330, 331), үл</th>
+                        </tr>
+                        <tr>
+                           <th> Сахар-7.1 г</th>
+                           <th>исэлдүүлэгч (1520, 422, 473), чихэрлэг</th>
+                        </tr>
+                        <tr>
+                           <th>Уураг-0 г</th>
+                           <th>амт оруулагч (960, 420), амт үнэр оруулагч</th>
+                        </tr>
+                        <tr>
+                           <th>Тос-0 г</th>
+                        </tr>
+                        <tr>
+                           <th>Натри-1 мг </th>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </section>
+            <!-- Fuze Tea -->
+            <section id="fuzeModal" class="modal">
+               <div class="fuze-modal-content">
+                  <div class="modal-header">
+                     <span  class="close7">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                     <p>
+                        FUZE TEA брэнд 2012 онд дэлхийн 14 орны зах зээлд зэрэг танилцуулагдсаны нэг нь Монгол Улс байсан юм. 
+                     </p>
+                     <p>Цай, жимс болон бусад байгалийн түүхий эдүүдийн төгс зохицол бүхий эрч хүчийг бэлэглэх FUZE TEA брэнд өнөөдөр дэлхийн 40 орчим улсын зах зээлд 30 гаруй төрлийн сонголттойгоор борлуулагдаж байгаа бөгөөд Монгол Улсын хувьд  цайны зах зээлийг тодорхойлж буй тэргүүлэгч брэндийн байр суурийг эзэлж байна.</p>
+                     <ul>
+                        <li>
+                           Хуванцар савлагаатай: 330мл , 500мл, 1500мл, 4500мл
+                        </li>
+                     </ul>
+                     <table style="background-color: #c4c4c4; padding-bottom: 2em;">
+                        <tr style="background-color: #808080;">
+                           <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
+                           <th>ОРЦ НАЙРЛАГА</th>
+                        </tr>
+                        <tr>
+                           <th>Илчлэг-34 ккал</th>
+                           <th>Ус, сахар, нимбэгний шүүс, хүчиллэг зохицуулагч  (330.331), цайны ханд, байгалийн амт үнэр оруулагчид, үл исэлдүүлэгч (300.301)</th>
+                        </tr>
+                        <tr>
+                           <th>Нүүрс ус-8.1 г</th>
+                           <th></th>
+                        </tr>
+                        <tr>
+                           <th> Сахар-8.1 г</th>
+                           <th></th>
+                        </tr>
+                        <tr>
+                           <th>Уураг-0 г</th>
+                           <th></th>
+                        </tr>
+                        <tr>
+                           <th>Тос-0 г</th>
+                        </tr>
+                        <tr>
+                           <th>Натри-18 мг </th>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </section>
+            <!-- Minute Maid -->
+            <section id="minuteModal" class="modal">
+               <div class="minute-modal-content">
+                  <div class="modal-header">
+                     <span  class="close8">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                     <p>
+                        Minute Maid нь шүүс үйлдвэрлэлийн 60 гаруй жилийн арвин туршлагатай бөгөөд чанар, шинэчлэлт, шимт бодисын гайхамшигт уламжлалтай билээ. 
+                     </p>
+                     <p>Нарны гэрэлд боловсорсон сайн чанарын жүржийг сонгон авч, дээд зэргийн амттай жүржийн зөөлөн эдийг тусгайлан нэмсэн гайхалтай амт бүхий Minute Maid Жүржийн шүүсийг танд зориулдаг билээ.</p>
+                     <p>1945 онд АНУ-ын цэргийн хүчин Флорида Фоодс корпорациас 500 мянган поунд буюу 250 мянга орчим килограмм нунтаг жүржийн жүүс захиалсан нь хожим Вакум Фоодс болж сүүлд нь Минут Мэйд корпораци болж нэршил нь өөрчлөгдсөн байна.  Минут Мэйд корпорацийг 1960 онд Кока-Кола компани худалдан авсан нь оргилуун ундаанаас өөр төрлийн бизнесийг эхлүүлсэн анхны аз сорьсон алхам байсан юм.</p>
+                     <ul>
+                        <li>
+                           Хуванцар савлагаатай: 330мл , 500мл, 1500мл, 4500мл
+                        </li>
+                     </ul>
+                     <table style="background-color: #c4c4c4; padding-bottom: 2em;">
+                        <tr style="background-color: #808080;">
+                           <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
+                           <th>ОРЦ НАЙРЛАГА</th>
+                        </tr>
+                        <tr>
+                           <th>Илчлэг-34 ккал</th>
+                           <th>Ус, сахар, нимбэгний шүүс, хүчиллэг зохицуулагч  (330.331), цайны ханд, байгалийн амт үнэр оруулагчид, үл исэлдүүлэгч (300.301)</th>
+                        </tr>
+                        <tr>
+                           <th>Нүүрс ус-8.1 г</th>
+                           <th></th>
+                        </tr>
+                        <tr>
+                           <th> Сахар-8.1 г</th>
+                           <th></th>
+                        </tr>
+                        <tr>
+                           <th>Уураг-0 г</th>
+                           <th></th>
+                        </tr>
+                        <tr>
+                           <th>Тос-0 г</th>
+                        </tr>
+                        <tr>
+                           <th>Натри-18 мг </th>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </section>
+            <!-- Schweppes -->
+            <section id="schweppesModal" class="modal">
+               <div class="schweppes-modal-content">
+                  <div class="modal-header">
+                     <span  class="close9">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                     <p>
+                        Швейцарийн эрдэмтэн Жэйкоб Швеппе 1783 онд хийжүүлсэн ус гаргах аргыг улам боловсронгуй болгон патенжуулж авснаар дэлхий хамгийн анхны оргилуун ус болон ундааны Schweppes (Швеппс) брэнд үүссэн түүхтэй. Тэрээр 1792 оноос Лондон руу өөрийн бизнесийг шилжүүлэн өргөжүүлснээр Schweppes брэнд маш олон төрлийн амттай оргилуун ус болон ундаануудыг гаргаж дэлхий даяар өөрийн гэсэн сая сая хэрэглэгчидтэй болжээ.
+                     </p>
+                     <p>Дэлхий даяараа Schweppes-ийг дангаар цангаа тайлж уухаас гадна төрөл бүрийн уух зүйлстэй хольж олон төрлийн гайхалтай амт бүхий коктейл болгон хэрэглэдэг. Та ч гэсэн гэртээ туршаад үзээрэй.</p>
+                     <ul>
+                        <li>
+                           Хуванцар савлагаатай: 0.48л, 1.25л
+                        </li>
+                     </ul>
+                     <table style="background-color: #c4c4c4; padding-bottom: 2em;">
+                        <tr style="background-color: #808080;">
+                           <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
+                           <th>ОРЦ НАЙРЛАГА</th>
+                        </tr>
+                        <tr>
+                           <th>Илчлэг-34 ккал</th>
+                           <th>Ус, сахар, нимбэгний шүүс, хүчиллэг зохицуулагч  (330.331), цайны ханд, байгалийн амт үнэр оруулагчид, үл исэлдүүлэгч (300.301)</th>
+                        </tr>
+                        <tr>
+                           <th>Нүүрс ус-8.1 г</th>
+                           <th></th>
+                        </tr>
+                        <tr>
+                           <th> Сахар-8.1 г</th>
+                           <th></th>
+                        </tr>
+                        <tr>
+                           <th>Уураг-0 г</th>
+                           <th></th>
+                        </tr>
+                        <tr>
+                           <th>Тос-0 г</th>
+                        </tr>
+                        <tr>
+                           <th>Натри-18 мг </th>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </section>
+            <!-- Millenia -->
+            <section id="milleniaModal" class="modal">
+               <div class="millenia-modal-content">
+                  <div class="modal-header">
+                     <span  class="close10">&times;</span>
+                  </div>
+                  <div class="modal-body " style="color: #202020">
+                     <p>
+                        VIO Millenia байгалийн эрдэст ус нь Монгол орны онгон дагшин нутагт, газрын гүнд хуримтлагдах явцдаа үе давхаргуудад байрлах хөрс, чулуулгийн найрлагаар эрдэсжсэн бүтээгдэхүүн. Дэлхийн 200 гаруй улсад бүтээгдэхүүн үйлдвэрлэдэг Кока-Кола компанийн албан ёсны брэндийн нэг болох VIO  нэрийн дор үйлдвэрлэж борлуулах  эрхийг авсан Монголын анхны бүтээгдэхүүн.
+                     </p>
+                     <p>Европын Холбооны стандартын үзүүлэлтүүдийг хангасан ус
+                        Усны чанар нь Европын Холбооны ‘Байгалийн усны стандарт’ үзүүлэлтүүдийг хангасан болохыг Германы SGS лабораторийн 3 жилийн шинжилгээний дүнгээр баталгаажсан.
+                     </p>
+                     <p>Байгалиасаа шүлтлэг ус</p>
+                     <p> Газрын гүнээс гаргасан усны орчинг pH 7.8 болохыг тогтоов</p>
+                     <table style="background-color: #c4c4c4; padding-bottom: 2em;">
+                        <tr style="background-color: #808080;">
+                           <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
+                           <th>ОРЦ НАЙРЛАГА</th>
+                        </tr>
+                        <tr>
+                           <th>Илчлэг-0 ккал</th>
+                           <th>Кальци-50</th>
+                        </tr>
+                        <tr>
+                           <th>Нүүрс ус-0г</th>
+                           <th>Магни-12 г</th>
+                        </tr>
+                        <tr>
+                           <th>Чихэр-0 гр </th>
+                           <th>Натри-7,7</th>
+                        </tr>
+                        <tr>
+                           <th>Уураг-0 г</th>
+                           <th>Кали-1,85</th>
+                        </tr>
+                        <tr>
+                           <th>Тос-0 г</th>
+                           <th>Стронци- 0,23</th>
+                        </tr>
+                        <tr>
+                           <th>Натри-0.77 мг </th>
+                           <th>Бикарбонат-190</th>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </section>
+            <!-- Powerade -->
+            <section id="schweppesModal" class="modal">
+               <div class="schweppes-modal-content">
+                  <div class="modal-header">
+                     <span  class="close9">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                     <p>
+                        Швейцарийн эрдэмтэн Жэйкоб Швеппе 1783 онд хийжүүлсэн ус гаргах аргыг улам боловсронгуй болгон патенжуулж авснаар дэлхий хамгийн анхны оргилуун ус болон ундааны Schweppes (Швеппс) брэнд үүссэн түүхтэй. Тэрээр 1792 оноос Лондон руу өөрийн бизнесийг шилжүүлэн өргөжүүлснээр Schweppes брэнд маш олон төрлийн амттай оргилуун ус болон ундаануудыг гаргаж дэлхий даяар өөрийн гэсэн сая сая хэрэглэгчидтэй болжээ.
+                     </p>
+                     <p>Дэлхий даяараа Schweppes-ийг дангаар цангаа тайлж уухаас гадна төрөл бүрийн уух зүйлстэй хольж олон төрлийн гайхалтай амт бүхий коктейл болгон хэрэглэдэг. Та ч гэсэн гэртээ туршаад үзээрэй.</p>
+                     <ul>
+                        <li>
+                           Хуванцар савлагаатай: 0.48л, 1.25л
+                        </li>
+                     </ul>
+                     <table style="background-color: #c4c4c4; padding-bottom: 2em;">
+                        <tr style="background-color: #808080;">
+                           <th >ТЭЖЭЭЛЛЭГ ЧАНАР(100мл)</th>
+                           <th>ОРЦ НАЙРЛАГА</th>
+                        </tr>
+                        <tr>
+                           <th>Илчлэг-34 ккал</th>
+                           <th>Ус, сахар, нимбэгний шүүс, хүчиллэг зохицуулагч  (330.331), цайны ханд, байгалийн амт үнэр оруулагчид, үл исэлдүүлэгч (300.301)</th>
+                        </tr>
+                        <tr>
+                           <th>Нүүрс ус-8.1 г</th>
+                           <th></th>
+                        </tr>
+                        <tr>
+                           <th> Сахар-8.1 г</th>
+                           <th></th>
+                        </tr>
+                        <tr>
+                           <th>Уураг-0 г</th>
+                           <th></th>
+                        </tr>
+                        <tr>
+                           <th>Тос-0 г</th>
+                        </tr>
+                        <tr>
+                           <th>Натри-18 мг </th>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </section>
+         </section>
+      </main>
+      <footer>
+         <section class="footer ">
+            <section class="footer-product">
+               <ul>
+                  <h5><a href="Products.html">Бренд</a></h5>
+                  <hr>
+                  <li><a href="productDetails.html">Coca-Cola</a></li>
+                  <li><a href="productDetails.html">Fanta</a></li>
+                  <li><a href="productDetails.html">Sprite</a></li>
+                  <li><a href="productDetails.html">Fuzetea</a></li>
+                  <li><a href="productDetails.html">Minute Maid</a></li>
+                  <li><a href="productDetails.html">Powerade</a></li>
+                  <li><a href="productDetails.html">Peace Tea</a></li>
+               </ul>
+            </section>
+            <article class="social-responsibility">
+               <ul>
+                  <h5><a href="niigem.html">НИЙГМИЙН ХАРИУЦЛАГА</a></h5>
+                  <hr>
+                  <li><a href="niigem.html">Эрүүл, идэвхтэй амьдрал</a></li>
+                  <li><a href="job.html">Ажлын байр</a></li>
+                  <li><a href="niigem.html">Энергийн менежмэнт</a></li>
+                  <li><a href="niigem.html">Ус хэмнэлт</a></li>
+                  <li><a href="niigem.html">Сав баглаа боодлын менежмэнт</a></li>
+                  <li><a href="niigem.html">Хамтарч ажиллах санал хүсэлт</a></li>
+               </ul>
+            </article>
+            <article class="footer-aboutus">
+               <ul>
+                  <h5 ><a href="aboutus.html">БИДНИЙ ТУХАЙ </a></h5>
+                  <hr>
+                  <li><a href="aboutus.html">М-СИ-ЭС Кока-Кола ХХК-ийн тухай</a></li>
+                  <li><a href="aboutus.html">М-СИ-ЭС Группын тухай</a></li>
+                  <li><a href="aboutus.html">Кока-Кола компанийн тухай</a></li>
+                  <h5><a href="medee.html">МЭДЭЭ МЭДЭЭЛЭЛ</a></h5>
+                  <hr>
+                  <li><a href="medee.html">Мэдээ</a></li>
+                  <li><a href="medee.html">Фото</a></li>
+                  <li><a href="medee.html">Видео</a></li>
+               </ul>
+            </article>
+            <section class="footer-contact">
+               <p>ХОЛБОГДОХ</p>
+               <hr>
+               <form>
+                  <label for="type">Төрлөө сонгоно уу?</label>
+                  <select id="type" name="type">
+                     <option value="message">Гомдол , санал</option>
+                     <option value="message">Хамтран ажиллаж санал</option>
+                  </select>
+                  <br />
+                  <label for="email">Имэйл</label> <br />
+                  <input type="text" id="email" name="mail" /><br />
+                  <label for="phone">Утас</label> <br />
+                  <input type="text" id="phone" name="number" /><br />
+                  <label for="message">Мессеж</label> <br />
+                  <input type="text" id="message" name="sms" /><br />
+                  <br />
+                  <input class="footer-contact-button" type="submit" value="Илгээнэ үү" />
+               </form>
+            </section>
+         </section>
+         <section class="footer-bottom ">
+            <section class="footer-Logo">
+               <picture>
+                  <source
+                     srcset="img/footer/footer-logo 1.png"
+                     media="(min-width:1020px)"
+                     />
+                  <source
+                     srcset="/img/footer/footer-logo 1.png"
+                     media="(min-width:800px)"
+                     />
+                  <img src="img/footer/footer.png" alt="footer-logo" />
+               </picture>
+            </section>
+            <section class="icons">
+               <a href="https://www.facebook.com/CocaColaMongolia">
+               <img class="icon" alt="icons" src="img/Footer/facebook.png" />
+               </a>
+               <a href="https://www.instagram.com/cocacolamongolia/" >
+               <img class="icon" alt="icons" src="img/Footer/instagram.png" />
+               </a>
+               <a href="https://www.youtube.com/channel/UCtqoKNEFjf6qiTk7J846XpQ">
+               <img class="icon" alt="icons" src="img/Footer/youtube.png" />
+               </a>
+            </section>
+            <article class="bottom-footer-title">
+               <p>COPYRIGHT © MCS Coca-Cola Company</p>
+            </article>
+         </section>
+      </footer>
+      <script src="./mobileMenu.js"></script>
+      <script src="./Modal/modal.js" ></script>
+      <script src = "./Modal//fantaModal.js" ></script>
+      <script src="./Modal/spriteModal.js" ></script>
+      <script src = "./Modal/bonaqua.js" ></script>
+      <script src = "./Modal/peaceTea.js" ></script>
+      <script src = "./Modal/Moya.js" ></script>
+      <script src = "./Modal/fuzeTea.js"  ></script>
+      <script src = "./Modal/MinuteMaid.js"  ></script>
+      <script src = "./Modal/schweppes.js"  ></script>
+      <script src = "./Modal/millenia.js"  ></script>
+      <script src="./productSlider.js" ></script>
+   </body>
 </html>
