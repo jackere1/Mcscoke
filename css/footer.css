@@ -89,6 +89,10 @@ input[type="text"] {
   width: 6.6em;
   height: auto;
 }
+.icon:hover{
+  transform: rotate3d(1,1,1,360deg);
+  transition: all 1s ease ;
+}
 @media only screen and (min-width: 1200px) {
   hr {
     display: none;

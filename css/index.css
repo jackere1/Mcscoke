@@ -8,6 +8,10 @@ body {
 img {
   max-width: 100%;
 }
+.mcs-logo:hover{
+  transform: rotate3d(1,1,1,360deg);
+  transition: all 1s ease;
+}
 /* nav css */
 .nav {
   box-sizing: border-box;
@@ -83,12 +87,66 @@ img {
   margin-left: 1em;
   text-align: justify;
 }
-.product-title > a > button {
-  background-color: #000000;
-  color: var(--white);
+
+.product-button {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background-color: #000;
+
   padding: 1em;
-  border-radius: var(--radius);
+  border-radius: 1.5rem;
+  border: 2px solid black;
+
 }
+.product-button>span{
+  color: #fff;
+}
+
+.product-button::before,
+.product-button::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 20%;
+}
+.product-button::before {
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.product-button::after {
+  content: attr(data-replace);
+  height: 100%;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: var(--main-bg-color);
+  
+}
+
+.product-button:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.product-button:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.product-button span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.product-button:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+/* Presentational Styles */
+
+
+
 .product-img {
   margin-left: 2.5em;
 }
@@ -302,6 +360,10 @@ input[type="text"] {
 .icon {
   width: 1.5em;
   height: auto;
+}
+.icon:hover{
+  transform: rotate3d(1,1,1,360deg);
+  transition: all 1s ease ;
 }
 .footer-contact {
   color: #aeaeae;
