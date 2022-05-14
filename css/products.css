@@ -94,6 +94,7 @@ img {
 .product:hover .transition1 {
   bottom: 0;
   height: 100%;
+  left: 0;
   outline:none;
   transition: .4s ease;
   

@@ -47,6 +47,10 @@
   width: 2.5rem;
   text-align: center;
 }
+.mcs-logo:hover{
+  transform: rotate3d(1,1,1,360deg);
+  transition: all 1s ease;
+}
 @media only screen and (max-width: 1000px) {
   .nav-logo {
     width: 8em;

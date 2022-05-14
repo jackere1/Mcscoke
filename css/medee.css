@@ -8,3 +8,37 @@ body {
 img {
   max-width: 100%;
 }
+
+.newsItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: var(--main-padding);
+}
+.news {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 12rem;
+  background-color: white;
+  border-bottom: 1px solid hsla(45, 4%, 81%, 0.5);
+  padding: 2em;
+}
+@media only screen and (max-width: 480px) {
+  .newsItem {
+    margin: var(--mobile-padding);
+  }
+}
+.newsImg {
+  position: relative;
+}
+.news-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.news-title {
+  font-weight: bold;
+}
+.news-date {
+  bottom: 0;
+}
