@@ -10,18 +10,28 @@ img {
 }
 
 .first {
+  margin: 0 10%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
 }
 
 .first > button {
-  width: 15vw;
-  height: 2vw;
-  background-color: rgba(255, 0, 0, 0.8);
+  border-radius: 2rem;
+  width: 300px;
+  height: 5vh;
+  background-color: rgba(255, 0, 0, 1);
   color: var(--white);
   border: 2px red solid;
-  font-size: 1vw;
+  font-size: 1.2rem;
   cursor: pointer;
+  opacity: 65%;
+}
+
+
+.first > button:hover{
+  background-color: #000;
+  /* color: black; */
 }
 
 .buttons > button {
@@ -43,10 +53,6 @@ img {
   background-color: var(--gray);
 }
 
-.first > button:hover{
-  background-color: #fff;
-  color: black;
-}
 
 .nopixel > img {
   width: 10vw;
@@ -55,8 +61,19 @@ img {
 .bg {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
+  height: 75vh;
   background: linear-gradient(0deg, #FFF 1%, grey 30%, var(--gray) 90%);
+  z-index: -2;
+}
+
+.bg > img {
+  border-radius: 10vw;
+  box-shadow: 0 0 5vh 2vh #000;
+  top: 15vh;
+  position: absolute;
+  width: 1600px;
+  height: 90%;
 }
 
 .mainbg {
@@ -99,22 +116,44 @@ div > p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20vh;
 }
 
 @media only screen and (max-width: 1000px){
+  .bg > img {
+    width: 100%;
+    height: 70%;
+  }
+  .bg {
+    height: 65vh;
+  }
   .human {
     width: 10vw;
   }
+  .first {
+    justify-content: center;
+    /* margin: 0; */
+  }
+  .first > button:first-child {
+    margin-left: 10%;
+  }
   .first > button {
+    /* position: absolute; */
+    /* z-index: 1; */
+    margin: 0 1%;
     width: 30vw;
-    height: 4vw;
+    height: 5vh;
     font-size: 2vw;
+    bottom: 100vh;
   }
 
   .buttons > button {
-    width: 30vw;
+    width: 25vw;
     height: 5vw;
-    font-size: 1vw;
+    font-size: 1.3vw;
+  }
+  .info {
+    margin-top: 2vh; 
   }
 
   .images {
@@ -126,5 +165,25 @@ div > p {
 
   h2 {
     font-size: 2vw;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .bg > img {
+    width: 80%;
+    height: 30%;
+  }
+  .bg {
+    margin-right: 5%;
+    height: 30vh;
+  }
+  .first > button {
+    margin: 0;
+    width: 100%;
+    height: 3vh;
+  }
+  .info {
+    margin-top: 0; 
   }
 }

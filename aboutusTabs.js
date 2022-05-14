@@ -1,5 +1,5 @@
 const renderGroup = () => {
-    document.getElementsByClassName("info").style.backgroundImage = "url('img/aboutUs/bg1.jpg')";
+    // document.getElementsByClassName("info").style.backgroundImage = "url('img/aboutUs/bg1.jpg')";
     fetch("https://api.jsonbin.io/b/62776adf019db4679697887c/1")
     .then(response => response.json())
     .then(data => {
