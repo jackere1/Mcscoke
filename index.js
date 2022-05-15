@@ -1,7 +1,7 @@
 const http = require("http");
 
 const fs = require("fs");
-const pg = require("pg");
+const { Pool } = require("pg");
 const urlObj = require("url");
 
 const hostname = "127.0.0.1";
@@ -9,7 +9,7 @@ const port = 3000;
 
 const server = http.createServer((req, res) => {
   let urlPath = req.url.split("/")[1];
-  console.log("html unshihiin umnu");
+  console.log("file unshihiin umnu");
   //#region file read
   // fs.readFile(urlPath, (err, data) => {
   //   if (err) {
@@ -30,13 +30,32 @@ const server = http.createServer((req, res) => {
   // #region PG
   const pool = new Pool({
     host: "localhost",
-    port: "3000",
+    port: "5432",
     database: "News",
-    user: "pguser",
-    password: "password",
+    user: "postgres",
+    password: "123",
   });
 
-  pool.query(``);
+  pool.query(`SELECT * FROM "medee"`),
+    (err, data) => {
+      res.write(`<html><head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Welcome</title>
+  </head><body><table>`);
+      for (const row of data.rows) {
+        res.write(
+          `<tr><td>${row.title}</td><td>` +
+            row.news +
+            `</td></tr>` +
+            row.onsar +
+            `</td></tr>`
+        );
+      }
+      res.write("</table></body></html>");
+      res.end();
+    };
   // #endregion PG
 });
 
