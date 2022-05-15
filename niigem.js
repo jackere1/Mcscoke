@@ -91,21 +91,20 @@ const niigem = () => {
     fetch("https://api.jsonbin.io/b/6277a010019db467969797d1")
     .then(response => response.json())
     .then(data => {
-        console.log(data);
         data.map(value => {
             return(
-                document.querySelector(".info").innerHTML += `<figure>
+                document.querySelector(".info").innerHTML += `<figure class="niigem">
                     <h2>${value.title}</h2>
                     ${value.p.map(elm => {
                         return(
                             `<span>${elm}</span>`
                         )
                     })}
-                    ${value.image.map(elm => {
+                    <div>${value.image.map(elm => {
                         return(
                             `<img src="${elm}" alt="${value.alt}"/>`
                         )
-                    })}
+                    })}<div>
                 </figure>`
             )
         })
