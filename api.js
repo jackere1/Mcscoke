@@ -21,7 +21,7 @@ const UIoptions = {
   explorer: true,
 };
 app.use(express.json());
-app.use("/medee", newsCategories);
+app.use("/medee", news);
 app.use("/medeepost", news);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(openapiSpec, UIoptions));
 
