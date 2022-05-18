@@ -105,9 +105,16 @@ input[type="text"] {
   height: 30px;
   border-radius: 10px;
 }
+
+.text-info {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .text-info > div {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
 }
 .texting[type=text] {
   border-radius: 2rem;
