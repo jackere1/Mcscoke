@@ -55,7 +55,7 @@ img {
   width: 2.5rem;
   text-align: center;
 }
-.mcs{
+.mcs {
   border-radius: var(--radius);
 }
 /*nav-css*/
@@ -100,7 +100,7 @@ img {
   padding: 0 11em 0 11em;
   margin-top: 2em;
 }
-.mcs{
+.mcs {
   border-radius: var(--radius);
 }
 .information2 {
@@ -151,7 +151,7 @@ img {
   text-align: center;
   cursor: pointer;
 }
-.text>button{
+.text > button {
   border-radius: var(--radius);
   background-color: rgb(191, 45, 0, 10%);
   color: var(--white);
@@ -182,7 +182,6 @@ img {
   text-align: center;
   border-radius: 0.6em 0.6em 0 0;
   margin-bottom: 0.25em;
-  
 }
 
 .vacancy:hover .information2-vacancy-overlay {
@@ -190,7 +189,7 @@ img {
 }
 .information2-overlay {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   background: rgb(196, 197, 88, 90%);
   color: #f1f1f1;
   width: 100%;
@@ -202,7 +201,7 @@ img {
   border-radius: 0.6em 0.6em 0 0;
   margin-bottom: 0.25em;
 }
-.information2-vacancy-overlay > h3 > a{
+.information2-vacancy-overlay > h3 > a {
   text-decoration: none;
   color: var(--white);
 }
