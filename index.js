@@ -5,7 +5,7 @@ const { Pool } = require("pg");
 const urlObj = require("url");
 
 const hostname = "127.0.0.1";
-const port = 3000;
+const port = 5000;
 
 const server = http.createServer((req, res) => {
   let urlPath = req.url.split("/")[1];

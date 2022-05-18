@@ -21,7 +21,8 @@ const UIoptions = {
   explorer: true,
 };
 app.use(express.json());
-app.use("/news", news);
+app.use("/medee", newsCategories);
+app.use("/medeepost", news);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(openapiSpec, UIoptions));
 
 /**
@@ -33,15 +34,6 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(openapiSpec, UIoptions));
  *       200:
  *         description: Returns a mysterious string.
  */
-app.get("/", (req, res) => {
-  res.send("index");
-});
-
-app.get("/news", (req, res) => {
-  res.send(
-    '{"news":[{"id":"1","title":"Title1"},{"id":"2","title":"Title2"}]}'
-  );
-});
 
 app.listen(port, () => {
   console.log("//localhost:5000");

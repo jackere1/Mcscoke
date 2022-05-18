@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta
-      name="description"
-      content="MCS Coca-Cola, М-Си-Эс Кока-Кола, Кока-Кола"
-    />
-    <meta
-      name="keywords"
-      content="MCS Coca-Cola, М-Си-Эс Кока-Кола, Кока-Кола"
-    />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="icon" href="img/icon.png" type="image/x-icon" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:type" content="website" />
     <meta charset="UTF-8" />
+    <meta name="description" content="Latest about MCS, Mcs news, Mcs 2022" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomePage</title>
+    <link rel="stylesheet" href="./css/medee.css" />
+    <link rel="icon" href="img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/medee.css" />
+    <script type="module" src="./Modules/app.js"></script>
+    <script src="./component.js"></script>
+    <script src="./api.js"></script>
+    <script src="./routes/*.js"></script>
+    <title>News</title>
   </head>
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <script src="./component.js"></script>
-
   <body>
     <header>
-      <!-- header heseg -->
       <mcs-header></mcs-header>
     </header>
     <main>
-      <h1>Hello</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
-        optio? Earum vero mollitia ex nulla quia laudantium voluptatibus facilis
-        illum dolorem? Dolorum eum quis qui? Itaque officiis doloribus odio
-        enim.
-      </p>
+      <section id="newsItems"></section>
     </main>
     <footer>
       <mcs-footer></mcs-footer>
     </footer>
     <script src="./mobileMenu.js"></script>
-    <script src="./Scroll.js"></script>
   </body>
 </html>
