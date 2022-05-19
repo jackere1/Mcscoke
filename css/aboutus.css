@@ -29,6 +29,7 @@ main {
 .reveal.active {
   opacity: 1;
 }
+
 .buttons {
   margin: 2% 10% 2% 10%;
   width: 100%;
@@ -42,6 +43,13 @@ main {
   height: 6vh;
   color: var(--white);
   font-size: 1.2vw;
+  border: 2px solid var(--red);
+}
+
+.buttons > button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
 }
 
 .buttons > button:hover {

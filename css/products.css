@@ -97,6 +97,7 @@ img {
   left: 0;
   outline: none;
   transition: 0.4s ease;
+
 }
 /* Fanta */
 .transition2 {
@@ -414,6 +415,7 @@ img {
 }
 
 .hvsnegt > ul {
+
   text-decoration: none;
 }
 

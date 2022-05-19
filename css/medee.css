@@ -35,10 +35,12 @@ img {
   position: relative;
   height: 100%;
   width: auto;
+
 }
 .news-title {
   font-weight: bold;
 }
+
 .news-title:hover {
   cursor: pointer;
   color: var(--main-bg-color);

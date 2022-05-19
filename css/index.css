@@ -5,12 +5,14 @@
 body {
   margin: 0;
   font-family: var(--main-font);
+
 }
 img {
   max-width: 100%;
 }
 .mcs-logo:hover {
   transform: rotate3d(1, 1, 1, 360deg);
+
   transition: all 1s ease;
 }
 /* nav css */
@@ -113,6 +115,7 @@ img {
   transform-origin: 100% 50%;
   transform: scaleX(0);
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+
 }
 .product-button::after {
   content: attr(data-replace);
@@ -141,7 +144,6 @@ img {
 }
 
 /* Presentational Styles */
-
 .product-img {
   margin-left: 2.5em;
 }
@@ -302,6 +304,7 @@ img {
 }
 .reveal-information-img2 {
   transform: translateX(20px);
+
 }
 .reveal-information-img3 {
   transform: translateY(20px);
@@ -316,6 +319,15 @@ img {
   opacity: 1;
   transition: all 1.3s ease;
   transform: translateX(0);
+}
+.reveal{
+  opacity: 0;
+  right: -100%;
+}
+
+.reveal.active{
+  opacity: 1;
+  transition: all 2s ease;
 }
 @media only screen and (min-width: 1020px) {
   hr {

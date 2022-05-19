@@ -12,6 +12,7 @@ const news = () => {
         <div class="news-title" id="title">${value.title}</div>
         <div class="news-description" id="description">${value.description}</div>
         <div class="news-date" id="date">${value.date}</div>
+
             </div>
             </div>`);
       });

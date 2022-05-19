@@ -1,3 +1,4 @@
+
 window.addEventListener("scroll", reveal);
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -13,3 +14,4 @@ function reveal() {
   }
 }
 console.log(object);
+

@@ -3,12 +3,14 @@ class Header extends HTMLElement {
     this.innerHTML = `
     <nav class="nav">
          <section class="nav-logo">
+
          <a href = "index.html">
             <img src="img/Navbar/mcs_logo_nav.png"/>
           <a/>
            </section>
         <ul class="nav-menu">
           <li class="nav-item active"><a href="index.html" class="nav-link ">Нүүр хуудас</a></li>
+
           <li class="nav-item"><a href="Products.html" class="nav-link">Бүтээгдэхүүнүүд</a></li>
           <li class="nav-item"><a href="aboutus.html" class="nav-link">Бидний тухай</a></li>
           <li class="nav-item"><a href="niigem.html" class="nav-link">Нийгмийн хариуцлага</a></li>
@@ -34,7 +36,7 @@ class Footer extends HTMLElement {
      <section class="footer ">
       <section class="footer-product">
          <ul>
-            <h5><a href="Products.html">Бренд</a></h5>
+            <h5><a href="Products.html">БРЕНД</a></h5>
             <hr>
             <li><a href="productDetails.html">Coca-Cola</a></li>
             <li><a href="productDetails.html">Fanta</a></li>
@@ -75,21 +77,26 @@ class Footer extends HTMLElement {
       <section class="footer-contact">
         <p>ХОЛБОГДОХ</p>
         <hr>
-        <form class= "footer-contact">
-        <div >
+        <form class="footer-contact">
          <label for="type">Төрлөө сонгоно уу?</label>
-          <select id="type" name="type">
-      <option value="message">Гомдол , санал</option>
-      <option value="message">Хамтран ажиллаж санал</option>
-    </select> </div> <br />
-    <div>
-          <label for="email">Имэйл</label> <br />
-          <input class = "phoneNumber" type="text" id="email" name="mail" /><br />
-          <label for="phone">Утас</label> <br />
-          <input class = "phoneNumber" type="text" id="phone" name="number" /><br />
-          <label for="message">Мессеж</label> <br />
-          <input class="message" type="text" id="message" name="sms" /><br />
-          <br />
+          <select id="type" name="type" class="selection">
+      <option value="message">Гомдол, санал хүсэлт</option>
+      <option value="message">Хамтран ажиллах санал</option>
+    </select> <br>
+          <div class="text-info">
+            <div>
+              <label for="email">Имэйл</label>
+              <input type="text" class="info" id="email" name="mail" placeholder="Dulmaa@mcs.com"/><br />
+            </div>
+            <div>
+              <label for="phone">Утас</label>
+              <input type="text" class="info" id="phone" name="number" placeholder="+976 99112233"/><br />
+            </div>
+          </div>
+
+            <label for="message">Мессеж</label>
+            <input type="text" class="texting" id="message" name="sms" width="200px" height="100px"/><br />
+            <br /> 
           <input class="footer-contact-button" type="submit" value="Илгээнэ үү" />
         </form>
       </section>

@@ -4,25 +4,38 @@
 body {
   margin: 0;
   font-family: var(--main-font);
-  background-image: url("../img/NiigemHariutslaga/sr-bg\ \(1\).jpg");
 }
 img {
   max-width: 100%;
 }
 
+.nav {
+  background-color: #000;
+}
+
 .first {
+  margin: 0 10%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
 }
 
 .first > button {
-  width: 15vw;
-  height: 2vw;
-  background-color: rgba(255, 0, 0, 0.8);
+  border-radius: 2rem;
+  width: 300px;
+  height: 5vh;
+  background-color: rgba(255, 0, 0, 1);
   color: var(--white);
   border: 2px red solid;
-  font-size: 1vw;
+  font-size: 1.2rem;
   cursor: pointer;
+  opacity: 65%;
+}
+
+
+.first > button:hover{
+  background-color: #000;
+  /* color: black; */
 }
 
 .buttons > button {
@@ -33,7 +46,7 @@ img {
   border: 2px white solid;
   font-size: 1vw;
   cursor: pointer;
-  margin: 10vh 0;
+  margin: 5vh 0;
 }
 
 .buttons > button:hover {
@@ -44,11 +57,6 @@ img {
   background-color: var(--gray);
 }
 
-.first > button:hover {
-  background-color: #fff;
-  color: black;
-}
-
 .nopixel > img {
   width: 10vw;
 }
@@ -56,8 +64,19 @@ img {
 .bg {
   display: flex;
   justify-content: center;
-  width: 100%;
-  background: linear-gradient(0deg, #fff 1%, grey 30%, var(--gray) 90%);
+  width: 100vw;
+  height: 75vh;
+  background: linear-gradient(0deg, #FFF 1%, grey 30%, var(--gray) 90%);
+  z-index: -2;
+}
+
+.bg > img {
+  border-radius: 10vw;
+  box-shadow: 0 0 5vh 2vh #000;
+  top: 15vh;
+  position: absolute;
+  width: 1600px;
+  height: 90%;
 }
 
 .mainbg {
@@ -66,10 +85,10 @@ img {
 }
 
 .human {
-  width: 3%;
-  height: 5%;
-  border-right: 2px red solid;
-  margin: 10px;
+ width: 3%;
+ height: 5%;
+ border-right: 2px red solid;
+ margin: 10px;
 }
 
 .images {
@@ -83,7 +102,7 @@ img {
   /* display: none; */
 }
 h2 {
-  color: var(--red);
+  color: rgb(200, 0, 0);
 }
 div {
   display: flex;
@@ -100,32 +119,106 @@ div > p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20vh;
 }
 
-@media only screen and (max-width: 1000px) {
+.niigem {
+  display: flex;
+  flex-flow: column;
+  padding: 0 10%;
+  margin: 50px 0;
+}
+.niigem > div {
+  background-color: #000;
+  margin-top: 5vh;
+}
+
+.niigem > div > img {
+  width: 35vw;
+  height: 45vh;
+}
+
+@media only screen and (max-width: 1000px){
+  .niigem {
+    font-size: 12px;
+  }
+  .niigem > div > img {
+    width: 35vw;
+    height: 25vh;
+  }
+  .bg > img {
+    width: 100%;
+    height: 70%;
+  }
+  .bg {
+    height: 65vh;
+  }
   .human {
     width: 10vw;
   }
+  .first {
+    justify-content: center;
+    /* margin: 0; */
+  }
+  .first > button:first-child {
+    margin-left: 10%;
+  }
   .first > button {
+    /* position: absolute; */
+    /* z-index: 1; */
+    margin: 0 1%;
     width: 30vw;
-    height: 4vw;
+    height: 5vh;
     font-size: 2vw;
+    bottom: 100vh;
   }
 
   .buttons > button {
-    width: 30vw;
+    width: 25vw;
     height: 5vw;
-    font-size: 1vw;
+    font-size: 1.3vw;
+  }
+  .info {
+    margin-top: 10vh;   
   }
 
   .images {
     width: 90vw;
   }
-  div > p {
-    font-size: 0.8rem;
-  }
 
   h2 {
+    text-align: center;
     font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .niigem > div > img {
+    width: 30vw;
+    height: 25vh;
+  }
+  .niigem > div {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  .bg > img {
+    width: 80%;
+    height: 30%;
+  }
+  .bg {
+    margin-right: 5%;
+    height: 30vh;
+  }
+  .first > button {
+    margin: 0;
+    width: 100%;
+    height: 3vh;
+  }
+  .info {
+    margin-top: 5vh; 
+  }
+  h2{
+    font-size: 5vw;
   }
 }
