@@ -14,7 +14,21 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
+.btn.active {
+  background-color: var(--main-bg-color);
+  color: #202020;
+}
+.info {
+  width: 60%;
+  text-align: start;
+}
+.reveal {
+  transition: all 2s ease;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
 .buttons {
   margin: 2% 10% 2% 10%;
   width: 100%;
@@ -23,11 +37,15 @@ main {
 }
 
 .buttons > button {
-  background-color: var(--button-red);
+  background-color: #18829c;
   width: 20vw;
   height: 6vh;
   color: var(--white);
   font-size: 1.2vw;
+}
+
+.buttons > button:hover {
+  cursor: pointer;
 }
 
 .info {
@@ -35,14 +53,24 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  background-image: url("img/aboutUs/bg1.jpg");
 }
 
 @media only screen and (max-width: 600px) {
-  h4, .buttons > button {
-    font-size: 0.5em;
+  h4,
+  .buttons > button {
+    font-size: 0.8em;
   }
 
+  .buttons {
+    margin: 0;
+  }
   .buttons > button {
     width: 100%;
+    border: 1px solid var(--gray);
+  }
+  .info {
+    width: 100%;
+    text-align: center;
   }
 }

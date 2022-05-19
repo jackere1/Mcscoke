@@ -4,7 +4,128 @@
 body {
   margin: 0;
   font-family: var(--main-font);
+  background-image: url("../img/NiigemHariutslaga/sr-bg\ \(1\).jpg");
 }
 img {
   max-width: 100%;
+}
+
+.first {
+  display: flex;
+  justify-content: space-around;
+}
+
+.first > button {
+  width: 15vw;
+  height: 2vw;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: var(--white);
+  border: 2px red solid;
+  font-size: 1vw;
+  cursor: pointer;
+}
+
+.buttons > button {
+  width: 25vw;
+  height: 4vw;
+  background-color: rgba(70, 144, 167, 0.815);
+  color: var(--white);
+  border: 2px white solid;
+  font-size: 1vw;
+  cursor: pointer;
+  margin: 10vh 0;
+}
+
+.buttons > button:hover {
+  background-color: var(--gray);
+}
+
+.buttons > button:active {
+  background-color: var(--gray);
+}
+
+.first > button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.nopixel > img {
+  width: 10vw;
+}
+
+.bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(0deg, #fff 1%, grey 30%, var(--gray) 90%);
+}
+
+.mainbg {
+  width: 50rem;
+  height: 40vh;
+}
+
+.human {
+  width: 3%;
+  height: 5%;
+  border-right: 2px red solid;
+  margin: 10px;
+}
+
+.images {
+  width: 55vw;
+  margin: auto;
+  border-bottom: 1px solid var(--red);
+}
+
+.images > img {
+  width: 100%;
+  /* display: none; */
+}
+h2 {
+  color: var(--red);
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div > p {
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .human {
+    width: 10vw;
+  }
+  .first > button {
+    width: 30vw;
+    height: 4vw;
+    font-size: 2vw;
+  }
+
+  .buttons > button {
+    width: 30vw;
+    height: 5vw;
+    font-size: 1vw;
+  }
+
+  .images {
+    width: 90vw;
+  }
+  div > p {
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    font-size: 2vw;
+  }
 }
