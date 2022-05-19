@@ -1,0 +1,143 @@
+{
+  "Brand": [
+    {
+      "id": "0",
+      "items": {
+        "title": "Coca-Cola",
+        "link": "Products.html"
+      }
+    },
+    {
+      "id": "1",
+      "items": {
+        "title": "Fanta",
+        "link": "Products.html"
+      }
+    },
+    {
+      "id": "2",
+      "items": {
+        "title": "Sprite",
+        "link": "Products.html"
+      }
+    },
+    {
+      "id": "3",
+      "items": {
+        "title": "FuzeTea",
+        "link": "Products.html"
+      }
+    },
+    {
+      "id": "4",
+      "items": {
+        "title": "Minute Maid",
+        "link": "Products.html"
+      }
+    },
+    {
+      "id": "5",
+      "items": {
+        "title": "Powerade",
+        "link": "Products.html"
+      }
+    },
+    {
+      "id": "6",
+      "items": {
+        "title": "Peace Tea",
+        "link": "Products.html"
+      }
+    }
+  ],
+  "Niigem": [
+    {
+      "id": "0",
+      "items": {
+        "title": "Эрүүл, идэвхтэй амьдрал",
+        "link": "niigem.html"
+      }
+    },
+    {
+      "id": "1",
+      "items": {
+        "title": "Ажлын байр",
+        "link": "niigem.html"
+      }
+    },
+    {
+      "id": "2",
+      "items": {
+        "title": "Энергийн менежмэнт",
+        "link": "niigem.html"
+      }
+    },
+    {
+      "id": "3",
+      "items": {
+        "title": "Ус хэмнэлт",
+        "link": "niigem.html"
+      }
+    },
+    {
+      "id": "4",
+      "items": {
+        "title": "Сав баглаа боодлын менежмэнт",
+        "link": "niigem.html"
+      }
+    },
+    {
+      "id": "5",
+      "items": {
+        "title": "Хамтарч ажиллах санал хүсэлт",
+        "link": "niigem.html"
+      }
+    }
+  ],
+  "aboutUs": [
+    {
+      "id": "0",
+      "items": {
+        "title": "М-СИ-ЭС Кока-Кола ХХК-ийн тухай",
+        "link": "niigem.html"
+      }
+    },
+    {
+      "id": "1",
+      "items": {
+        "title": "М-СИ-ЭС Группын тухай",
+        "link": "niigem.html"
+      }
+    },
+    {
+      "id": "2",
+      "items": {
+        "title": "Кока-Кола компанийн тухай",
+        "link": "niigem.html"
+      }
+    }
+  ],
+  "news": [
+    {
+      "id": "0",
+      "items": {
+        "title": "Мэдээ",
+        "link": "medee.html"
+      }
+    },
+    {
+      "id": "1",
+      "items": {
+        "title": "Фото",
+        "link": "medee.html"
+      }
+    },
+    {
+      "id": "2",
+      "items": {
+        "title": "Видео",
+        "link": "medee.html"
+      }
+    }
+  ]
+}
