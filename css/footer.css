@@ -73,11 +73,29 @@ input[type="text"] {
   color: var(--white);
 }
 .footer-contact-button {
-  background-color: var(--main-bg-color);
-  border-radius: var(--radius);
+  width: 200px;
+  font-size: 1rem;
+  height: 40px;
+  background-color: var(--red);
+  border-radius: 2rem;
   padding: 0.5em 0.5em 0.5em 0.5em;
   color: var(--white);
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 0 2px #999;
+
 }
+
+.footer-contact-button:hover {
+  opacity: 70%;
+}
+
+.footer-contact-button:active {
+  opacity: 70%;
+  transform: translateY(3px);
+  box-shadow: 0 4px #666;
+}
+
 .icon {
   width: 1.5em;
   height: auto;
@@ -121,7 +139,7 @@ input[type="text"] {
   align-items: center;
 }
 .texting[type=text] {
-  border-radius: 2rem;
+  border-radius: 1rem;
   width: 400px;  
   height: 120px;
   word-wrap: wrap;
