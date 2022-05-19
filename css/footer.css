@@ -87,11 +87,11 @@ input[type="text"] {
 }
 
 .footer-contact-button:hover {
-  opacity: 70%;
+  opacity: 60%;
 }
 
 .footer-contact-button:active {
-  opacity: 70%;
+  opacity: 60%;
   transform: translateY(3px);
   box-shadow: 0 4px #666;
 }
