@@ -4,7 +4,6 @@
 body {
   margin: 0;
   font-family: var(--main-font);
-  /* background-color: #000; */
 }
 img {
   max-width: 100%;
@@ -58,7 +57,6 @@ img {
   background-color: var(--gray);
 }
 
-
 .nopixel > img {
   width: 10vw;
 }
@@ -105,7 +103,6 @@ img {
 }
 h2 {
   color: rgb(200, 0, 0);
-  /* color: aquamarine;  */
 }
 div {
   display: flex;

@@ -20,32 +20,69 @@
   </head>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script src="./component.js"></script>
+  <script src = "./activeNav.js"></script>
+  
   <body>
     <header>
        <!-- header heseg -->
-  <mcs-header></mcs-header>
+  <mcs-header> </mcs-header>
     </header>
     <main>
-      <img class="nature" src="./img/HomePage/slider3 (2).png" width="100%" >
-      <img class="nature" src="./img/HomePage/slider.png" width="100%">
-      <img class="nature" src="./img/HomePage/web.jpg" width="100%">
+       <picture>
+               <source 
+                  srcset="img/HomePage/sliderImage.png"
+                  media="(min-width:1020px)"
+                  />
+               <source
+                  srcset="./img/HomePage/sliderImage.png"
+                  media="(min-width:800px)"
+                  />
+               <img class="nature" src="./img/HomePage/slider3Mobile.png" width="100%" alt="aboutcola"
+                  />
+            </picture>
+       <picture>
+               <source 
+                  srcset="img/HomePage/slider.png"
+                  media="(min-width:1020px)"
+                  />
+               <source
+                  srcset="img/HomePage/slider.png"
+                  media="(min-width:800px)"
+                  />
+               <img class="nature" src="./img/HomePage/sliderMobile.png" width="100%" alt="aboutcola"
+                  />
+            </picture>
+     <picture>
+               <source 
+                  srcset="img/HomePage/web.jpg"
+                  media="(min-width:1020px)"
+                  />
+               <source
+                  srcset="img/HomePage/web.jpg"
+                  media="(min-width:800px)"
+                  />
+               <img class="nature" src="./img/HomePage/slider2Mobile.jpg" width="100%" alt="aboutcola"
+                  />
+            </picture>
+
       <script>
          w3.slideshow(".nature", 6000);
          </script>
       <section class="wrapper">
-      <div class="product-title ">
+      <div class="product-title reveal reveal-title">
          <h2>Таны хүслээр</h2>
          <p>М-Си-Эс Кока-Кола ХХК нь хүн бүрийн хүсэл сонирхолд нийцүүлэн ердийн, бага илчлэгтэй болон илчлэггүй гэх мэт олон төрлийн ундаануудыг дуртай цагт нь, хүссэн газарт нь, гарын дор байлган аз жаргалын амтыг мэдрүүлж, сэргээхийн төлөө чармайн ажиллаж байна.</p>
          <!-- <a  href="Products.html"><button class="product-button">Бүтээгдэхүүнүүд</button></a> <br><br> -->
-          <a class="product-button" href="Products.html" id="style-2" data-replace="Дэлгэрэнгүй"><span>Бүтээгдэхүүнүүд</span></a>
+          <a class="product-button reveal reveal-button" href="Products.html" id="style-2" data-replace="Дэлгэрэнгүй"><span>Бүтээгдэхүүнүүд</span></a>
       </div>
       <div class="product-img">
-         <img class="product-img1" src="img/HomePage/Cola.png" alt="cocaCola"/>
-         <img class="product-img1"  src = "img/HomePage/Fanta.png" alt=" fanta"/>
-         <img class="product-img1" src="img/HomePage/Sprite.png" alt=" sprite"/>
+         <img class="product-img1 reveal reveal-img1" src="img/HomePage/Cola.png" alt="cocaCola"/>
+         <img class="product-img1 reveal reveal-img2"  src = "img/HomePage/Fanta.png" alt=" fanta"/>
+         <img class="product-img1 reveal reveal-img3 " src="img/HomePage/Sprite.png" alt=" sprite"/>
       </div>
    </section>
-      <section class="information reveal">
+   <section class="inf">
+      <section class="information ">
          <section class="about-mcs">
             <picture>
                <source 
@@ -56,16 +93,14 @@
                   srcset="img/HomePage/aboutCocacola.png"
                   media="(min-width:800px)"
                   />
-               <img class="mcs"
+               <img class="mcs reveal reveal-information-img1"
                   src="img/HomePage/acocaMobile.png" alt="aboutcola"
                   />
             </picture>
             <div class = "information-overlay">
                <div class="text">
                   <h3>М-Си-Эс Кока-Кола ХХК-ийн тухай</h3>
-              <p>Хэрэглэгч, харилцагчидаа дээдэлдэг, монголдоо хамгийн...
-            </p>
-            <a>Дэлгэрэнгүй</a>
+            <a class="information-overlay-button" href="aboutus.html">   <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22v4h24L21 37l2.84 2.84L39.68 24 23.84 8.16 21 11l11 11H8z" fill="#fff"></path></svg></a>
                </div>
        
             </div>
@@ -81,18 +116,18 @@
                srcset="img/HomePage/happines.png"
                media="(min-width:800px)"
                />
-            <img class="mcs"
+            <img class="mcs reveal reveal-information-img2"
                src="img/HomePage/happinessMobile.png" alt="happiness"
                />
          </picture>
          <div class = "information-overlay">
             <div class="text">
                <h3>Happiness-center</h3>
-           <p>
-            М-Си-Эс Кока-Кола компани хүүхэд залуусын чөлөөт цагийг ...
-         </p>
-         <a>Дэлгэрэнгүй</a>
+         <a class="information-overlay-button" href="Happiness.html">
+             <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22v4h24L21 37l2.84 2.84L39.68 24 23.84 8.16 21 11l11 11H8z" fill="#fff"></path></svg>
+         </a>
             </div>
+           
       </section>
    </section>
    <section class="information2 reveal ">
@@ -106,7 +141,7 @@
                srcset="img/HomePage/planttour.png"
                media="(min-width:800px)"
                />
-            <img class="mcs"
+            <img class="mcs reveal  reveal-information-img3"
                src="img/HomePage/plant-tour-mobile.png" alt="tour"
                />
          </picture>
@@ -124,7 +159,7 @@
                srcset="img/HomePage/doKnow.png"
                media="(min-width:800px)"
                />
-            <img class="mcs"
+            <img class="mcs reveal  reveal-information-img4"
                src="img/HomePage/doKnowMobile.png" alt="douYouknow"
                />
          </picture>
@@ -140,7 +175,7 @@
                srcset="img/HomePage/HR.png"
                media="(min-width:800px)"
                />
-            <img class="mcs"
+            <img class="mcs reveal  reveal-information-img5 "
                src="img/HomePage/HR-mobile.png" alt="vacancy"
                />
          </picture>
@@ -149,7 +184,7 @@
          </div>
       </section>
    </section>
-      
+   </section>
    </main>
    
    <footer>

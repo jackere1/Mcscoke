@@ -3,10 +3,14 @@ class Header extends HTMLElement {
     this.innerHTML = `
     <nav class="nav">
          <section class="nav-logo">
+
+         <a href = "index.html">
             <img src="img/Navbar/mcs_logo_nav.png"/>
+          <a/>
            </section>
         <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html" class="nav-link">Нүүр хуудас</a></li>
+          <li class="nav-item active"><a href="index.html" class="nav-link ">Нүүр хуудас</a></li>
+
           <li class="nav-item"><a href="Products.html" class="nav-link">Бүтээгдэхүүнүүд</a></li>
           <li class="nav-item"><a href="aboutus.html" class="nav-link">Бидний тухай</a></li>
           <li class="nav-item"><a href="niigem.html" class="nav-link">Нийгмийн хариуцлага</a></li>
@@ -24,7 +28,6 @@ class Header extends HTMLElement {
     `;
   }
 }
-
 customElements.define("mcs-header", Header);
 
 class Footer extends HTMLElement {

@@ -16,29 +16,44 @@
   </head>
   <body>
     <header>
-
       <mcs-header></mcs-header>
     </header>
     <main>
-      <section class="buttons">
-        <button onclick="renderCompany()">
+      <section class="buttons" id="bu">
+        <button class="btn" onclick="renderCompany()">
           М-Си-ЭС Кока-Кола ХХК-ын тухай
         </button>
-        <button onclick="renderGroup()">М-Си-ЭС Группын тухай</button>
-        <button onclick="renderCola()">Кока кола компанийн тухай</button>
+        <button class="btn" onclick="renderGroup()">
+          М-Си-ЭС Группын тухай
+        </button>
+        <button class="btn" onclick="renderCola()">
+          Кока кола компанийн тухай
+        </button>
       </section>
       <section class="info">
         <figure>
           <img src="img/aboutUs/mcsgroup-1.jpg" alt="about MCS" />
         </figure>
         <figure>
-          <img src="img/aboutUs/mcsgroup-2.jpg" alt="about MCS" />
+          <img
+            class="reveal"
+            src="img/aboutUs/mcsgroup-2.jpg"
+            alt="about MCS"
+          />
         </figure>
         <figure>
-          <img src="img/aboutUs/mcsgroup-3.jpg" alt="about MCS" />
+          <img
+            class="reveal"
+            src="img/aboutUs/mcsgroup-3.jpg"
+            alt="about MCS"
+          />
         </figure>
         <figure>
-          <img src="img/aboutUs/mcsgroup-4.jpg" alt="about MCS" />
+          <img
+            class="reveal"
+            src="img/aboutUs/mcsgroup-4.jpg"
+            alt="about MCS"
+          />
         </figure>
         <article>
           <h4>
@@ -53,5 +68,7 @@
     </footer>
     <script src="./mobileMenu.js"></script>
     <script src="./Scroll.js"></script>
+    <script src="./activeTabs.js"></script>
+
   </body>
 </html>

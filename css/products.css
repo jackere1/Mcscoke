@@ -1,6 +1,7 @@
 @import url("./variable.css");
 @import url("header.css");
 @import url("footer.css");
+@import url("./activeNav.css");
 body {
   margin: 0;
   font-family: var(--main-font);
@@ -9,36 +10,34 @@ img {
   max-width: 100%;
 }
 
-
 .contain {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin-top: 2rem;
   grid-auto-rows: 45vh;
-} 
+}
 
-.contain >   a {
+.contain > a {
   display: flex;
   width: 100%;
   justify-content: center;
 }
- .productImg{
+.productImg {
   display: flex;
   width: 100%;
   justify-content: center;
-  
-} 
+}
 
-.container{
+.container {
   position: relative;
 }
-.product{
-  border: 1px solid hsla(45,4%,81%,0.3);
+.product {
+  border: 1px solid hsla(45, 4%, 81%, 0.3);
   padding: 1rem 0 1rem 0;
   position: relative;
   display: flex;
 }
-.transition{
+.transition {
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -46,13 +45,13 @@ img {
   background-image: url("../img/Products/Brand_dobrii_170630\ \(5\).jpg");
   overflow: hidden;
   width: 100%;
-  height:0;
+  height: 0;
 }
 .product:hover .transition {
   bottom: 0;
   height: 100%;
-  outline:none;
-  transition: .4s ease;
+  outline: none;
+  transition: 0.4s ease;
 }
 .prev {
   top: 50%;
@@ -65,7 +64,7 @@ img {
   padding: 1em;
   color: white;
 }
-.next{
+.next {
   top: 50%;
   position: absolute;
   right: 0;
@@ -75,202 +74,199 @@ img {
   padding: 1em;
   color: white;
 }
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
 /* CocaCola */
-.transition1{
+.transition1 {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: rgb(244, 0 , 0, 88%);
+  background-color: rgb(244, 0, 0, 88%);
   overflow: hidden;
   width: 100%;
-  height:0;
+  height: 0;
 }
 .product:hover .transition1 {
   bottom: 0;
   height: 100%;
   left: 0;
-  outline:none;
-  transition: .4s ease;
-  
+  outline: none;
+  transition: 0.4s ease;
+
 }
 /* Fanta */
-.transition2{
+.transition2 {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
- background-color: rgb(255,165,0,88%);
+  background-color: rgb(255, 165, 0, 88%);
   overflow: hidden;
   width: 100%;
-  height:0;
+  height: 0;
 }
 .product:hover .transition2 {
   bottom: 0;
   height: 100%;
-  outline:none;
-  transition: .4s ease;
+  outline: none;
+  transition: 0.4s ease;
 }
 /* Sprite */
-.transition3{
+.transition3 {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
- background-color: rgb(50,205,50,88%);
+  background-color: rgb(50, 205, 50, 88%);
   overflow: hidden;
   width: 100%;
-  height:0;
+  height: 0;
 }
 .product:hover .transition3 {
   bottom: 0;
   height: 100%;
-  outline:none;
-  transition: .4s ease;
+  outline: none;
+  transition: 0.4s ease;
 }
 /* Bonaqua */
-.transition4{
+.transition4 {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: rgb(135,206,250,88%);
+  background-color: rgb(135, 206, 250, 88%);
   overflow: hidden;
   width: 100%;
-  height:0;
+  height: 0;
 }
 .product:hover .transition4 {
   bottom: 0;
   height: 100%;
-  outline:none;
-  transition: .4s ease;
+  outline: none;
+  transition: 0.4s ease;
 }
 /* Peace tea */
-.transition5{
+.transition5 {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
- background-color: rgb(32,178,170,90%);
+  background-color: rgb(32, 178, 170, 90%);
   overflow: hidden;
   width: 100%;
-  height:0;
+  height: 0;
 }
 .product:hover .transition5 {
   bottom: 0;
   height: 100%;
-  outline:none;
-  transition: .4s ease;
+  outline: none;
+  transition: 0.4s ease;
 }
 /* моя семья */
-.transition6{
+.transition6 {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
- background-color: rgb(197, 187, 153,88%);
+  background-color: rgb(197, 187, 153, 88%);
   overflow: hidden;
   width: 100%;
-  height:0;
+  height: 0;
 }
-.product:hover .transition6{
+.product:hover .transition6 {
   bottom: 0;
   height: 100%;
-  outline:none;
-  transition: .4s ease;
+  outline: none;
+  transition: 0.4s ease;
 }
 /* Fuze tea */
-.transition7{
+.transition7 {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
- background-color: rgb(32,178,170,90%);
+  background-color: rgb(32, 178, 170, 90%);
   overflow: hidden;
   width: 100%;
-  height:0;
+  height: 0;
 }
-.product:hover .transition7{
+.product:hover .transition7 {
   bottom: 0;
   height: 100%;
-  outline:none;
-  transition: .4s ease;
+  outline: none;
+  transition: 0.4s ease;
 }
 /* Minute Maid */
-.transition8{
+.transition8 {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: rgb(255,165,0,88%);
+  background-color: rgb(255, 165, 0, 88%);
   overflow: hidden;
   width: 100%;
-  height:0;
-
+  height: 0;
 }
-.product:hover .transition8{
+.product:hover .transition8 {
   bottom: 0;
   height: 100%;
-  outline:none;
-  transition: .4s ease;
+  outline: none;
+  transition: 0.4s ease;
 }
 /* Schweppes */
-.transition9{
+.transition9 {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: rgb(197, 187, 153,88%);
+  background-color: rgb(197, 187, 153, 88%);
   overflow: hidden;
   width: 100%;
-  height:0;
-
+  height: 0;
 }
-.product:hover .transition9{
+.product:hover .transition9 {
   bottom: 0;
   height: 100%;
-  outline:none;
-  transition: .4s ease;
+  outline: none;
+  transition: 0.4s ease;
 }
 /* Millenia*/
-.transition10{
+.transition10 {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: rgb(135,206,250,88%);
+  background-color: rgb(135, 206, 250, 88%);
   overflow: hidden;
   width: 100%;
-  height:0;
-
+  height: 0;
 }
-.product:hover .transition10{
+.product:hover .transition10 {
   bottom: 0;
   height: 100%;
-  outline:none;
-  transition: .4s ease;
+  outline: none;
+  transition: 0.4s ease;
 }
-.transition11{
+.transition11 {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: rgb(135,206,250,88%);
+  background-color: rgb(135, 206, 250, 88%);
   overflow: hidden;
   width: 100%;
-  height:0;
-
+  height: 0;
 }
-.product:hover .transition11{
+.product:hover .transition11 {
   bottom: 0;
   height: 100%;
-  outline:none;
-  transition: .4s ease;
+  outline: none;
+  transition: 0.4s ease;
 }
 /* Coca-cola Modal */
 .text {
@@ -284,18 +280,17 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
   cursor: pointer;
-  
 }
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   padding-top: 6.3em;
   left: 0;
   top: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
-.modal-content{
+.modal-content {
   position: relative;
   margin: auto;
   padding: 0;
@@ -304,37 +299,48 @@ img {
   height: 90%;
   background: var(--main-bg-color);
   background-position-x: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
-
 }
 
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /* The Close Button */
 .close,
- .close2 , 
- .close3 ,
- .close4 ,
- .close5,
- .close6,
- .close7 ,
- .close8,
- .close9,
- .close10,
- .close11,
- .close12{
+.close2,
+.close3,
+.close4,
+.close5,
+.close6,
+.close7,
+.close8,
+.close9,
+.close10,
+.close11,
+.close12 {
   color: white;
   float: right;
   font-size: 1.8em;
@@ -342,13 +348,13 @@ img {
   cursor: pointer;
 }
 
-.close:hover ,
-.close2:hover , 
-.close3:hover ,
-.close4:hover ,
+.close:hover,
+.close2:hover,
+.close3:hover,
+.close4:hover,
 .close5:hover,
 .close6:hover,
-.close7:hover ,
+.close7:hover,
 .close8:hover,
 .close9:hover,
 .close10:hover,
@@ -362,21 +368,22 @@ img {
 
 .modal-header {
   padding: 2px 16px;
-  color : var(--white);
-
+  color: var(--white);
 }
 
-.modal-body , .modal-body1 {
-color: var(--white);
+.modal-body,
+.modal-body1 {
+  color: var(--white);
 }
 
 /* grid-testing */
-#mm { 
+#mm {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1.5fr 1fr;
-  grid-template-areas: "undaa tailbar"
-                       "undaa husnegt";
+  grid-template-areas:
+    "undaa tailbar"
+    "undaa husnegt";
 }
 
 .colas {
@@ -384,9 +391,7 @@ color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
 
 .tailbar {
   display: flex;
@@ -394,7 +399,6 @@ color: var(--white);
   grid-area: tailbar;
   justify-content: center;
   text-align: justify;
-
 }
 
 .hvsnegt {
@@ -404,13 +408,14 @@ color: var(--white);
   display: grid;
   width: 80%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr ;
- grid-gap: 1px;
+  grid-template-rows: 1fr;
+  grid-gap: 1px;
   padding: 0;
   margin-bottom: 0.4rem;
 }
 
-.hvsnegt > ul  {
+.hvsnegt > ul {
+
   text-decoration: none;
 }
 
@@ -432,12 +437,12 @@ color: var(--white);
   width: 80%;
   background-image: url("../img/Products/fantaBg.jpg");
   background-position-x: left;
-  background-position-y:bottom;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  background-position-y: bottom;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 /* Sprite Modal */
 .sprite-modal-content {
@@ -451,11 +456,11 @@ color: var(--white);
   background-image: url("../img/Products/SPRITE\ web.jpg");
   background-position-x: left;
   background-position-y: top;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 /* Bonaqua Modal */
 .bonaqua-modal-content {
@@ -466,13 +471,13 @@ color: var(--white);
   border: 1px solid #888;
   width: 80%;
   height: 80%;
-background-image: url("../img/Products/pexels-olena-ukraine-933701.jpg");
-  background-position:center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  background-image: url("../img/Products/pexels-olena-ukraine-933701.jpg");
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 /* Peace tea Modal */
 .peace-modal-content {
@@ -483,15 +488,15 @@ background-image: url("../img/Products/pexels-olena-ukraine-933701.jpg");
   padding: 0;
   border: 1px solid #888;
   width: 80%;
-background-image: url("../img/Products/26804404_407175973045518_2051645\ \(2\).png");
-background-position: center;
+  background-image: url("../img/Products/26804404_407175973045518_2051645\ \(2\).png");
+  background-position: center;
   background-position-x: left;
   background-position-y: top;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 /* Moy */
 .moy-modal-content {
@@ -502,13 +507,13 @@ background-position: center;
   border: 1px solid #888;
   width: 80%;
   height: 80%;
-background-image: url("../img/Products/606eb60d-e654-466a-8ff0-18fed9ae9497-moya\ semya\ web.png");
-background-position: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  background-image: url("../img/Products/606eb60d-e654-466a-8ff0-18fed9ae9497-moya\ semya\ web.png");
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 /* Fuze tea*/
 .fuze-modal-content {
@@ -519,13 +524,13 @@ background-position: center;
   border: 1px solid #888;
   width: 80%;
   height: 80%;
-background-image: url("../img/Products/Brand_fuze-170630.jpg");
-background-position: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  background-image: url("../img/Products/Brand_fuze-170630.jpg");
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 /* Minute Maid */
 .minute-modal-content {
@@ -536,14 +541,14 @@ background-position: center;
   border: 1px solid #888;
   width: 80%;
   height: 80%;
-background-image: url("../img/Products/mm-web.png");
-background-position-x: center;
-background-position-y: bottom;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  background-image: url("../img/Products/mm-web.png");
+  background-position-x: center;
+  background-position-y: bottom;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 /* Schweppes */
 .schweppes-modal-content {
@@ -554,14 +559,14 @@ background-position-y: bottom;
   border: 1px solid #888;
   width: 80%;
   height: 80%;
-background-image: url("../img/Products/Brand_Schweps-170630.jpg");
-background-position-x: right;
-background-position-y: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  background-image: url("../img/Products/Brand_Schweps-170630.jpg");
+  background-position-x: right;
+  background-position-y: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 /* Millenia */
@@ -572,13 +577,13 @@ background-position-y: center;
   border: 1px solid #888;
   width: 80%;
   height: 80%;
-background-image: url("../img/Products/millenia-web.png");
-background-position: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  background-image: url("../img/Products/millenia-web.png");
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 @media only screen and (max-width: 1350px) {
   .contain {

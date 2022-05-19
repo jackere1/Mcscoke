@@ -14,13 +14,21 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
+.btn.active {
+  background-color: var(--main-bg-color);
+  color: #202020;
+}
 .info {
   width: 60%;
   text-align: start;
 }
-
-
+.reveal {
+  transition: all 2s ease;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
 
 .buttons {
   margin: 2% 10% 2% 10%;
@@ -30,7 +38,7 @@ main {
 }
 
 .buttons > button {
-  background-color: var(--button-red);
+  background-color: #18829c;
   width: 20vw;
   height: 6vh;
   color: var(--white);
@@ -44,6 +52,10 @@ main {
   cursor: pointer;
 }
 
+.buttons > button:hover {
+  cursor: pointer;
+}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -53,7 +65,8 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
-  h4, .buttons > button {
+  h4,
+  .buttons > button {
     font-size: 0.8em;
   }
 

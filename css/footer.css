@@ -83,7 +83,11 @@ input[type="text"] {
   height: auto;
 }
 .footer-contact {
-  color: #aeaeae;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .footer-Logo {
   width: 6.6em;

@@ -1,5 +1,7 @@
 @import url(./variable.css);
-
+@import url(./activeNav.css);
+@import url(./header.css);
+@import url(./footer.css);
 body {
   margin: 0;
   font-family: var(--main-font);
@@ -8,8 +10,9 @@ body {
 img {
   max-width: 100%;
 }
-.mcs-logo:hover{
-  transform: rotate3d(1,1,1,360deg);
+.mcs-logo:hover {
+  transform: rotate3d(1, 1, 1, 360deg);
+
   transition: all 1s ease;
 }
 /* nav css */
@@ -61,7 +64,7 @@ img {
   width: 2.5rem;
   text-align: center;
 }
-.mcs{
+.mcs {
   border-radius: var(--radius);
 }
 /*nav-css*/
@@ -84,7 +87,7 @@ img {
 }
 .product-title > p {
   color: var(--white);
-  margin-left: 1em;
+  margin-left: 1.2em;
   text-align: justify;
 }
 
@@ -92,20 +95,17 @@ img {
   overflow: hidden;
   position: relative;
   display: inline-block;
-  background-color: #000;
-
+  background-color: #202020;
   padding: 1em;
-  border-radius: 1.5rem;
-  border: 2px solid black;
-
+  border-radius: 1.2rem;
 }
-.product-button>span{
-  color: #fff;
+.product-button > span {
+  color: var(--main-bg-color);
 }
 
 .product-button::before,
 .product-button::after {
- content: '';
+  content: "";
   position: absolute;
   width: 100%;
   left: 20%;
@@ -114,16 +114,16 @@ img {
   bottom: 0;
   transform-origin: 100% 50%;
   transform: scaleX(0);
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+
 }
 .product-button::after {
   content: attr(data-replace);
   height: 100%;
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: var(--main-bg-color);
-  
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: whitesmoke;
 }
 
 .product-button:hover::before {
@@ -136,7 +136,7 @@ img {
 
 .product-button span {
   display: inline-block;
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 .product-button:hover span {
@@ -144,14 +144,14 @@ img {
 }
 
 /* Presentational Styles */
-
-
-
 .product-img {
   margin-left: 2.5em;
 }
 .product-img1 {
   margin-left: 1.5em;
+}
+.inf {
+  margin-bottom: 2rem;
 }
 .information {
   display: grid;
@@ -160,7 +160,7 @@ img {
   padding: 0 11em 0 11em;
   margin-top: 2em;
 }
-.mcs{
+.mcs {
   border-radius: var(--radius);
 }
 .information2 {
@@ -189,7 +189,7 @@ img {
   height: auto;
   opacity: 0;
   transition: 0.7s ease;
-  background-color: rgb(191, 45, 0, 90%);
+  background-color: rgb(191, 45, 0, 60%);
   border-radius: var(--radius);
   margin-bottom: 0.25em;
 }
@@ -211,7 +211,7 @@ img {
   text-align: center;
   cursor: pointer;
 }
-.text>button{
+.text > button {
   border-radius: var(--radius);
   background-color: rgb(191, 45, 0, 10%);
   color: var(--white);
@@ -242,7 +242,6 @@ img {
   text-align: center;
   border-radius: 0.6em 0.6em 0 0;
   margin-bottom: 0.25em;
-  
 }
 
 .vacancy:hover .information2-vacancy-overlay {
@@ -250,7 +249,7 @@ img {
 }
 .information2-overlay {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   background: rgb(196, 197, 88, 90%);
   color: #f1f1f1;
   width: 100%;
@@ -262,7 +261,7 @@ img {
   border-radius: 0.6em 0.6em 0 0;
   margin-bottom: 0.25em;
 }
-.information2-vacancy-overlay > h3 > a{
+.information2-vacancy-overlay > h3 > a {
   text-decoration: none;
   color: var(--white);
 }
@@ -273,50 +272,6 @@ img {
 .vacancy:hover .information2-vacancy-overlay {
   opacity: 1;
 }
-
-.footer {
-  font-family: var(--main-font);
-  background-color: var(--gray);
-  display: grid;
-  grid-template-columns: 15% 25% 25% 30%;
-  margin-top: 2em;
-  padding: var(--main-padding);
-}
-
-.footer > * {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-.footer-product > ul {
-  list-style-type: none;
-}
-.footer-product > ul > h5 {
-  color: var(--white);
-}
-.social-responsibility > ul {
-  list-style-type: none;
-}
-.footer-aboutus > ul {
-  list-style-type: none;
-}
-.footer-product > ul > li > a {
-  text-decoration: none;
-  color: #aeaeae;
-  line-height: 1.7;
-}
-.footer.contact > select,
-input[type="text"] {
-  padding: 0.5em 0.5em;
-  margin: 0.1em 0;
-  display: grid;
-  border-radius: var(--radius);
-  box-sizing: border-box;
-}
-
-.footer-contact p {
-  color: var(--white);
-}
-
 .social-responsibility > ul > li > a {
   text-decoration: none;
   color: #aeaeae;
@@ -326,51 +281,44 @@ input[type="text"] {
   text-decoration: none;
   color: var(--white);
 }
-.footer-aboutus > ul > li > a {
-  text-decoration: none;
-  color: #aeaeae;
-  line-height: 1.7;
+.reveal {
+  opacity: 0;
 }
-.footer-aboutus > ul > h5 > a {
-  text-decoration: none;
-  color: var(--white);
+.reveal-title {
+  transform: translateX(-150px);
 }
-.footer-product > ul > h5 > a {
-  text-decoration: none;
-  color: var(--white);
+.reveal-button {
+  transform: translateY(100px);
 }
-.footer-bottom {
-  border-top: 0.5px solid #454545;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: var(--gray);
-  align-items: center;
-  padding: var(--main-padding);
-  padding-top: 0.5em;
+.reveal-img1 {
+  transform: translateX(150px);
 }
-.bottom-footer-title {
-  color: var(--white);
+.reveal-img2 {
+  transform: translateX(200px);
 }
-.footer-contact-button {
-  background-color: var(--main-bg-color);
-  border-radius: var(--radius);
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  color: var(--white);
+.reveal-img3 {
+  transform: translateX(250px);
 }
-.icon {
-  width: 1.5em;
-  height: auto;
+.reveal-information-img1 {
+  transform: translateX(-20px);
 }
-.icon:hover{
-  transform: rotate3d(1,1,1,360deg);
-  transition: all 1s ease ;
+.reveal-information-img2 {
+  transform: translateX(20px);
+
 }
-.footer-contact {
-  color: #aeaeae;
+.reveal-information-img3 {
+  transform: translateY(20px);
 }
-.footer-Logo {
-  width: 6.6em;
-  height: auto;
+.reveal-information-img4 {
+  transform: translateY(60px);
+}
+.reveal-information-img5 {
+  transform: translateY(100px);
+}
+.reveal.active {
+  opacity: 1;
+  transition: all 1.3s ease;
+  transform: translateX(0);
 }
 .reveal{
   opacity: 0;
@@ -419,17 +367,10 @@ input[type="text"] {
     width: 5em;
     height: auto;
   }
-  .footer {
-    padding: var(--mobile-padding);
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "footer-contact"
-      "footer-product"
-      "social-responsibility"
-      "footer-aboutus";
-  }
-  .footer-bottom {
-    padding: var(--mobile-padding);
+  .product-button::before,
+  .product-button::after {
+    position: absolute;
+    left: 0;
   }
   .information {
     grid-template-columns: 1fr;
@@ -439,9 +380,7 @@ input[type="text"] {
     grid-template-columns: 1fr;
     padding: var(--mobile-padding);
   }
-  .footer-contact {
-    padding: var(--mobile-padding);
-  }
+
   .mcs-logo {
     display: none;
   }
