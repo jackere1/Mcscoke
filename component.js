@@ -5,7 +5,7 @@ class Header extends HTMLElement {
          <section class="nav-logo">
 
          <a href = "index.html">
-            <img src="img/Navbar/mcs_logo_nav.png"/>
+            <img src="img/Navbar/mcs_logo_nav.png" alt="mcs-logo"/>
           <a/>
            </section>
         <ul class="nav-menu">

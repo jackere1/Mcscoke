@@ -1,8 +1,122 @@
 @import url("./header.css");
 @import url("./footer.css");
+@import url("./variable.css");
 body {
   margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+  color: #fff;
 }
 img {
+  max-width: 100%;
+}
+
+
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--red);
+  display: flex;
+  height: 80vh;
+}
+
+.main > figure {
+  width: 12vw;
+}
+#cola1, #cola5 {
+  transform: translateY(-20vh);
+}
+
+#cola2, #cola4 {
+  transform: translateY(-8vh);
+}
+.main > figure > a:hover {
+  transition: 0.5s;
+  opacity: 70%;
+}
+#jumbotron {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+#jumbotron > img {
+  transform: translateY(10vh);
+}
+.query {
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/Do_you_know/bg.png");
+  background-size: cover;
+  height: 100%;
   width: 100%;
+}
+
+.query > figure {
+  margin-top: 10vh;
+  width: 70%;
+  height: 60vh;
+  background-color: var(--gray);
+}
+.query > figure > h2 {
+  background-color: gray;
+  color: #000;
+}
+
+.query > figure > ul {
+  height: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.query > figure > ul > li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 10%;
+  background-color: #000;
+  list-style: none;
+  margin-right: 2vw;
+}
+
+
+@media only screen and (max-width: 1050px) {
+  #cola1, #cola2, #cola3, #cola4, #cola5, #jumbotron > img {
+    transform: translateY(0); 
+  }
+  #cola1, #cola2, #cola3, #cola4, #cola5 {
+    transform: translateY(-10vh);
+  }
+  .main {
+    height: 120vh;
+  }
+  .main > figure {
+    width: 25vw;
+  }
+  .query > figure {
+    width: 100%;
+    height: 25vh;
+  }
+  .query, .query > figure > ul > li{
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    height: 180vh;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .main > figure {
+    width: 35vw;
+  }
+  /* #jumbotron > img {
+    width: 35vw;
+  } */
 }
