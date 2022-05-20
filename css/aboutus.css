@@ -43,6 +43,9 @@ main {
 .reveal-tab2-img1 {
   transform: translateX(-100px);
 }
+.reveal-tab2-img {
+  transform: translateY(200px);
+}
 .info {
   width: 60%;
   text-align: start;
@@ -94,7 +97,7 @@ main {
   font-weight: 800;
   mix-blend-mode: multiply;
   color: var(--main-bg-color);
-  background-color: #202020;
+  background-color: #101010;
 }
 #detach-button-host {
   display: none !important;
