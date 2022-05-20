@@ -97,7 +97,7 @@ main {
   font-weight: 800;
   mix-blend-mode: multiply;
   color: var(--main-bg-color);
-  background-color: #101010;
+  background-color: #303030;
 }
 #detach-button-host {
   display: none !important;
