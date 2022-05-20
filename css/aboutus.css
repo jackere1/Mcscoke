@@ -14,22 +14,42 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.btn.active {
+.btn.tabActive {
   background-color: var(--main-bg-color);
   color: #202020;
+}
+.reveal {
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+  transition: all 1.3s ease;
+  transform: translateX(0);
+}
+.reveal2.active {
+  opacity: 1;
+  transition: all 4s ease;
+  transform: translateX(0);
+}
+.reveal-tab1 {
+  transform: translateY(40px);
+}
+.reveal-tab2 {
+  transform: translateY(80px);
+}
+.reveal-tab3 {
+  transform: translateY(120px);
+}
+.reveal-tab2-img1 {
+  transform: translateX(-100px);
+}
+.reveal-tab2-img {
+  transform: translateY(200px);
 }
 .info {
   width: 60%;
   text-align: start;
 }
-.reveal {
-  transition: all 2s ease;
-  opacity: 0;
-}
-.reveal.active {
-  opacity: 1;
-}
-
 .buttons {
   margin: 2% 10% 2% 10%;
   width: 100%;
@@ -43,19 +63,45 @@ main {
   height: 6vh;
   color: var(--white);
   font-size: 1.2vw;
-  border: 2px solid var(--red);
-}
-
-.buttons > button:hover {
-  background-color: var(--white);
-  color: var(--black);
-  cursor: pointer;
 }
 
 .buttons > button:hover {
   cursor: pointer;
 }
-
+.homePage-video {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+.homePage-video video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.homePage-video > h1 {
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 10vw;
+  text-align: center;
+  font-weight: 800;
+  mix-blend-mode: multiply;
+  color: var(--main-bg-color);
+  background-color: #101010;
+}
+#detach-button-host {
+  display: none !important;
+}
 .info {
   display: flex;
   flex-direction: column;
