@@ -286,7 +286,7 @@ img {
   transform: translateX(-150px);
 }
 .reveal-button {
-  transform: translateY(100px);
+  transform: translateY(20px);
 }
 .reveal-img1 {
   transform: translateX(150px);
@@ -360,7 +360,7 @@ img {
     margin-right: auto;
   }
   .product-img1 {
-    width: 5em;
+    width: 4em;
     height: auto;
   }
   .product-button::before,
