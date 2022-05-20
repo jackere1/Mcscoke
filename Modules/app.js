@@ -1,7 +1,7 @@
 import Information from "./Information.js";
 
 const appRoot = document.getElementById("newsItems");
-const newsData = await fetch("../json/news/medee.json").then((response) =>
+const newsData = await fetch("./json/news/medee.json").then((response) =>
   response.json()
 );
 console.log(appRoot);
