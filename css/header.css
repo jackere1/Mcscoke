@@ -1,7 +1,7 @@
 @import url("./variable.css");
 .nav {
   box-sizing: border-box;
-  background-color: var(--gray);
+  background-color: #202020;
   display: flex;
   min-height: 4rem;
   justify-content: space-between;

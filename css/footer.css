@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--gray);
+  background-color: #202020;
   display: grid;
   grid-template-columns: 15% 25% 25% 30%;
   padding: var(--main-padding);
@@ -64,7 +64,7 @@ input[type="text"] {
   border-top: 0.5px solid #454545;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: var(--gray);
+  background-color: #202020;
   align-items: center;
   padding: var(--main-padding);
   padding-top: 0.5em;

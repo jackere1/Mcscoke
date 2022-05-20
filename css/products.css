@@ -37,6 +37,7 @@ img {
   position: relative;
   display: flex;
 }
+
 .transition {
   position: absolute;
   bottom: 100%;
