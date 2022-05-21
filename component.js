@@ -112,7 +112,7 @@ class Footer extends HTMLElement {
             srcset="/img/footer/footer-logo 1.png"
             media="(min-width:800px)"
             />
-            <img src="img/footer/footer.png" alt="footer-logo" />
+            <img src="img/Footer/footer.png" alt="footer-logo" />
           </picture>
         </section>
         <section class="icons">
