@@ -33,7 +33,7 @@ customElements.define("mcs-header", Header);
 class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-     <section class="footer ">
+     <section class="footer wrapper">
       <section class="footer-product">
          <ul>
             <h5><a href="Products.html">БРЕНД</a></h5>
@@ -76,7 +76,6 @@ class Footer extends HTMLElement {
       </article>
       <section class="footer-contact">
         <p>ХОЛБОГДОХ</p>
-        <hr>
         <form class="footer-contact">
          <label for="type">Төрлөө сонгоно уу?</label>
           <select id="type" name="type" class="selection">
@@ -100,8 +99,8 @@ class Footer extends HTMLElement {
           <input class="footer-contact-button" type="submit" value="Илгээх" />
         </form>
       </section>
-      </section>
-      <section class="footer-bottom ">
+    </section>
+    <section class="footer-bottom ">
       <section class="footer-Logo">
          <picture>
             <source
