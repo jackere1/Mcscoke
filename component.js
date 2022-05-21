@@ -33,7 +33,7 @@ customElements.define("mcs-header", Header);
 class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-     <section class="footer wrapper">
+     <section class="footer">
       <section class="footer-product">
          <ul>
             <h5><a href="Products.html">БРЕНД</a></h5>

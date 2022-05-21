@@ -154,7 +154,7 @@ input[type="text"] {
   margin: 0 20px;
 }
 @media only screen and (max-width: 1500px) {
-  .wrapper {
+  .footer {
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-around;  */
@@ -175,11 +175,10 @@ input[type="text"] {
   }
 }
 @media only screen and (max-width: 850px) {
-  .wrapper {
+  .footer {
     justify-content: center;
-
   }
-  .wrapper:first-child{
+  .footer:first-child{
     justify-content: flex-start;
     margin: 0;
   }
