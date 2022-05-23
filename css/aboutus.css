@@ -121,10 +121,18 @@ main {
   }
   .buttons > button {
     width: 100%;
-    border: 1px solid var(--gray);
   }
   .info {
     width: 100%;
     text-align: center;
+  }
+  .reveal-tab1 {
+    transform: translateX(20px);
+  }
+  .reveal-tab2 {
+    transform: translateX(40px);
+  }
+  .reveal-tab3 {
+    transform: translateX(60px);
   }
 }
