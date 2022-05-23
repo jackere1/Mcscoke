@@ -1,7 +1,7 @@
 .footer {
-  background-color: #202020;
   display: grid;
-  grid-template-columns: 20% 25% 25% 30%;
+  background-color: #202020;
+  grid-template-columns: 15% 25% 30% 30%;
   padding: var(--main-padding);
 }
 .footer > * {
@@ -73,38 +73,17 @@ input[type="text"] {
   color: var(--white);
 }
 .footer-contact-button {
-  width: 200px;
-  font-size: 1rem;
-  height: 40px;
-  background-color: var(--red);
-  border-radius: 2rem;
+  background-color: var(--main-bg-color);
+  border-radius: var(--radius);
   padding: 0.5em 0.5em 0.5em 0.5em;
   color: var(--white);
-  border: 2px solid black;
-  cursor: pointer;
-  box-shadow: 0 2px #999;
 }
-
-.footer-contact-button:hover {
-  opacity: 60%;
-}
-
-.footer-contact-button:active {
-  opacity: 60%;
-  transform: translateY(3px);
-  box-shadow: 0 4px #666;
-}
-
 .icon {
   width: 1.5em;
   height: auto;
 }
 .footer-contact {
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  color: #aeaeae;
 }
 .footer-Logo {
   width: 6.6em;
@@ -138,7 +117,7 @@ input[type="text"] {
   align-items: center;
 }
 .texting[type="text"] {
-  border-radius: 1rem;
+  border-radius: 2rem;
   width: 400px;
   height: 120px;
   word-wrap: wrap;
@@ -168,17 +147,13 @@ input[type="text"] {
 }
 @media only screen and (max-width: 850px) {
   .footer {
-    display: grid;
     padding: var(--mobile-padding);
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-areas:
       "footer-contact"
       "footer-product"
       "social-responsibility"
       "footer-aboutus";
-  }
-  hr {
-    width: 100%;
   }
   .footer-bottom {
     padding: var(--mobile-padding);

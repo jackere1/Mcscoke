@@ -26,11 +26,6 @@ main {
   transition: all 1.3s ease;
   transform: translateX(0);
 }
-.reveal2.active {
-  opacity: 1;
-  transition: all 1.5s ease;
-  transform: translateX(0);
-}
 .reveal-tab1 {
   transform: translateY(40px);
 }
@@ -43,13 +38,7 @@ main {
 .reveal-tab2-img1 {
   transform: translateX(-100px);
 }
-.reveal-tab2-img {
-  transform: translateY(200px);
-}
-.info {
-  width: 60%;
-  text-align: start;
-}
+
 .buttons {
   margin: 2% 10% 2% 10%;
   width: 100%;
@@ -57,7 +46,8 @@ main {
   justify-content: space-around;
 }
 
-.buttons > button {
+.btn {
+  border-radius: 0.4rem;
   background-color: #18829c;
   width: 20vw;
   height: 6vh;
@@ -65,7 +55,7 @@ main {
   font-size: 1.2vw;
 }
 
-.buttons > button:hover {
+.btn:hover {
   cursor: pointer;
 }
 .homePage-video {
@@ -117,10 +107,14 @@ main {
   }
 
   .buttons {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
   }
-  .buttons > button {
-    width: 100%;
+  .btn {
+    width: auto;
+    border-radius: 0;
+    margin: var(--mobile-padding);
+    margin-top: 0.7em;
   }
   .info {
     width: 100%;
