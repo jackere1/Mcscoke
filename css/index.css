@@ -94,7 +94,7 @@ img {
   margin-left: 2.5em;
 }
 .product-img1 {
-  margin-left: 1.5em;
+  margin-left: 1.7em;
 }
 .inf {
   margin-bottom: 2rem;
@@ -321,5 +321,11 @@ img {
   }
   .information2-vacancy-overlay {
     opacity: 1;
+  }
+  .reveal-information-img1,
+  .reveal-information-img2,
+  .reveal-information-img3,
+  .reveal-information-img5 {
+    transform: translate(0);
   }
 }

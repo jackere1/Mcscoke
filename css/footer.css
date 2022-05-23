@@ -1,7 +1,7 @@
 .footer {
-  background-color: var(--gray);
+  background-color: #202020;
   display: grid;
-  grid-template-columns: 15% 25% 25% 30%;
+  grid-template-columns: 20% 25% 25% 30%;
   padding: var(--main-padding);
 }
 .footer > * {
@@ -33,7 +33,6 @@ input[type="text"] {
   border-radius: var(--radius);
   box-sizing: border-box;
 }
-
 
 .footer-contact p {
   color: var(--white);
@@ -84,7 +83,6 @@ input[type="text"] {
   border: 2px solid black;
   cursor: pointer;
   box-shadow: 0 2px #999;
-
 }
 
 .footer-contact-button:hover {
@@ -101,7 +99,6 @@ input[type="text"] {
   width: 1.5em;
   height: auto;
 }
-
 .footer-contact {
   color: var(--white);
   display: flex;
@@ -113,9 +110,9 @@ input[type="text"] {
   width: 6.6em;
   height: auto;
 }
-.icon:hover{
-  transform: rotate3d(1,1,1,360deg);
-  transition: all 1s ease ;
+.icon:hover {
+  transform: rotate3d(1, 1, 1, 360deg);
+  transition: all 1s ease;
 }
 .footer-contact {
   display: flex;
@@ -140,32 +137,27 @@ input[type="text"] {
   flex-flow: column nowrap;
   align-items: center;
 }
-.texting[type=text] {
+.texting[type="text"] {
   border-radius: 1rem;
-  width: 400px;  
+  width: 400px;
   height: 120px;
   word-wrap: wrap;
   font-size: 1rem;
 }
 
-.info[type=text] {
+.info[type="text"] {
   font-size: 1rem;
   width: 180px;
   margin: 0 20px;
 }
-@media only screen and (max-width: 1500px) {
-  .footer {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-around;  */
-  }
-  .footer-contact {
-    margin-bottom: 20px;
-  }
-}
 
 @media only screen and (max-width: 1200px) {
-  .selection, .texting[type=text]{
+  /* .texting[type=text] {
+    width: 400px;
+    height: 150px;
+  } */
+  .selection,
+  .texting[type="text"] {
     font-size: 0.8rem;
   }
 }
@@ -176,23 +168,7 @@ input[type="text"] {
 }
 @media only screen and (max-width: 850px) {
   .footer {
-    justify-content: center;
-  }
-  .footer:first-child{
-    justify-content: flex-start;
-    margin: 0;
-  }
-  .footer-bottom {
-    font-size: 3.5vw;
-  }
-  .texting[type=text] {
-    width: 250px;
-    height: 100px;
-  }
-  .text-info {
-    flex-flow: column wrap;
-  }
-  .footer {
+    display: grid;
     padding: var(--mobile-padding);
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -201,15 +177,13 @@ input[type="text"] {
       "social-responsibility"
       "footer-aboutus";
   }
+  hr {
+    width: 100%;
+  }
   .footer-bottom {
     padding: var(--mobile-padding);
   }
   .footer-contact {
     padding: var(--mobile-padding);
-  }
-}
-@media only screen and (max-width: 600px) {
-  .footer-contact{
-    transform: translateX(-5%);
   }
 }

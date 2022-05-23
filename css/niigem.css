@@ -130,6 +130,7 @@ div > p {
   flex-direction: column;
   align-items: center;
   margin-top: 20vh;
+  text-align: justify;
 }
 
 .niigem {
