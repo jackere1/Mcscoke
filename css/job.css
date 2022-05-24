@@ -26,14 +26,14 @@ img {
   height: 60vh;
 }
 
-.jobImg{
+.jobImg {
   width: 100%;
 }
-.job-information-p{
+.job-information-p {
   margin-left: 2rem;
 }
-@media only screen and (max-width: 660px) {
-  .job-information{
+@media only screen and (max-width: 600px) {
+  .job-information {
     margin: var(--mobile-padding);
     margin-bottom: 2rem;
   }

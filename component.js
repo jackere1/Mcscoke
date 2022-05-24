@@ -94,7 +94,7 @@ class Footer extends HTMLElement {
           </div>
 
             <label for="message">Мессеж</label>
-            <textarea type="text" class="texting" id="message" name="sms" width="200px" height="100px"/></textarea><br />
+            <textarea type="text" class="texting" id="message" name="sms" "/></textarea><br />
             <br /> 
           <input class="footer-contact-button" type="submit" value="Илгээх" />
         </form>

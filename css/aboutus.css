@@ -47,8 +47,8 @@ main {
 }
 
 .btn {
-  border-radius: 0.4rem;
-  background-color: #18829c;
+  border-radius: 0.2rem;
+  background-color: #303030;
   width: 20vw;
   height: 6vh;
   color: var(--white);

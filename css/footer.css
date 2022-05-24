@@ -145,7 +145,7 @@ input[type="text"] {
     display: none;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 600px) {
   .footer {
     padding: var(--mobile-padding);
     grid-template-columns: 100%;
@@ -160,5 +160,25 @@ input[type="text"] {
   }
   .footer-contact {
     padding: var(--mobile-padding);
+  }
+
+  .text-info {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .text-info > div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .texting[type="text"] {
+    width: 340px;
+    height: 120px;
+  }
+  .info[type="text"] {
+    font-size: 1rem;
+    width: 150px;
+    margin: 0 20px;
   }
 }
