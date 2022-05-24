@@ -92,6 +92,13 @@ main {
 #detach-button-host {
   display: none !important;
 }
+.company {
+  padding: var(--main-padding);
+  text-align: justify;
+}
+.company-title:hover {
+  color: var(--main-bg-color);
+}
 .info {
   display: flex;
   flex-direction: column;
@@ -128,5 +135,8 @@ main {
   }
   .reveal-tab3 {
     transform: translateX(60px);
+  }
+  .company {
+    padding: var(--mobile-padding);
   }
 }

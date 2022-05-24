@@ -50,9 +50,9 @@ const renderCompany = () => {
       data.map((value) => {
         return (document.querySelector(
           ".info"
-        ).innerHTML += `<h3>${value.title}</h3>
+        ).innerHTML += `<section class = "company"><h3 class = "company-title">${value.title}</h3>
                 <span>${value.p}<span>
-                <ul id=${value.id}>${value.list}</ul>`);
+                <ul id=${value.id}>${value.list}</ul></section>`);
       });
       document.querySelector(".info").innerHTML += `</article>`;
     });

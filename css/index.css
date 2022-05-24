@@ -108,6 +108,7 @@ img {
 }
 .mcs {
   border-radius: var(--radius);
+  width: 100%;
 }
 .information2 {
   display: grid;
@@ -211,6 +212,10 @@ img {
   text-decoration: none;
   color: var(--white);
 }
+a {
+  text-decoration: none;
+  color: var(--white);
+}
 .plant-tour:hover .information2-overlay {
   opacity: 1;
 }
@@ -290,6 +295,9 @@ img {
   .product-title > p {
     text-align: justify;
   }
+  .svg {
+    display: none;
+  }
 
   .product-img {
     grid-area: product-img;
@@ -297,7 +305,7 @@ img {
     margin-right: auto;
   }
   .product-img1 {
-    width: 4em;
+    width: 3.5em;
     height: auto;
   }
   .product-button::before,
