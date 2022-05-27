@@ -13,4 +13,3 @@ function reveal() {
     // // }
   }
 }
-console.log(object);
