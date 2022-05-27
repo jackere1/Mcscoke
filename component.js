@@ -10,7 +10,6 @@ class Header extends HTMLElement {
            </section>
         <ul class="nav-menu">
           <li class="nav-item active"><a href="index.html" class="nav-link ">Нүүр хуудас</a></li>
-
           <li class="nav-item"><a href="Products.html" class="nav-link">Бүтээгдэхүүнүүд</a></li>
           <li class="nav-item"><a href="aboutus.html" class="nav-link">Бидний тухай</a></li>
           <li class="nav-item"><a href="niigem.html" class="nav-link">Нийгмийн хариуцлага</a></li>

@@ -20,6 +20,7 @@ const openapiSpec = await swaggerJSDoc(options);
 const UIoptions = {
   explorer: true,
 };
+
 app.use(express.json());
 app.use("/medee", news);
 app.use("/medeepost", news);
