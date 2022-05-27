@@ -58,7 +58,7 @@ img {
 }
 
 @media only screen and (max-width: 900px) {
-  .newsItem {
+  .medeenvvd {
     grid-template-columns: 1fr;
     margin: var(--mobile-padding);
   }
