@@ -1,4 +1,4 @@
-var React = {
+const Comps = {
     Component: class {
         constructor(props, cls) {
             this.props = props;
@@ -23,4 +23,4 @@ var React = {
     }
 }
 
-export default React;
+export default Comps;

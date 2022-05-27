@@ -9,10 +9,10 @@ img {
   max-width: 100%;
 }
 
-.newsItem {
+.medeenvvd {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: var(--main-padding);
+  margin: 0 10vw;
 }
 .news {
   display: grid;
@@ -53,19 +53,11 @@ img {
   background-color: #031f3b;
   color: white;
 }
-
-a:nth-child(5) {
-  background-color: var(--main-bg-color);
-  color: white;
-}
-a:nth-child(1) {
-  font-weight: bold;
+.active {
+  border: 1px solid var(--black);
 }
 
-a:nth-child(7) {
-  font-weight: bold;
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .newsItem {
     grid-template-columns: 1fr;
     margin: var(--mobile-padding);
