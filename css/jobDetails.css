@@ -99,7 +99,7 @@ input[type="text"] {
     display: none;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   .footer {
     padding: var(--mobile-padding);
     grid-template-columns: 1fr;

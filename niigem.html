@@ -12,6 +12,7 @@
     <link rel="icon" href="img/icon.png" type="image/x-icon" />
     <script src="niigem.js"></script>
     <script src="./component.js"></script>
+    <script src="./Scroll.js"></script>
     <title>Responsibilities</title>
   </head>
   <body>
@@ -28,9 +29,13 @@
       </section>
 
       <section class="first">
-        <button onclick="work()">Ажлын байр</button>
-        <button onclick="ecology()">Байгаль орчин, экологи</button>
-        <button onclick="niigem()">Нийгэм</button>
+        <button class="reveal reveal-button" onclick="work()">
+          Ажлын байр
+        </button>
+        <button class="reveal reveal-button" onclick="ecology()">
+          Байгаль орчин, экологи
+        </button>
+        <button class="reveal reveal-button" onclick="niigem()">Нийгэм</button>
       </section>
       <section class="info">
         <figure>
@@ -38,9 +43,9 @@
             <img
               src="img/NiigemHariutslaga/image 23.png"
               alt="ajil logo"
-              class="human"
+              class="human reveal reveal-img"
             />
-            <p>
+            <p class="reveal reveal-p">
               Бид хүмүүсийг илүү эрч хүчтэйгээр өргөн цар хүрээнд сэтгэж,
               гайхалтай үр дүн гаргахуйц ажлын байрыг бий болгохыг зорин
               ажилладаг.
@@ -48,7 +53,11 @@
           </div>
         </figure>
         <figure>
-          <img src="img/NiigemHariutslaga/image 24.png" alt="ajil info" />
+          <img
+            class="reveal reveal-img2"
+            src="img/NiigemHariutslaga/image 24.png"
+            alt="ajil info"
+          />
         </figure>
       </section>
     </main>

@@ -27,7 +27,7 @@ const ecology = () => {
 
 const water = () => {
     document.querySelector(".inside").innerHTML = "";
-    fetch("https://api.jsonbin.io/b/62778a9738be296761fe1244")
+    fetch("./json/niigem/water.json")
     .then(response => response.json())
     .then(data => {
         data.map(value => {
@@ -49,7 +49,7 @@ const water = () => {
 
 const energy = () => {
     document.querySelector(".inside").innerHTML = "";
-    fetch("https://api.jsonbin.io/b/62779206019db46796979376")
+    fetch("./json/niigem/energy.json")
     .then(response => response.json())
     .then(data => {
         data.map(value => {
@@ -65,7 +65,7 @@ const energy = () => {
 
 const bottle = () => {
     document.querySelector(".inside").innerHTML = "";
-    fetch("https://api.jsonbin.io/b/6277942b019db467969793ef/1")
+    fetch("./json/niigem/bottle.json")
     .then(response => response.json())
     .then(data => {
         data.map(value => {
@@ -88,7 +88,7 @@ const bottle = () => {
 
 const niigem = () => {
     document.querySelector(".info").innerHTML = "";
-    fetch("https://api.jsonbin.io/b/6277a010019db467969797d1")
+    fetch("./json/niigem/niigem.json")
     .then(response => response.json())
     .then(data => {
         data.map(value => {

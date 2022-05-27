@@ -8,14 +8,8 @@ body {
 img {
   max-width: 100%;
 }
-
-.nav {
-  background-color: #000;
-}
-
 .first {
   margin: 0 10%;
-  width: 80%;
   display: flex;
   justify-content: space-around;
 }
@@ -32,8 +26,7 @@ img {
   opacity: 65%;
 }
 
-
-.first > button:hover{
+.first > button:hover {
   background-color: #000;
   /* color: black; */
 }
@@ -48,7 +41,26 @@ img {
   cursor: pointer;
   margin: 5vh 0;
 }
-
+.reveal.active {
+  opacity: 1;
+  transition: all 1.3s ease;
+  transform: translateX(0);
+}
+.reveal-button {
+  transform: translateX(20px);
+}
+.reveal {
+  opacity: 0;
+}
+.reveal-p {
+  transform: translateX(100px);
+}
+.reveal-img {
+  transform: translateX(-40px);
+}
+.reveal-img2 {
+  transform: translateX(40px);
+}
 .buttons > button:hover {
   background-color: var(--gray);
 }
@@ -66,7 +78,7 @@ img {
   justify-content: center;
   width: 100vw;
   height: 75vh;
-  background: linear-gradient(0deg, #FFF 1%, grey 30%, var(--gray) 90%);
+  background: linear-gradient(0deg, #fff 1%, grey 30%, var(--gray) 90%);
   z-index: -2;
 }
 
@@ -85,10 +97,10 @@ img {
 }
 
 .human {
- width: 3%;
- height: 5%;
- border-right: 2px red solid;
- margin: 10px;
+  width: 3%;
+  height: 5%;
+  border-right: 2px red solid;
+  margin: 10px;
 }
 
 .images {
@@ -119,7 +131,9 @@ div > p {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   margin-top: 20vh;
+  text-align: justify;
 }
 
 .niigem {
@@ -138,7 +152,7 @@ div > p {
   height: 45vh;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
   .niigem {
     font-size: 12px;
   }
@@ -158,19 +172,13 @@ div > p {
   }
   .first {
     justify-content: center;
+    flex-direction: column;
     /* margin: 0; */
-  }
-  .first > button:first-child {
-    margin-left: 10%;
   }
   .first > button {
     /* position: absolute; */
     /* z-index: 1; */
-    margin: 0 1%;
-    width: 30vw;
-    height: 5vh;
     font-size: 2vw;
-    bottom: 100vh;
   }
 
   .buttons > button {
@@ -179,7 +187,7 @@ div > p {
     font-size: 1.3vw;
   }
   .info {
-    margin-top: 10vh;   
+    margin-top: 10vh;
   }
 
   .images {
@@ -204,21 +212,26 @@ div > p {
   }
   .bg > img {
     width: 100%;
-    height: 30%;
+    height: 40%;
+  }
+  .first {
+    justify-content: center;
+    flex-direction: column;
+    /* margin: 0; */
   }
   .bg {
     margin-right: 5%;
     height: 30vh;
   }
   .first > button {
-    margin: 0;
-    width: 100%;
-    height: 3vh;
+    width: auto;
+    margin: var(--mobile-padding);
+    margin-top: 1em;
   }
   .info {
-    margin-top: 5vh; 
+    margin-top: 5vh;
   }
-  h2{
+  h2 {
     font-size: 5vw;
   }
 }

@@ -1,6 +1,6 @@
-import React from "./ComponentBase.js";
+import Comps from "./ComponentBase.js";
 
-export default class Information extends React.Component {
+export default class Information extends Comps.Component {
   constructor(data) {
     super();
     this.data = data;
@@ -13,17 +13,18 @@ export default class Information extends React.Component {
     wrapper.className = "newsItem";
     docFrag.appendChild(wrapper);
 
-    this.data.map((value, key) => {
+    this.data.map(value => {
       return (docFrag.firstChild.innerHTML += `
-      <div class="news">
-      <div class="newsImg" id="img">
-      <img class="news-img" src="${value.img}"></img></div>
- <div>
-  <div class="news-title" id="title">${value.title}</div>
-  <div class="news-description" id="description">${value.description}</div>
-  <div class="news-date" id="date">${value.date}</div>
-      </div>
-      </div>
+      <section class="news">
+        <div class="newsImg" id="img">
+          <img class="news-img" src="img/News/medee${value.id}.jpg" alt="newsimg"></img>
+        </div>
+        <div>
+          <div class="news-title" id="title">${value.title}</div>
+          <div class="news-description" id="description">${value.description}</div>
+          <div class="news-date" id="date">${value.date}</div>
+        </div>
+      </section>
       `);
     });
 

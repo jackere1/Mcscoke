@@ -9,7 +9,12 @@ class Header extends HTMLElement {
           <a/>
            </section>
         <ul class="nav-menu">
+<<<<<<< HEAD
           <li class="nav-item active"><a href="index.html" class="nav-link ">Нүүр хуудас</a></li>
+=======
+          <li class="nav-item "><a href="index.html" class="nav-link ">Нүүр хуудас</a></li>
+
+>>>>>>> 285235bdbe988a172bbf56ee13f4a69d6de76076
           <li class="nav-item"><a href="Products.html" class="nav-link">Бүтээгдэхүүнүүд</a></li>
           <li class="nav-item"><a href="aboutus.html" class="nav-link">Бидний тухай</a></li>
           <li class="nav-item"><a href="niigem.html" class="nav-link">Нийгмийн хариуцлага</a></li>
@@ -32,7 +37,7 @@ customElements.define("mcs-header", Header);
 class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-     <section class="footer ">
+     <section class="footer">
       <section class="footer-product">
          <ul>
             <h5><a href="Products.html">БРЕНД</a></h5>
@@ -75,7 +80,6 @@ class Footer extends HTMLElement {
       </article>
       <section class="footer-contact">
         <p>ХОЛБОГДОХ</p>
-        <hr>
         <form class="footer-contact">
          <label for="type">Төрлөө сонгоно уу?</label>
           <select id="type" name="type" class="selection">
@@ -94,24 +98,24 @@ class Footer extends HTMLElement {
           </div>
 
             <label for="message">Мессеж</label>
-            <textarea type="text" class="texting" id="message" name="sms" width="200px" height="100px"/></textarea><br />
+            <textarea type="text" class="texting" id="message" name="sms" "/></textarea><br />
             <br /> 
           <input class="footer-contact-button" type="submit" value="Илгээх" />
         </form>
       </section>
-      </section>
-      <section class="footer-bottom ">
+    </section>
+    <section class="footer-bottom ">
       <section class="footer-Logo">
          <picture>
             <source
-            srcset="img/footer/footer-logo 1.png"
-            media="(min-width:1020px)"
+            srcset="img/Footer/footer.png"
+            media="(max-width:1020px)"
             />
             <source
-            srcset="/img/footer/footer-logo 1.png"
-            media="(min-width:800px)"
+            srcset="/img/Footer/footer.png"
+            media="(max-width:800px)"
             />
-            <img src="img/footer/footer.png" alt="footer-logo" />
+            <img src="img/Footer/footer.png" alt="footer-logo" />
           </picture>
         </section>
         <section class="icons">

@@ -71,7 +71,7 @@ section > p > a {
     display: none;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   .happiness-information {
     margin: var(--mobile-padding);
   }

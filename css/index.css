@@ -5,7 +5,6 @@
 body {
   margin: 0;
   font-family: var(--main-font);
-
 }
 img {
   max-width: 100%;
@@ -15,59 +14,7 @@ img {
 
   transition: all 1s ease;
 }
-/* nav css */
-.nav {
-  box-sizing: border-box;
-  background-color: var(--gray);
-  display: flex;
-  min-height: 4rem;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.4em 3em 0.4em 3em;
-}
 
-.nav-logo {
-  width: 9em;
-  height: auto;
-}
-.hamburger {
-  display: none;
-  cursor: pointer;
-  align-items: center;
-}
-.bar {
-  display: block;
-  width: 1.5rem;
-  height: 0.2rem;
-  background-color: var(--white);
-  margin: 0.3rem auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  gap: 4rem;
-}
-.nav-menu > li > a {
-  color: white;
-  text-decoration: none;
-}
-.nav-menu > li {
-  align-items: center;
-  list-style-type: none;
-}
-.nav-menu > ul :hover {
-  color: skyblue;
-}
-.mcs-logo {
-  width: 2.5rem;
-  text-align: center;
-}
-.mcs {
-  border-radius: var(--radius);
-}
-/*nav-css*/
 .wrapper {
   background-color: var(--main-bg-color);
   display: grid;
@@ -115,7 +62,6 @@ img {
   transform-origin: 100% 50%;
   transform: scaleX(0);
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-
 }
 .product-button::after {
   content: attr(data-replace);
@@ -148,7 +94,7 @@ img {
   margin-left: 2.5em;
 }
 .product-img1 {
-  margin-left: 1.5em;
+  margin-left: 1.7em;
 }
 .inf {
   margin-bottom: 2rem;
@@ -162,6 +108,8 @@ img {
 }
 .mcs {
   border-radius: var(--radius);
+  width: 100%;
+  height: 14rem;
 }
 .information2 {
   display: grid;
@@ -265,6 +213,10 @@ img {
   text-decoration: none;
   color: var(--white);
 }
+a {
+  text-decoration: none;
+  color: var(--white);
+}
 .plant-tour:hover .information2-overlay {
   opacity: 1;
 }
@@ -281,14 +233,11 @@ img {
   text-decoration: none;
   color: var(--white);
 }
-.reveal {
-  opacity: 0;
-}
 .reveal-title {
   transform: translateX(-150px);
 }
 .reveal-button {
-  transform: translateY(100px);
+  transform: translateY(20px);
 }
 .reveal-img1 {
   transform: translateX(150px);
@@ -304,7 +253,6 @@ img {
 }
 .reveal-information-img2 {
   transform: translateX(20px);
-
 }
 .reveal-information-img3 {
   transform: translateY(20px);
@@ -320,12 +268,11 @@ img {
   transition: all 1.3s ease;
   transform: translateX(0);
 }
-.reveal{
+.reveal {
   opacity: 0;
-  right: -100%;
 }
 
-.reveal.active{
+.reveal.active {
   opacity: 1;
   transition: all 2s ease;
 }
@@ -334,15 +281,7 @@ img {
     display: none;
   }
 }
-@media only screen and (max-width: 660px) {
-  .nav-logo {
-    width: 8em;
-    height: auto;
-    align-items: center;
-  }
-  .nav {
-    padding: var(--mobile-padding);
-  }
+@media only screen and (max-width: 600px) {
   .wrapper {
     padding: var(--mobile-padding);
     grid-template-columns: 1fr;
@@ -357,6 +296,9 @@ img {
   .product-title > p {
     text-align: justify;
   }
+  .svg {
+    display: none;
+  }
 
   .product-img {
     grid-area: product-img;
@@ -364,7 +306,7 @@ img {
     margin-right: auto;
   }
   .product-img1 {
-    width: 5em;
+    width: 3.5em;
     height: auto;
   }
   .product-button::before,
@@ -380,39 +322,19 @@ img {
     grid-template-columns: 1fr;
     padding: var(--mobile-padding);
   }
-
-  .mcs-logo {
-    display: none;
+  .information2-overlay {
+    opacity: 1;
   }
-  .hamburger {
-    display: block;
+  .information-overlay {
+    opacity: 1;
   }
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
+  .information2-vacancy-overlay {
+    opacity: 1;
   }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(0.5em) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-0.5em) rotate(-45deg);
-  }
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    gap: 0;
-    top: 2.8rem;
-    flex-direction: column;
-    background-color: rgb(43, 43, 43, 96%);
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    transition: 0.4s;
-    padding: 0;
-  }
-  .nav-item {
-    margin: 1rem 0;
-  }
-  .nav-menu.active {
-    left: 0;
+  .reveal-information-img1,
+  .reveal-information-img2,
+  .reveal-information-img3,
+  .reveal-information-img5 {
+    transform: translate(0);
   }
 }

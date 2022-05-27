@@ -5,10 +5,9 @@
     <meta name="description" content="Latest about MCS, Mcs news, Mcs 2022" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/medee.css" />
     <link rel="icon" href="img/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/medee.css" />
-    <script type="module" src="./Modules/app.js"></script>
+    <!-- <script type="module" src="./Modules/app.js"></script> -->
     <script src="./component.js"></script>
     <title>News</title>
   </head>
@@ -17,20 +16,21 @@
       <mcs-header></mcs-header>
     </header>
     <main>
-      <section id="newsItems"></section>
+      <section id="newsItems" class="medeenvvd"></section>
       <section class="pagination_section">
-        <a href="#"><< Previous</a>
-        <a href="#" title="Algorithm">1</a>
-        <a href="#" title="DataStructure">2</a>
-        <a href="#" title="Languages">3</a>
-        <a href="#" title="Interview" class="active">4</a>
-        <a href="#" title="practice">5</a>
-        <a href="#">Next >></a>
+        <!-- <a href="#"><< Previous</a>
+        <a href="#" onclick="newsPage(0)" class="active">1</a>
+        <a href="#" onclick="newsPage(1)">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">Next >></a> -->
       </section>
     </main>
     <footer>
       <mcs-footer></mcs-footer>
     </footer>
+    <script src="medee.js"></script>
+
     <script src="./mobileMenu.js"></script>
   </body>
 </html>

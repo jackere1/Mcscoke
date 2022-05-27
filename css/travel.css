@@ -15,7 +15,7 @@ body {
   margin: var(--main-padding);
   text-align: justify;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   .travel-information {
     margin: var(--mobile-padding);
   }

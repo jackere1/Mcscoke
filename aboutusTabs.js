@@ -1,6 +1,6 @@
 const renderGroup = () => {
   document.getElementsByClassName("info");
-  fetch("https://api.jsonbin.io/b/62776adf019db4679697887c/1")
+  fetch("./json/aboutus/group.json")
     .then((response) => response.json())
     .then((data) => {
       // console.log(data);
@@ -20,7 +20,7 @@ const renderGroup = () => {
 };
 
 const renderCola = () => {
-  fetch("https://api.jsonbin.io/b/62776f98019db467969789a6")
+  fetch("./json/aboutus/cola.json")
     .then((response) => response.json())
     .then((data) => {
       // console.log(data);
@@ -40,7 +40,7 @@ const renderCola = () => {
 };
 
 const renderCompany = () => {
-  fetch("https://api.jsonbin.io/b/6277743e25069545a32f1029/2")
+  fetch("./json/aboutus/company.json")
     .then((response) => response.json())
     .then((data) => {
       document.querySelector(
@@ -50,9 +50,9 @@ const renderCompany = () => {
       data.map((value) => {
         return (document.querySelector(
           ".info"
-        ).innerHTML += `<h3>${value.title}</h3>
+        ).innerHTML += `<section class = "company"><h3 class = "company-title">${value.title}</h3>
                 <span>${value.p}<span>
-                <ul id=${value.id}>${value.list}</ul>`);
+                <ul id=${value.id}>${value.list}</ul></section>`);
       });
       document.querySelector(".info").innerHTML += `</article>`;
     });

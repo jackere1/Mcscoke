@@ -12,6 +12,7 @@
     <link rel="icon" href="img/icon.png" type="image/x-icon" />
     <script src="aboutusTabs.js"></script>
     <script src="./component.js"></script>
+    <script src="./Scroll.js"></script>
     <title>AboutUs</title>
   </head>
   <body>
@@ -19,38 +20,54 @@
       <mcs-header></mcs-header>
     </header>
     <main>
+      <section class="homePage-video">
+        <video
+          src="./img/aboutUs/М-Си-Эс Группийн танилцуулга (online-video-cutter.com).mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+        <h1>MCS COCA <span>COLA</span></h1>
+      </section>
       <section class="buttons" id="bu">
-        <button class="btn" onclick="renderCompany()">
+        <button class="btn reveal reveal-tab1" onclick="renderCompany()">
           М-Си-ЭС Кока-Кола ХХК-ын тухай
         </button>
-        <button class="btn" onclick="renderGroup()">
+        <button
+          class="btn tabActive reveal reveal-tab2"
+          onclick="renderGroup()"
+        >
           М-Си-ЭС Группын тухай
         </button>
-        <button class="btn" onclick="renderCola()">
+        <button class="btn reveal reveal-tab3" onclick="renderCola()">
           Кока кола компанийн тухай
         </button>
       </section>
       <section class="info">
         <figure>
-          <img src="img/aboutUs/mcsgroup-1.jpg" alt="about MCS" />
+          <img
+            class="reveal reveal-tab2-img1"
+            src="img/aboutUs/mcsgroup-1.jpg"
+            alt="about MCS"
+          />
         </figure>
         <figure>
           <img
-            class="reveal"
+            class="reveal reveal-tab2-img1"
             src="img/aboutUs/mcsgroup-2.jpg"
             alt="about MCS"
           />
         </figure>
         <figure>
           <img
-            class="reveal"
+            class="reveal reveal-tab2-img1"
             src="img/aboutUs/mcsgroup-3.jpg"
             alt="about MCS"
           />
         </figure>
         <figure>
           <img
-            class="reveal"
+            class="reveal reveal-tab2-img1"
             src="img/aboutUs/mcsgroup-4.jpg"
             alt="about MCS"
           />
@@ -69,6 +86,5 @@
     <script src="./mobileMenu.js"></script>
     <script src="./Scroll.js"></script>
     <script src="./activeTabs.js"></script>
-
   </body>
 </html>
