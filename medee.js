@@ -14,7 +14,7 @@ const newsPage = pageNumber => {
         }
         document.querySelector(".pagination_section").innerHTML += `<a href="#" onclick="pageChange(1)">Next >></a>`;
 
-        if(pageNumber < newsData.length / 10) {
+        if(pageNumber < newsData.length / 10 && pageNumber >= 0) {
             currentPage = pageNumber;
             //10 medee render hiih
             let renderData = [];
