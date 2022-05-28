@@ -138,7 +138,7 @@ div > p {
 
 .niigem {
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   padding: 0 10%;
   margin: 50px 0;
 }
@@ -152,6 +152,9 @@ div > p {
   height: 45vh;
 }
 
+.overflower {
+  overflow: hidden;
+}
 @media only screen and (max-width: 1000px) {
   .niigem {
     font-size: 12px;

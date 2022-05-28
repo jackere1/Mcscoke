@@ -100,7 +100,7 @@ const niigem = () => {
                             `<span>${elm}</span>`
                         )
                     })}
-                    <div>${value.image.map(elm => {
+                    <div class="overflower">${value.image.map(elm => {
                         return(
                             `<img src="${elm}" alt="${value.alt}"/>`
                         )
