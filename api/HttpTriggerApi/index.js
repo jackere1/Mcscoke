@@ -5,6 +5,10 @@ module.exports = async function (context, req) {
     // status: 200, /* Defaults to 200 */
     headers: {
       "Content-Type": "application/json",
+      "Acces-Control-Allow-Origin": "*",
+      "Acces-Control-Allow-Methods": "GET,POST,PUT,PATCH,DELETE",
+      "Acces-Control-Allow-Headers":
+        "Origin, X-Requested-With, Content-Type, Accept",
     },
     body: [
       {
