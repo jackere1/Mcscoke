@@ -96,7 +96,7 @@ class Footer extends HTMLElement {
             <label for="message">Мессеж</label>
             <textarea type="text" class="texting" id="message" name="sms" "/></textarea><br />
             <br /> 
-          <input class="footer-contact-button" type="submit" value="Илгээх" />
+          <input class="footer-contact-button" type="submit" value="Илгээх" onclick="test()"/>
         </form>
       </section>
     </section>
@@ -131,7 +131,6 @@ class Footer extends HTMLElement {
           <p>COPYRIGHT © MCS Coca-Cola Company</p>
         </article>
       </section>
-  
     `;
   }
 }
