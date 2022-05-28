@@ -1,6 +1,6 @@
 var currentPage;
 const newsPage = pageNumber => {
-    fetch("./json/news/medee.json")
+    fetch("https://mcs-back.azurewebsites.net/api/HttpTriggerApi?code=pR4E9rdem8GJxaxg2hhnw1ipUTMcCcR1bZqQZmlBn7y1AzFuFT2wvQ==")
     .then(response => response.json())
     .then(newsData => {
         console.log(newsData);
